@@ -8,10 +8,11 @@ function Projects() {
         "https://www.demo-site.org"
       ];
     const siteDivs = sites.map((site, index) => (
-        <div key={index} className="relative">
+        <div key={index} className="relative lg:w-1/4">
             <img 
             src="https://plus.unsplash.com/premium_photo-1663089895867-428d148a8663?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8N3x8cHJvZ3JhbW1lcnxlbnwwfHwwfHx8MA%3D%3D&auto=format&fit=crop&w=500&q=60" 
             alt = "logo"
+            className="w-full"
             />
             <a 
             href={site} 
@@ -24,11 +25,11 @@ function Projects() {
         </div>
         ));
   return (
-    <div className="my-20 mx-10">
-      <div className="flex justify-center text-4xl text-green-400 my-10">
+    <div className="relative my-20 mx-10">
+      <div className="flex flex-wrap justify-center text-4xl text-green-500 font-bold my-10">
         <h1>CURRENT PROJECTS</h1>
       </div>
-      <div className="flex flex-nowrap justify-center grid-cols-4 gap-20">
+      <div className="flex flex-wrap lg:flex-row justify-center gap-10">
         {siteDivs} 
       </div>
     </div>

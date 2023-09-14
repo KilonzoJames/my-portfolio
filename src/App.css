@@ -5,6 +5,12 @@ body{
     background-size: cover;
     scroll-behavior: smooth;
 }
+.active{
+    background-color: #1d4ed8;
+}
+/* #nav a:not(.active):hover{
+    background-color: #5a0c1f;
+} */
 
 /* .social-icons a{
     margin: 0 10px;

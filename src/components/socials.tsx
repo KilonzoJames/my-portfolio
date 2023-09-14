@@ -19,33 +19,29 @@ function Socials() {
         },
       ];
   return (
-    <div className="flex flex-wrap justify-center my-10">
-        <div className="social-icons">
-            <div className="flex justify-center text-4xl text-green-400 my-10">
-                <h3>SOCIALS</h3>
+    <div className="my-10">
+        <h3 className='flex justify-center my-10 text-4xl text-green-500 font-bold'>SOCIALS</h3>
+        <div className="flex flex-wrap md:flex-row lg:flex-row justify-center gap-20">
+            {socialLinks.map((link, index) => (
+            <div key={index} className="text-center">
+                <a
+                    key={index}
+                    href={link.href}
+                    target="_blank"
+                    rel="noreferrer"
+                    className="bg-gray-300 cursor-pointer rounded-full hover:animate-spin w-40 h-40 justify-items-center flex items-center"
+                >
+                    <img
+                    src={link.imgSrc}
+                    alt={link.alt}
+                    width="72"
+                    height="72"
+                    className="mx-auto"
+                    />
+                </a>
+                <p className="mt-4 text-green-700">{link.alt}</p>
             </div>
-            <div className="flex flex-col md:flex-row lg:flex-row justify-center gap-20">
-                {socialLinks.map((link, index) => (
-                <div key={index} className="text-center">
-                    <a
-                        key={index}
-                        href={link.href}
-                        target="_blank"
-                        rel="noreferrer"
-                        className="bg-gray-300 cursor-pointer rounded-full hover:animate-spin w-40 h-40 justify-items-center flex items-center"
-                    >
-                        <img
-                        src={link.imgSrc}
-                        alt={link.alt}
-                        width="72"
-                        height="72"
-                        className="mx-auto"
-                        />
-                    </a>
-                    <p className="mt-4 text-green-700">{link.alt}</p>
-                 </div>
-                ))}
-            </div>
+            ))}
         </div>
     </div>
 );

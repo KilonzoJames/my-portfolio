@@ -19,7 +19,7 @@ function Techstack() {
           {tech}
         </li>
       ));
-    const techListContainer = <ul className="flex flex-nowrap justify-center gap-4 mx-4">{techList}</ul>;
+    const techListContainer = <ul className="flex flex-wrap justify-center gap-4 mx-4">{techList}</ul>;
 
       
   return (
