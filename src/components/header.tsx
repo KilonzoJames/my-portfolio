@@ -29,47 +29,47 @@ function Header() {
         },
       ];
   return (
-    <nav className="fixed top-0 left-0 w-full shadow-md flex justify-between items-center bg-zinc-950 text-white py-4 px-12 h-24 transition-all duration-500" id="nav">
-        <div className=" flex items-center hover:scale-75 transition-all duration-500">
-            <span className='text-4xl mx-4'><FontAwesomeIcon icon={faSnowflake} /></span>
-            <a className="text-4xl text-green-500" href="/">KIL<span><FontAwesomeIcon icon={faCrosshairs}/></span>NZO JAMES</a>
-        </div>
-
-        {/* Toggle button */}
-        <button
-          className={`absolute right-4 top-4 lg:absolute lg:right-10 lg:top-10 lg:hidden ${open ? 'lg:block' : 'lg:hidden'}`}
-          onClick={() => setOpen((prevOpen) => !prevOpen)}
-        >
-          {open ? (
-            <FontAwesomeIcon icon={faXmark} />
-          ) : (
-            <FontAwesomeIcon icon={faBars} />
-          )}
-        </button>
-        {/* Navbar links */}
-        {open ? (
-          // Display vertically on small screens when open
-          <div className="lg:hidden">
-            {navLinks.map((link, index) => (
-              <a key={index} className="block py-2" href={link.href}>
-                <FontAwesomeIcon icon={link.icon} className="me-1" beat size="1x" />
-                {link.text}
-              </a>
-            ))}
+      <nav className={`fixed top-0 left-0 w-full bg-zinc-950 text-white py-4 px-12 h-[6rem] flex justify-between items-center transition-all duration-500 overflow-hidden ${open ? 'h-[30vh]' : ''}`} id="nav">
+          <div className=" flex items-center hover:scale-75 transition-all duration-500">
+              <span className='text-4xl mx-4'><FontAwesomeIcon icon={faSnowflake} /></span>
+              <a className="text-4xl text-green-500" href="/">KIL<span><FontAwesomeIcon icon={faCrosshairs}/></span>NZO JAMES</a>
           </div>
-        ) : (
-        // Display horizontally on large screens when closed
-          <div className="hidden lg:flex space-x-6 text-2xl mx-12">
-            {navLinks.map((link, index) => (
-              <a key={index} className="py-2 mx-6" href={link.href}>
-                <FontAwesomeIcon icon={link.icon} className="me-1" beat size="1x" />
-                {link.text}
-              </a>
-            ))}
-        </div>
-      )}
-    </nav>
-);
+
+          {/* Toggle button */}
+          <button
+            className={`absolute right-4 top-4 lg:absolute lg:right-10 lg:top-10 lg:hidden ${open ? 'lg:block' : 'lg:hidden'}`}
+            onClick={() => setOpen((prevOpen) => !prevOpen)}
+          >
+            {open ? (
+              <FontAwesomeIcon icon={faXmark} />
+            ) : (
+              <FontAwesomeIcon icon={faBars} />
+            )}
+          </button>
+          {/* Navbar links */}
+          {open ? (
+            // Display vertically on small screens when open
+            <div className="lg:hidden">
+              {navLinks.map((link, index) => (
+                <a key={index} className="block py-2 text-4xl" href={link.href}>
+                  <FontAwesomeIcon icon={link.icon} className="me-1" beat size="1x" />
+                  {link.text}
+                </a>
+              ))}
+            </div>
+          ) : (
+          // Display horizontally on large screens when closed
+            <div className="hidden lg:flex space-x-6 text-2xl mx-12">
+              {navLinks.map((link, index) => (
+                <a key={index} className="py-2 mx-6" href={link.href}>
+                  <FontAwesomeIcon icon={link.icon} className="me-1" beat size="1x" />
+                  {link.text}
+                </a>
+              ))}
+          </div>
+        )}
+      </nav>
+  );
 }
 
 export default Header

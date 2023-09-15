@@ -29,7 +29,7 @@ function Socials() {
                     href={link.href}
                     target="_blank"
                     rel="noreferrer"
-                    className="bg-gray-300 cursor-pointer rounded-full hover:animate-spin w-40 h-40 justify-items-center flex items-center"
+                    className="bg-gray-300 cursor-pointer rounded-full hover:animate-spin w-[12rem] h-[12rem] justify-items-center flex items-center"
                 >
                     <img
                     src={link.imgSrc}
@@ -39,7 +39,7 @@ function Socials() {
                     className="mx-auto"
                     />
                 </a>
-                <p className="mt-4 text-green-700">{link.alt}</p>
+                <p className="mt-4 text-2xl text-green-700">{link.alt}</p>
             </div>
             ))}
         </div>
