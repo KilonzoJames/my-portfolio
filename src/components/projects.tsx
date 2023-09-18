@@ -44,11 +44,11 @@ function Projects() {
       </div>
       <div className="flex flex-wrap lg:flex-row justify-center gap-10 my-[5vw]">
         {siteDivs}
-        <button onClick={prevSlide} className="absolute left-20 top-1/2 transform -translate-y-1/2 bg-gray-700 text-white p-[1vw] rounded-full opacity-50 hover:opacity-100">
+        <button onClick={prevSlide} className="absolute left-20 top-1/2 transform -translate-y-1/2 bg-green-500 text-white p-[1vw] rounded-full opacity-50 hover:opacity-100">
           &lt;
         </button>
 
-        <button onClick={nextSlide} className="absolute right-20 top-1/2 transform -translate-y-1/2 bg-gray-700 text-white p-[1vw] rounded-full opacity-50 hover:opacity-100">
+        <button onClick={nextSlide} className="absolute right-20 top-1/2 transform -translate-y-1/2 bg-green-500 text-white p-[1vw] rounded-full opacity-50 hover:opacity-100">
           &gt;
         </button>
       </div>

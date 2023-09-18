@@ -10,7 +10,7 @@ import Header from './header'
 
 function Home() {
   return (
-    <div className="relative w-full mx-auto bg-zinc-600 text-white transition-all duration-500">
+    <div className="relative w-full mx-auto text-center bg-zinc-600 text-white transition-all duration-500">
         <div className="App-header">
             <Header/>
         </div>

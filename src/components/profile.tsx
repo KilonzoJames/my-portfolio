@@ -4,7 +4,7 @@ import React from 'react'
 
 function Profile() {
   return (
-    <div className='mt-24'>
+    <div className='mt-36 md:mt-28'>
         <div>
             <a href="https://git.io/typing-svg"><img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=800&size=35&duration=2500&pause=700&color=0ACF11&vCenter=true&center=true&width=600&height=75&lines=Hey...;I'm+James;Kilonzo+James." alt="Typing SVG" /></a>
         </div>

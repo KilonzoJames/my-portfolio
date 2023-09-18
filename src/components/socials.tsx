@@ -39,7 +39,7 @@ function Socials() {
                     className="mx-auto"
                     />
                 </a>
-                <p className="mt-4 text-2xl text-green-700">{link.alt}</p>
+                <p className="mt-4 text-2xl text-green-600 font-bold">{link.alt}</p>
             </div>
             ))}
         </div>
