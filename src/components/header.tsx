@@ -30,9 +30,9 @@ function Header() {
       ];
   return (
       <nav className={`fixed top-0 left-0 w-full  h-auto bg-zinc-950 text-white py-8 px-12 flex justify-between items-center transition-all duration-500 overflow-hidden ${open ? 'h-[30vh]' : ''}`} id="nav">
-          <div className=" flex items-center hover:scale-75 transition-all duration-500">
-              <span className='text-5xl mx-4'><FontAwesomeIcon icon={faSnowflake} /></span>
-              <a className="text-5xl text-green-500" href="/">KIL<span><FontAwesomeIcon icon={faCrosshairs}/></span>NZO JAMES</a>
+          <div className=" flex items-center text-4xl hover:scale-75 transition-all duration-500">
+              <span className='mx-4'><FontAwesomeIcon icon={faSnowflake} /></span>
+              <a className="text-green-500" href="/">KIL<span><FontAwesomeIcon icon={faCrosshairs}/></span>NZO JAMES</a>
           </div>
 
           {/* Toggle button */}

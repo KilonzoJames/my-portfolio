@@ -29,7 +29,7 @@ function Socials() {
                     href={link.href}
                     target="_blank"
                     rel="noreferrer"
-                    className="bg-gray-300 cursor-pointer rounded-full hover:animate-spin w-[12rem] h-[12rem] justify-items-center flex items-center"
+                    className="bg-gray-300 cursor-pointer rounded-full hover:animate-spin w-[10rem] h-[10rem] justify-items-center flex items-center"
                 >
                     <img
                     src={link.imgSrc}

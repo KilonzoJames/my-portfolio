@@ -1,11 +1,13 @@
 import React, { useState } from 'react';
-
+import portfolio from "../assets/screenshots/screencapture-ki-lonzo-onrender-2023-09-18-19_53_46.png";
+import foodapp from "../assets/screenshots/screencapture-food-ordering-app-lokp-onrender-2023-09-18-19_56_19.png"
+import bank from "../assets/screenshots/screencapture-bank-of-flatiron-2uyz-onrender-2023-09-18-19_54_41.png"
 function Projects() {
     const sites = [
-        "https://ki-lonzo.onrender.com/",
-        "https://bank-of-flatiron-2uyz.onrender.com",
-        "https://food-ordering-app-lokp.onrender.com/#/homepage",
-        "https://www.demo-site.org"
+        {url: "https://ki-lonzo.onrender.com/", pic: portfolio},
+        {url: "https://food-ordering-app-lokp.onrender.com/#/homepage", pic: foodapp},
+        {url: "https://bank-of-flatiron-2uyz.onrender.com", pic: bank},
+        {url: "https://www.demo-site.org"}
       ];
 
     const [currentIndex, setCurrentIndex] = useState(0);
@@ -23,22 +25,21 @@ function Projects() {
     const siteDivs = visibleSites.map((site, index) => (
         <div key={index} className="relative lg:w-1/4 transition-transform duration-500 ease-in-out">
             <img
-            src="https://plus.unsplash.com/premium_photo-1663089895867-428d148a8663?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8N3x8cHJvZ3JhbW1lcnxlbnwwfHwwfHx8MA%3D%3D&auto=format&fit=crop&w=500&q=60" 
+            src={site.pic} 
             alt = "logo"
-            className="w-full rounded-lg"
+            className="w-[40rem] h-[20rem] rounded-lg object-cover"
             />
             <a 
-            href={site} 
+            href={site.url} 
             target="_blank" 
             rel="noopener noreferrer"
-            className="absolute top-0 left-0 w-full h-full flex items-center justify-center text-white font-bold text-xl bg-zinc-900 bg-opacity-50 hover:bg-opacity-70 rounded-lg"
+            className="absolute top-0 left-0 w-full h-full flex items-center justify-center text-white font-bold text-xl bg-white-300 bg-opacity-50 hover:bg-opacity-70 rounded-lg"
             >
-            {/* {site} */}
             </a>
         </div>
         ));
   return (
-    <div className="relative p-[8vw] md:p-20">
+    <div className="relative p-[8vw]  bg-zinc-300 md:p-20">
       <div className="flex flex-wrap justify-center text-4xl text-green-500 font-bold">
         <h1>CURRENT PROJECTS</h1>
       </div>
