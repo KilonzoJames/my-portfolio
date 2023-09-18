@@ -2,9 +2,9 @@ import React, { useState } from 'react';
 
 function Projects() {
     const sites = [
-        "https://www.example.com",
-        "https://www.example.org",
-        "https://www.samplewebsite.com",
+        "https://ki-lonzo.onrender.com/",
+        "https://bank-of-flatiron-2uyz.onrender.com",
+        "https://food-ordering-app-lokp.onrender.com/#/homepage",
         "https://www.demo-site.org"
       ];
 
@@ -33,7 +33,7 @@ function Projects() {
             rel="noopener noreferrer"
             className="absolute top-0 left-0 w-full h-full flex items-center justify-center text-white font-bold text-xl bg-zinc-900 bg-opacity-50 hover:bg-opacity-70 rounded-lg"
             >
-            {site}
+            {/* {site} */}
             </a>
         </div>
         ));

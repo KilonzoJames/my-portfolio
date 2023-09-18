@@ -29,7 +29,7 @@ function Header() {
         },
       ];
   return (
-      <nav className={`fixed top-0 left-0 w-full bg-zinc-950 text-white py-4 px-12 h-[6rem] flex justify-between items-center transition-all duration-500 overflow-hidden ${open ? 'h-[30vh]' : ''}`} id="nav">
+      <nav className={`fixed top-0 left-0 w-full  h-auto bg-zinc-950 text-white py-4 px-12 flex justify-between items-center transition-all duration-500 overflow-hidden ${open ? 'h-[30vh]' : ''}`} id="nav">
           <div className=" flex items-center hover:scale-75 transition-all duration-500">
               <span className='text-4xl mx-4'><FontAwesomeIcon icon={faSnowflake} /></span>
               <a className="text-4xl text-green-500" href="/">KIL<span><FontAwesomeIcon icon={faCrosshairs}/></span>NZO JAMES</a>
@@ -61,8 +61,8 @@ function Header() {
           // Display horizontally on large screens when closed
             <div className="hidden lg:flex space-x-6 text-2xl mx-12">
               {navLinks.map((link, index) => (
-                <a key={index} className="py-2 mx-6" href={link.href}>
-                  <FontAwesomeIcon icon={link.icon} className="me-1" beat size="1x" />
+            <a key={index} className="flex flex-row items-center py-2 text-xl" href={link.href}>
+            <FontAwesomeIcon icon={link.icon} className="me-1" beat size="1x" />
                   {link.text}
                 </a>
               ))}
