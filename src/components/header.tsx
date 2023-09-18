@@ -5,6 +5,8 @@ import { faHome, faUser, faPhone, faBriefcase, faBars, faXmark, faCrosshairs, fa
 
 function Header() {
     const [open, setOpen] = useState(false)
+    // const [activeLink, setActiveLink] = useState('Home'); // Default to 'Home'
+
 
     const navLinks = [
         {
@@ -28,8 +30,9 @@ function Header() {
           href: "#contacts",
         },
       ];
+
   return (
-      <nav className={`fixed top-0 left-0 w-full  h-auto bg-zinc-950 text-white py-8 px-12 flex justify-between items-center transition-all duration-500 overflow-hidden ${open ? 'h-[30vh]' : ''}`} id="nav">
+      <nav className={`fixed top-0 left-0 w-full  h-auto bg-zinc-600 text-white py-8 px-12 flex justify-between items-center transition-all duration-500 overflow-hidden ${open ? 'h-[1/2] ' : ''}`} id="nav">
           <div className=" flex items-center text-4xl hover:scale-75 transition-all duration-500">
               <span className='mx-4'><FontAwesomeIcon icon={faSnowflake} /></span>
               <a className="text-green-500" href="/">KIL<span><FontAwesomeIcon icon={faCrosshairs}/></span>NZO JAMES</a>
@@ -41,9 +44,9 @@ function Header() {
             onClick={() => setOpen((prevOpen) => !prevOpen)}
           >
             {open ? (
-              <FontAwesomeIcon icon={faXmark} />
+              <FontAwesomeIcon icon={faXmark} className="text-4xl"/>
             ) : (
-              <FontAwesomeIcon icon={faBars} />
+              <FontAwesomeIcon icon={faBars} className="text-4xl"/>
             )}
           </button>
           {/* Navbar links */}
@@ -51,7 +54,7 @@ function Header() {
             // Display vertically on small screens when open
             <div className="lg:hidden">
               {navLinks.map((link, index) => (
-                <a key={index} className="block py-2 text-4xl" href={link.href}>
+                <a key={index} className="block py-2" href={link.href}>
                   <FontAwesomeIcon icon={link.icon} className="me-1" beat size="1x" />
                   {link.text}
                 </a>

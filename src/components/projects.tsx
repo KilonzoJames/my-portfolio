@@ -39,7 +39,7 @@ function Projects() {
         </div>
         ));
   return (
-    <div className="relative p-[8vw]  bg-zinc-300 md:p-20">
+    <div className="relative p-[4vw] md:p-20">
       <div className="flex flex-wrap justify-center text-4xl text-green-500 font-bold">
         <h1>CURRENT PROJECTS</h1>
       </div>
