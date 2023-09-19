@@ -2,12 +2,13 @@ import React, { useState } from 'react';
 import portfolio from "../assets/screenshots/screencapture-ki-lonzo-onrender-2023-09-18-19_53_46.png";
 import foodapp from "../assets/screenshots/screencapture-food-ordering-app-lokp-onrender-2023-09-18-19_56_19.png"
 import bank from "../assets/screenshots/screencapture-localhost-3001-2023-09-18-21_20_22.png"
+
 function Projects() {
     const sites = [
-        {url: "https://ki-lonzo.onrender.com/", pic: portfolio},
-        {url: "https://food-ordering-app-lokp.onrender.com/#/homepage", pic: foodapp},
-        {url: "https://bank-of-flatiron-2uyz.onrender.com", pic: bank},
-        {url: "https://www.demo-site.org"}
+        { url: "https://ki-lonzo.onrender.com/", pic: portfolio },
+        { url: "https://food-ordering-app-lokp.onrender.com/#/homepage", pic: foodapp },
+        { url: "https://bank-of-flatiron-2uyz.onrender.com", pic: bank },
+        { url: "https://www.demo-site.org" }
       ];
 
     const [currentIndex, setCurrentIndex] = useState(0);
@@ -19,6 +20,9 @@ function Projects() {
     const nextSlide = () => {
       setCurrentIndex((prevIndex) => (prevIndex === sites.length - 1 ? 0 : prevIndex + 1));
     };
+
+    // Calculate the translation for the slide container
+    // const translateX = -currentIndex * 100;
 
     const visibleSites = sites.slice(currentIndex, currentIndex + 3);
 
@@ -39,20 +43,22 @@ function Projects() {
         </div>
         ));
   return (
-    <div className="relative p-[4vw] md:p-20">
-      <div className="flex flex-wrap justify-center text-4xl text-green-500 font-bold">
-        <h1>CURRENT PROJECTS</h1>
-      </div>
-      <div className="flex flex-wrap lg:flex-row justify-center gap-10 my-[5vw]">
-        {siteDivs}
-        <button onClick={prevSlide} className="absolute left-20 top-1/2 transform -translate-y-1/2 bg-green-500 text-white p-[1vw] rounded-full opacity-50 hover:opacity-100">
-          &lt;
-        </button>
+     <div className="relative w-full mx-auto text-center transition-all duration-500 p-[4vw] md:p-20">
+         <div className="flex flex-wrap justify-center text-2xl text-green-500 font-bold">
+            <h1>CURRENT PROJECTS</h1>
+        </div>
+        <div className="flex flex-wrap lg:flex-row justify-center gap-10 my-[5vw]">
+            {siteDivs}
+            <button onClick={prevSlide}
+              className="absolute left-20 top-1/2 transform -translate-y-1/2 bg-green-500 text-white p-[1vw] rounded-full opacity-50 hover:opacity-100"
+            >
+              &lt;
+            </button>
 
-        <button onClick={nextSlide} className="absolute right-20 top-1/2 transform -translate-y-1/2 bg-green-500 text-white p-[1vw] rounded-full opacity-50 hover:opacity-100">
-          &gt;
-        </button>
-      </div>
+            <button onClick={nextSlide} className="absolute right-20 top-1/2 transform -translate-y-1/2 bg-green-500 text-white p-[1vw] rounded-full opacity-50 hover:opacity-100">
+              &gt;
+            </button>
+        </div>
     </div>
   );
 }

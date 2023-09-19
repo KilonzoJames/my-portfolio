@@ -32,7 +32,9 @@ function Header() {
       ];
 
   return (
-      <nav className={`fixed top-0 left-0 w-full  h-auto bg-zinc-600 text-white py-8 px-12 flex justify-between items-center transition-all duration-500 overflow-hidden ${open ? 'h-[1/2] ' : ''}`} id="nav">
+      <nav className={`fixed top-0 left-0 w-full  h-auto  text-white py-8 px-12 flex justify-between items-center transition-shadow shadow-md md:shadow-lg lg:shadow-xl duration-500  ${open ? 'h-[1/2] ' : ''}`} id="nav" style={{
+        backgroundColor: '#18163c',
+    }}>
           <div className=" flex items-center text-4xl hover:scale-75 transition-all duration-500">
               <span className='mx-4'><FontAwesomeIcon icon={faSnowflake} /></span>
               <a className="text-green-500" href="/">KIL<span><FontAwesomeIcon icon={faCrosshairs}/></span>NZO JAMES</a>
