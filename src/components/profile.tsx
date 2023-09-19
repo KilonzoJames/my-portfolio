@@ -6,8 +6,8 @@ import image from "../assets/IMG_20230919_073049.jpg"
 function Profile() {
   return (
     <div className='mt-36 md:mt-24'>
-        <div>
-            <a href="https://git.io/typing-svg"><img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=800&size=35&duration=2500&pause=700&color=0ACF11&vCenter=true&center=true&width=600&height=75&lines=Hey...;I'm+James;Kilonzo+James." alt="Typing SVG" /></a>
+        <div className="justify-center">
+        <a href="https://git.io/typing-svg"><img src="https://readme-typing-svg.demolab.com?font=Exo+2&weight=800&size=40&duration=2500&pause=700&color=0ACF11&center=true&vCenter=true&width=1000&height=150&lines=Hello%2C+I'm+James+Kilonzo%2C+a+dedicated+professional.;I+bring+passion+and+expertise+to+every+project.;Let's+create+something+extraordinary+together." alt="Typing SVG" /></a>
         </div>
         <div className='flex flex-wrap justify-center  p-10'>
             <h3 className='text-green-500 font-bold text-2xl my-6'>Fullstack Web Developer</h3>

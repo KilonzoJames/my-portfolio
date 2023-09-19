@@ -8,7 +8,7 @@ function Projects() {
         { url: "https://ki-lonzo.onrender.com/", pic: portfolio },
         { url: "https://food-ordering-app-lokp.onrender.com/#/homepage", pic: foodapp },
         { url: "https://bank-of-flatiron-2uyz.onrender.com", pic: bank },
-        { url: "https://www.demo-site.org" }
+        { url: "https://www.demo-site.org", pic: bank }
       ];
 
     const [currentIndex, setCurrentIndex] = useState(0);
