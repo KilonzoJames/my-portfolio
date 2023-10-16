@@ -1,11 +1,9 @@
 import React, { useState } from 'react'
-// import { Link } from 'react-router-dom'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faHome, faUser, faPhone, faBriefcase, faBars, faXmark, faCrosshairs, faSnowflake } from '@fortawesome/free-solid-svg-icons';
 
 function Header() {
     const [open, setOpen] = useState(false)
-    // const [activeLink, setActiveLink] = useState('Home'); // Default to 'Home'
 
 
     const navLinks = [

@@ -1,11 +1,11 @@
 import React, { useState } from 'react';
-import portfolio from "../assets/screenshots/screencapture-ki-lonzo-onrender-2023-09-18-19_53_46.png";
+import Expense_Tracker from "../assets/screenshots/screencapture-an-expense-tracker-onrender-2023-10-16-15_51_08.png";
 import foodapp from "../assets/screenshots/screencapture-food-ordering-app-lokp-onrender-2023-09-18-19_56_19.png"
 import bank from "../assets/screenshots/screencapture-localhost-3001-2023-09-18-21_20_22.png"
 
 function Projects() {
     const sites = [
-        { url: "https://ki-lonzo.onrender.com/", pic: portfolio },
+        { url: "https://an-expense-tracker.onrender.com/#/", pic: Expense_Tracker },
         { url: "https://food-ordering-app-lokp.onrender.com/#/homepage", pic: foodapp },
         { url: "https://bank-of-flatiron-2uyz.onrender.com", pic: bank },
         { url: "https://www.demo-site.org", pic: bank }
