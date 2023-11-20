@@ -58,3 +58,65 @@ body{
 .animate-image {
   animation: moveFromRightToMiddle 2s ease-in-out;
 }
+
+:root {
+	--skill-color: white;
+	--container-width: 600px;
+	--skill-size: calc(var(--container-width) / 5);
+}
+
+.skill {
+	margin-right: 0 20px 20px 0;
+    height: var(--skill-size); /* Use height instead of min-height */
+    width: var(--skill-size);
+	display: grid;
+	place-items: center;
+	padding: 5px;
+	border-radius: 20px;
+	color: var(--skill-color);
+    transition: all 390ms ease-in-out;
+}
+
+.react:hover {
+	--skill-color: #3bbad0;
+}
+
+.javascript:hover {
+	--skill-color: #fddd00;
+}
+
+.html:hover {
+	--skill-color: #f1662a;
+}
+
+.css:hover,
+.typescript:hover {
+	--skill-color: #1572b6;
+}
+
+.python:hover,
+.postgresql:hover,
+.sqlite:hover,
+.sql:hover {
+	--skill-color: #00d8ff;
+}
+
+.postman:hover {
+	--skill-color: #539e43;
+}
+
+.tailwind-css:hover {
+	--skill-color: #a259ff;
+}
+
+.bootstrap:hover {
+	--skill-color: #41a247;
+}
+
+.flask:hover {
+	--skill-color: #eeab37;
+}
+
+.git:hover {
+	--skill-color: #500603;
+}
