@@ -13,7 +13,7 @@ function Home() {
     <div className="relative w-full mx-auto text-center text-white transition-all duration-500" style={{
         backgroundColor: '#18163c',
     }}>
-        <div className="App-header">
+        <div className="App-header" id='home'>
             <Header/>
         </div>
         <div id = "profile">
