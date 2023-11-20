@@ -44,7 +44,7 @@ function Projects() {
         ));
   return (
      <div className="relative w-full mx-auto text-center transition-all duration-500 p-[4vw] md:p-20">
-         <div className="flex flex-wrap justify-center text-2xl text-green-500 font-bold">
+         <div className="flex flex-wrap justify-center text-3xl text-green-500 font-bold">
             <h1>CURRENT PROJECTS</h1>
         </div>
         <div className="flex flex-wrap lg:flex-row justify-center gap-10 my-[5vw]">

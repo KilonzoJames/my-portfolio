@@ -3,7 +3,7 @@ import React from 'react'
 function Contacts() {
   return (
     <div className='relative'>
-        <h1 className="text-center text-green-500 font-bold py-4 mb-4 text-2xl">GET IN TOUCH</h1>
+        <h1 className="text-center text-green-500 font-bold py-4 mb-4 text-3xl">GET IN TOUCH</h1>
         <p className='text-center mx-[4vw] p-[2vw]'>
         Feel free to get in touch with us anytime! Whether you have questions, suggestions, or just want to say hello, we'd love to hear from you. Our team is here to assist you and provide the information you need. You can reach us via email, phone, or social media. We're committed to providing excellent service and prompt responses, so don't hesitate to contact us. Your feedback and inquiries are important to us, and we look forward to connecting with you!"
         </p>

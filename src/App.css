@@ -37,3 +37,24 @@ body{
     0 0 50 var(--color)
     0 0 75px var(--color)
 } */
+body{
+    font-family: 'Montserrat Alternates', sans-serif;
+}
+@keyframes moveFromRightToMiddle {
+  from {
+    transform: translateX(100%);
+  }
+  to {
+    transform: translateX(0);
+  }
+}
+
+.animate-text {
+  animation: moveFromRightToMiddle 2s ease-in-out;
+  overflow-y: auto;
+}
+
+/* Additional styling for the image animation if needed */
+.animate-image {
+  animation: moveFromRightToMiddle 2s ease-in-out;
+}
