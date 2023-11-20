@@ -21,7 +21,7 @@ function Socials() {
   return (
     <div className="my-10">
         <h3 className='flex justify-center my-10 text-3xl text-green-500 font-bold'>SOCIALS</h3>
-        <div className="flex flex-wrap md:flex-row lg:flex-row justify-center gap-20">
+        <div className="flex flex-wrap justify-center gap-32">
             {socialLinks.map((link, index) => (
             <div key={index} className="text-center">
                 <a
@@ -29,7 +29,7 @@ function Socials() {
                     href={link.href}
                     target="_blank"
                     rel="noreferrer"
-                    className="bg-gray-300 cursor-pointer rounded-full hover:animate-spin w-[10rem] h-[10rem] justify-items-center flex items-center"
+                    className="bg-slate-300 cursor-pointer rounded-full hover:animate-spin w-[10rem] h-[10rem] justify-items-center flex items-center"
                 >
                     <img
                     src={link.imgSrc}
