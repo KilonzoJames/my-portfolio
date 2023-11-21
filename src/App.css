@@ -1,4 +1,7 @@
-
+* {
+  margin: 0;
+  padding: 0;
+}
 body{
     /* background-image: url('../assets/photo-1562813733-b31f71025d54.avif');
     color: white; */

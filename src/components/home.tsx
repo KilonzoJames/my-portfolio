@@ -12,11 +12,9 @@ import ProjectsList from './ProjectsList'
 function Home() {
   return (
     <div className="relative w-full mx-auto text-center text-white transition-all duration-500" style={{
-        backgroundColor: '#18163c',
+        backgroundColor: '#211945',
     }}>
-        <div className="App-header" id='home'>
-            <Header/>
-        </div>
+        <Header/>
         <div id = "profile">
             <Profile/>
         </div>
