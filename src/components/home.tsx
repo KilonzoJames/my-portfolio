@@ -25,8 +25,8 @@ function Home() {
             <Techstack/>
         </div>
         <div id = "projects">
-            <Projects/>
-            {/* <ProjectsList/> */}
+            {/* <Projects/> */}
+            <ProjectsList/>
         </div>
         <div id = "contacts">
             <Contacts/>

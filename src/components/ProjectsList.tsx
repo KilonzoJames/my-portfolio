@@ -19,7 +19,7 @@ const projects = [
       name: "Expense Tracker",
       desc: "Track your expenses and income.",
       liveLink: "https://an-expense-tracker.onrender.com/#/",
-      githubLink: "https://github.com/yourusername/expense-tracker",
+      githubLink: "https://github.com/KilonzoJames/Expense-Tracker",
       techs: ["React", "JavaScript", "CSS"],
       isOpenSource: true,
       backgroundImage: Expense_Tracker
@@ -28,7 +28,7 @@ const projects = [
       name: "Food Ordering App",
       desc: "Order your favorite food online.",
       liveLink: "https://food-ordering-app-lokp.onrender.com/#/homepage",
-      githubLink: "https://github.com/yourusername/food-ordering-app",
+      githubLink: "https://github.com/KilonzoJames/Food-ordering-App",
       techs: ["React", "JavaScript", "CSS"],
       isOpenSource: true,
       backgroundImage: foodapp
@@ -36,7 +36,7 @@ const projects = [
     {
       name: "Banking App",
       desc: "Manage your finances with our banking app.",
-      liveLink: "https://bank-of-flatiron-2uyz.onrender.com",
+      liveLink: "https://github.com/KilonzoJames/Bank-of-Flatiron",
       githubLink: "https://github.com/yourusername/banking-app",
       techs: ["React", "Node.js", "Express", "MongoDB"],
       isOpenSource: true,
@@ -62,17 +62,23 @@ const Project: React.FC<ProjectProps> = ({ projects }) => {
   
     return (
       <div 
-      className="project w-[40rem] h-[20rem] mx-8 rounded-lg object-cover" 
-      style={backgroundStyle}
+      className="grid grid-rows-5 w-[40rem] h-[20rem] mx-8 rounded-lg object-cover border border-gray-400" 
       >
-            <h2>{projects.name}</h2>
-            <p>{projects.desc}</p>
-            <div className="tech-stack">
-                {projects.techs.map(item => <div key={item}>{item}</div>)}
+            <div className='flex items-center justify-center font-extrabold text-2xl'>{projects.name}</div>
+            <div className='mx-auto justify-center'>{projects.desc}</div>
+            <div className="tech-stack flex flex-wrap justify-around items-center ">
+                {projects.techs.map(item => <div key={item} className='bg-zinc-500 rounded-md p-2 text-xl'>{item}</div>)}
             </div>
-            <div className="btns gap-4">
-                <a href={projects.liveLink} target="_blank" rel="noreferrer">Live</a>
-                <a href={projects.githubLink} target="_blank" rel="noreferrer">Github</a>
+            <div 
+            className="btns border border-gray-300  text-green-500 font-bold row-span-2 grid grid-cols-2"
+            >
+              <div className='flex justify-center items-center gap-12 text-2xl'>
+                <a className="bg-zinc-200 p-2 rounded-md" href={projects.liveLink} target="_blank" rel="noreferrer">Live</a>
+                <a className="bg-zinc-200 p-2 rounded-md" href={projects.githubLink} target="_blank" rel="noreferrer">Github</a>
+              </div>
+                <div         
+                    style={backgroundStyle}         
+              ></div>
             </div>
             {projects.isOpenSource && <div className="open">Open Source</div>}
       </div>
@@ -86,7 +92,7 @@ const ProjectsList = () => {
                 <div className="flex justify-center text-3xl text-green-500 font-bold">
                     <h1>CURRENT PROJECTS</h1>
                 </div>
-                <div className='flex justify-center'>
+                <div className='flex flex-wrap gap-8 justify-center'>
                     {projects.map((project, index) => (
                     <Project key={index} projects={project} />
                     ))}
