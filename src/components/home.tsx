@@ -11,9 +11,7 @@ import ProjectsList from './ProjectsList'
 
 function Home() {
   return (
-    <div className="relative w-full mx-auto text-center text-white transition-all duration-500" style={{
-        backgroundColor: '#211945',
-    }}>
+    <div className="relative w-full mx-auto text-center text-white transition-all duration-500" >
         <Header/>
         <div id = "profile">
             <Profile/>

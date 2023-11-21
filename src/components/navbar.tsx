@@ -1,7 +1,8 @@
-import React, { useState } from 'react'
+import React, { useState, useEffect } from 'react'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faHome, faUser, faPhone, faBriefcase, faBars, faXmark } from '@fortawesome/free-solid-svg-icons';
+import { faHome, faUser, faPhone, faBriefcase, faBars, faXmark, faMoon, faSun } from '@fortawesome/free-solid-svg-icons';
 import { Link } from 'react-scroll';
+import { useTheme } from './ThemeContext';
 
 const navLinks = [
     {
@@ -15,16 +16,6 @@ const navLinks = [
       href: "profile",
     },
     {
-      text: 'Projects',
-      icon: faBriefcase,
-      href: "projects",
-    },
-    {
-      text: 'Contacts',
-      icon: faPhone,
-      href: "contacts",
-    },
-    {
       text: 'Socials',
       icon: faBriefcase,
       href: 'socials', 
@@ -34,6 +25,17 @@ const navLinks = [
       icon: faBriefcase,
       href: 'techstack', 
     },
+    {
+      text: 'Projects',
+      icon: faBriefcase,
+      href: "projects",
+    },
+    {
+      text: 'Contacts',
+      icon: faPhone,
+      href: "contacts",
+    },
+   
   ];
 function Navs() {
     return (
@@ -50,13 +52,19 @@ function Navs() {
   
 function Navbar() {
     const [isOpen, setOpen] = useState(false)
+    const { isDarkMode, toggleTheme } = useTheme();
+    const ThemeColour = isDarkMode ? 'dark' : 'light' ;
+
+    useEffect( () => 
+    {document.body.className = ThemeColour; }, [ThemeColour])
+
     function handleToggle() {
         setOpen((prevOpen) => !prevOpen);
     }    
 
   return (
     <>
-        <nav className='flex w-1/2 justify-end items-center'>
+        <nav className={`navbar flex w-1/2 justify-end items-center uppercase ${ThemeColour}`}>
             <div className='hidden md:flex justify-between w-full text-xl'>
                 <Navs/>
             </div>
@@ -71,10 +79,13 @@ function Navbar() {
             </div>
         </nav>
         {isOpen && (
-            <div className='flex flex-col basis-full items-center gap-4'>
+            <div className='flex flex-col basis-full items-center gap-4 uppercase'>
                 <Navs/>
             </div>
         )}
+        <div className='text-4xl hover:scale-150 transition-all duration-500' onClick={toggleTheme}>
+          {isDarkMode ? <FontAwesomeIcon icon={faMoon} /> : <FontAwesomeIcon icon={faSun} />}
+        </div>
     </>
   )
 }

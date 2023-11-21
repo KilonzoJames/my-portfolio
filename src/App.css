@@ -135,3 +135,16 @@ body{
 .git:hover {
 	--skill-color: #500603;
 }
+/* Light Mode Styles */
+.light {
+  background: linear-gradient(to bottom left, #1da1f2, #6253e8);
+  color: #000;
+  transition: all 1s;
+}
+
+/* Dark Mode Styles */
+.dark {
+  background: linear-gradient(to bottom left, #211945, #211945);
+  color: #fff;
+  transition: all 1s;
+}
