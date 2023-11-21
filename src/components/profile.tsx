@@ -6,14 +6,22 @@ import image from "../assets/IMG_20230919_073049.jpg"
 function Profile() {
   return (
     <div className='flex flex-col'>
-        <div className="">
+        <div className='animate-svg flex flex-col items-start text-green-500 font-bold text-4xl gap-4 my-4 p-4 mx-auto'>
+            <h1>Hello! </h1>
+            <div className='flex flex-col items-start'>
+                <span>I'm James Kilonzo ...</span>
+                <span>
+                    <a href="https://git.io/typing-svg"><img src="https://readme-typing-svg.demolab.com?font=Exo&weight=800&size=40&duration=4500&pause=1000&color=0ACF11&vCenter=true&repeat=false&random=false&width=1000&height=100&lines=a+full-stack+software+developer." alt="Typing SVG" /></a>
+                </span>
+            </div>
             <a href="https://git.io/typing-svg">
                 <img 
-                src="https://readme-typing-svg.demolab.com?font=Exo+2&weight=800&size=40&duration=2500&pause=700&color=0ACF11&center=true&vCenter=true&width=1000&height=150&lines=Hello%2C+I'm+James+Kilonzo%2C+a+dedicated+professional.;I+bring+passion+and+expertise+to+every+project.;Let's+create+something+extraordinary+together." 
+                src="https://readme-typing-svg.demolab.com?font=Exo+2&weight=800&size=40&duration=2500&pause=700&color=0ACF11&vCenter=true&width=1000&height=100&lines=I+bring+passion+and+expertise+to+every+project.;Let's+create+something+extraordinary+together." 
                 alt="Typing SVG" 
                 />
             </a>
         </div>
+          
         <div className='animate-text flex flex-col flex-wrap w-5/6 justify-center rounded-2xl mx-auto gap-4 mt-10 py-10'>
             <h3 className='text-green-500 font-extrabold text-center text-3xl m-2'>Fullstack Web Developer</h3>
             <div className='text-xl'

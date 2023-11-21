@@ -3,15 +3,14 @@ import React from 'react';
 import './App.css';
 import Home from './components/home';
 import NotFound from './components/notfound';
+import './project.css'
 
 function App() {
   return (
-    <div className="App">
       <Routes>
         <Route path="/" element={<Home/>} />
         <Route path="*" element={<NotFound/>} />
       </Routes>
-    </div>
   );
 }
 

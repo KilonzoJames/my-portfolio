@@ -6,6 +6,7 @@ import Projects from './projects'
 import Contacts from './contacts'
 import Footer from './footer'
 import Header from './header'
+import ProjectsList from './ProjectsList'
 
 
 function Home() {
@@ -27,6 +28,7 @@ function Home() {
         </div>
         <div id = "projects">
             <Projects/>
+            {/* <ProjectsList/> */}
         </div>
         <div id = "contacts">
             <Contacts/>

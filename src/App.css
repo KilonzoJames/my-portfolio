@@ -48,7 +48,19 @@ body{
     transform: translateX(0);
   }
 }
+@keyframes moveFromLeftToMiddle {
+  from {
+    transform: translateX(-100%);
+  }
+  to {
+    transform: translateX(0);
+  }
+}
 
+.animate-svg {
+  animation: moveFromLeftToMiddle 2s ease-in-out; /* Adjust the duration and timing function as needed */
+  overflow-y: auto;
+}
 .animate-text {
   animation: moveFromRightToMiddle 2s ease-in-out;
   overflow-y: auto;

@@ -1,6 +1,6 @@
 import React from 'react'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faJs, faHtml5, faCss3, faReact, faBootstrap, faPython } from '@fortawesome/free-brands-svg-icons';
+import { faJs, faHtml5, faCss3, faReact, faBootstrap, faPython, faGit } from '@fortawesome/free-brands-svg-icons';
 
 
 function Techstack() {
@@ -18,7 +18,7 @@ function Techstack() {
     { name: "SQLite", className: "sqlite" },
     { name: "SQL", className: "sql" },
     { name: "POSTMAN", className: "postman" },
-    { name: "GIT", className: "git"},
+    { name: "GIT", className: "git", icon: faGit },
   ];
   
     const techList = techstack.map((tech, index) => (
