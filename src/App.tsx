@@ -3,7 +3,7 @@ import React from 'react';
 import './App.css';
 import Home from './components/home';
 import NotFound from './components/notfound';
-// import './project.css'
+import './project.css'
 
 function App() {
   return (

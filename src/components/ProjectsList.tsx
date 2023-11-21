@@ -62,7 +62,7 @@ const Project: React.FC<ProjectProps> = ({ projects }) => {
   
     return (
       <div 
-      className="grid grid-rows-5 w-[40rem] h-[20rem] mx-8 rounded-lg object-cover border border-gray-400" 
+      className="grid grid-rows-6 w-[30rem] h-[20rem] mx-8 rounded-lg border border-gray-400" 
       >
             <div className='flex items-center justify-center font-extrabold text-2xl'>{projects.name}</div>
             <div className='mx-auto justify-center'>{projects.desc}</div>
@@ -70,15 +70,18 @@ const Project: React.FC<ProjectProps> = ({ projects }) => {
                 {projects.techs.map(item => <div key={item} className='bg-zinc-500 rounded-md p-2 text-xl'>{item}</div>)}
             </div>
             <div 
-            className="btns border border-gray-300  text-green-500 font-bold row-span-2 grid grid-cols-2"
+            className="btns relative border border-gray-300 text-green-500 font-bold row-span-3"
             >
-              <div className='flex justify-center items-center gap-12 text-2xl'>
-                <a className="bg-zinc-200 p-2 rounded-md" href={projects.liveLink} target="_blank" rel="noreferrer">Live</a>
-                <a className="bg-zinc-200 p-2 rounded-md" href={projects.githubLink} target="_blank" rel="noreferrer">Github</a>
+              <div className='grid grid-cols-2'>
+                <div className='flex flex-col justify-center items-center gap-2 text-2xl'>
+                  <a className="bg-zinc-200 p-2 m-4 rounded-md" href={projects.liveLink} target="_blank" rel="noreferrer">Live</a>
+                  <a className="bg-zinc-200 p-2 m-4 rounded-md" href={projects.githubLink} target="_blank" rel="noreferrer">Github</a>
+                </div>
+                  <div         
+                      className='object-cover'
+                      style={backgroundStyle}         
+                ></div>
               </div>
-                <div         
-                    style={backgroundStyle}         
-              ></div>
             </div>
             {projects.isOpenSource && <div className="open">Open Source</div>}
       </div>
@@ -92,7 +95,7 @@ const ProjectsList = () => {
                 <div className="flex justify-center text-3xl text-green-500 font-bold">
                     <h1>CURRENT PROJECTS</h1>
                 </div>
-                <div className='flex flex-wrap gap-8 justify-center'>
+                <div className='flex flex-wrap gap-12 justify-center'>
                     {projects.map((project, index) => (
                     <Project key={index} projects={project} />
                     ))}
