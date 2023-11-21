@@ -14,30 +14,6 @@
 	position: relative;
 }
 
-.light .project {
-	background-color: #d8e6ff;
-	color: #000;
-	transition: all 0.5s;
-}
-
-.light .open {
-	background-color: #000;
-	color: #fff;
-}
-
-.project > p {
-	margin-top: -1.2rem;
-}
-
-.project .tech-stack {
-	display: flex;
-	flex-wrap: wrap;
-}
-
-.light .tech-stack {
-	color: #fff;
-	transition: all 0.5s;
-}
 
 .project .tech-stack div {
 	min-height: 20px;
@@ -53,26 +29,6 @@
 	border-radius: var(--border-radius);
 }
 
-.project .btns {
-	display: flex;
-	justify-content: space-between;
-	flex-wrap: wrap;
-}
-
-.project .btns a {
-	min-height: calc(var(--project-width) / 8.3);
-	min-width: calc(var(--project-width) / 2.5);
-	max-height: calc(var(--project-width) / 8.3);
-	max-width: calc(var(--project-width) / 2.5);
-	background: rgb(245, 242, 245);
-	color: rgb(34, 33, 52);
-	text-decoration: none;
-	font-weight: 600;
-	border-radius: var(--border-radius);
-	display: grid;
-	place-items: center;
-	margin-bottom: 1rem;
-}
 
 .open {
 	background: rgb(245, 242, 245);
@@ -80,24 +36,14 @@
 	min-width: calc(var(--project-width) / 4.1);
 	max-height: calc(var(--project-width) / 4.1);
 	max-width: calc(var(--project-width) / 4.1);
-	border-radius: 50% 10px 50% 50%;
+	border-radius: 50% 10px 20px 50%;
 	position: absolute;
 	color: rgb(34, 33, 52);
 	display: grid;
 	place-items: center;
 	top: 0;
-	left: var(--blob-left);
+	right: 0;
+	/* left: var(--blob-left); */
 	font-size: calc(var(--project-width) / 26);
 	text-align: center;
-}
-
-@media screen and (max-width: 430px) {
-	:root {
-		--project-width: 200px;
-		--blob-left: 200px;
-	}
-
-	.project {
-		margin: 0 0 2rem 0;
-	}
 }

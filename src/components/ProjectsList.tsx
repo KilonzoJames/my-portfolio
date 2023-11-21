@@ -20,7 +20,7 @@ const projects = [
       desc: "Track your expenses and income.",
       liveLink: "https://an-expense-tracker.onrender.com/#/",
       githubLink: "https://github.com/KilonzoJames/Expense-Tracker",
-      techs: ["React", "JavaScript", "CSS"],
+      techs: ["Flask", "Python", "Postgresql","CSS", "TailwindCss", "React",],
       isOpenSource: true,
       backgroundImage: Expense_Tracker
     },
@@ -29,7 +29,7 @@ const projects = [
       desc: "Order your favorite food online.",
       liveLink: "https://food-ordering-app-lokp.onrender.com/#/homepage",
       githubLink: "https://github.com/KilonzoJames/Food-ordering-App",
-      techs: ["React", "JavaScript", "CSS"],
+      techs: ["React", "JavaScript", "CSS", "HTML"],
       isOpenSource: true,
       backgroundImage: foodapp
     },
@@ -38,7 +38,7 @@ const projects = [
       desc: "Manage your finances with our banking app.",
       liveLink: "https://github.com/KilonzoJames/Bank-of-Flatiron",
       githubLink: "https://github.com/yourusername/banking-app",
-      techs: ["React", "Node.js", "Express", "MongoDB"],
+      techs: ["React", "JavaScript", "CSS", "HTML"],
       isOpenSource: true,
       backgroundImage: bank
     },
@@ -62,26 +62,22 @@ const Project: React.FC<ProjectProps> = ({ projects }) => {
   
     return (
       <div 
-      className="grid grid-rows-6 w-[30rem] h-[20rem] mx-8 rounded-lg border border-gray-400" 
-      >
-            <div className='flex items-center justify-center font-extrabold text-2xl'>{projects.name}</div>
-            <div className='mx-auto justify-center'>{projects.desc}</div>
-            <div className="tech-stack flex flex-wrap justify-around items-center ">
-                {projects.techs.map(item => <div key={item} className='bg-zinc-500 rounded-md p-2 text-xl'>{item}</div>)}
+          className="relative grid grid-rows-6 w-[20em] mr-2 mb-2 mx-8 rounded-[10px] border-2 border-gray-400 bg-sweetpurple font-bold" 
+          >
+            <div className='flex items-center justify-center font-extrabold text-2xl uppercase'>{projects.name}</div>
+            <div className='mx-auto flex items-center'>{projects.desc}</div>
+            <div className="tech-stack flex flex-wrap row-span-2 justify-around items-center ">
+                {projects.techs.map(item => <div key={item} className='text-sm md:text-xl bg-zinc-500 rounded-md p-2'>{item}</div>)}
             </div>
             <div 
-            className="btns relative border border-gray-300 text-green-500 font-bold row-span-3"
+              className="text-green-500 font-bold row-span-2 grid grid-cols-2"
             >
-              <div className='grid grid-cols-2'>
                 <div className='flex flex-col justify-center items-center gap-2 text-2xl'>
-                  <a className="bg-zinc-200 p-2 m-4 rounded-md" href={projects.liveLink} target="_blank" rel="noreferrer">Live</a>
-                  <a className="bg-zinc-200 p-2 m-4 rounded-md" href={projects.githubLink} target="_blank" rel="noreferrer">Github</a>
+                  <a className="bg-zinc-200 p-2 m-2 rounded-md animate-pulse" href={projects.liveLink} target="_blank" rel="noreferrer">Live</a>
+                  <a className="bg-zinc-200 p-2 m-2 rounded-md" href={projects.githubLink} target="_blank" rel="noreferrer">Github</a>
                 </div>
-                  <div         
-                      className='object-cover'
-                      style={backgroundStyle}         
-                ></div>
-              </div>
+                <div style={backgroundStyle}>        
+                </div>
             </div>
             {projects.isOpenSource && <div className="open">Open Source</div>}
       </div>

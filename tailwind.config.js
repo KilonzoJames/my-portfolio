@@ -5,7 +5,11 @@ const tailwindConfig = {
     "./src/**/*.{js,ts,jsx,tsx}",
   ],
   theme: {
-    extend: {},
+    extend: {
+      colors:{ 
+         sweetpurple: '#18163c',
+      },
+    },
   },
   plugins: [],
 };
