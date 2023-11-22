@@ -21,7 +21,7 @@ function Socials() {
   return (
     <>
         <div className='flex justify-center'>
-          <h1 className='my-10'>SOCIALS</h1>
+          <h2 className='my-10'>SOCIALS</h2>
         </div>
         <div className="flex flex-wrap justify-center gap-32">
             {socialLinks.map((link, index) => (

@@ -89,7 +89,7 @@ const ProjectsList = () => {
     return (
         <div className="projects-list flex flex-col mx-auto gap-12 p-[4vw] md:p-20">
                 <div className="flex justify-center">
-                    <h1>CURRENT PROJECTS</h1>
+                    <h2>CURRENT PROJECTS</h2>
                 </div>
                 <div className='flex flex-wrap gap-12 justify-center'>
                     {projects.map((project, index) => (
