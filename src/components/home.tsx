@@ -13,7 +13,7 @@ function Home() {
   return (
     <div className="relative w-full mx-auto text-center text-white transition-all duration-500" >
         <Header/>
-        <div id = "profile" className='lg:h-screen lg:flex place-items-end'>
+        <div id = "profile" className='lg:h-screen lg:flex place-items-end mt-16 md:mt-32 '>
             <Profile/>
         </div>
         <div id = "socials" className='lg:h-screen lg:flex flex-col place-content-center flex gap-16'>

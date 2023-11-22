@@ -1,39 +1,60 @@
 import React from 'react'
 import image from "../assets/IMG_20230919_073049.jpg"
-// import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-// import { faArrowDown } from '@fortawesome/free-solid-svg-icons';
+import TypeWriterEffect from 'react-typewriter-effect';
+ 
 
 function Profile() {
   return (
     <div className='flex flex-col'>
-        <div className='animate-svg flex flex-col items-start text-green-500 font-bold text-4xl gap-4 my-4 p-4 mx-auto'>
-            <div className='flex flex-col-reverse md:flex-row gap-8'>
-                <div className='flex flex-col lg:items-start gap-4'>
-                    <h2>Hello! </h2>
-                    <h2>I'm James Kilonzo ...</h2>
-                    <a href="https://git.io/typing-svg"  >
-                        <img src="https://readme-typing-svg.demolab.com?font=Exo&weight=800&size=40&duration=4500&pause=1000&color=0ACF11&vCenter=true&repeat=false&random=false&width=1000&height=100&lines=a+full-stack+software+developer." 
-                        alt="Typing SVG" 
-                        className="h-30 w-60"
-                        />
-                    </a>
-                    <a href="https://git.io/typing-svg">
-                        <img 
-                        src="https://readme-typing-svg.demolab.com?font=Exo+2&weight=800&size=40&duration=2500&pause=700&color=0ACF11&vCenter=true&width=1000&height=100&lines=I+bring+passion+and+expertise+to+every+project.;Let's+create+something+extraordinary+together." 
-                        alt="Typing SVG" 
-                        />
-                    </a>
-                </div>
-                <div className='animate-image flex justify-center'>
-                    <img
-                        src={image}
-                        alt="logo"
-                        className='rounded-full md:mx-auto shadow-md shadow-gray-800 h-72 w-72 object-cover'
-                    />
-                </div>
+        <div className='animate-svg flex flex-col text-4xl gap-16 p-4 mx-auto'>
+            <div className=' flex justify-center hover:scale-105 transition-all duration-500'>
+                <img
+                    src={image}
+                    alt="logo"
+                    className='rounded-full md:mx-auto shadow-md shadow-gray-800 h-72 w-72 object-cover'
+                />
             </div>
-          
+            <div>
+                <TypeWriterEffect
+                        textStyle={{ 
+                            fontFamily: 'Merienda', 
+                            fontWeight: 800, 
+                            fontSize: '1.5em', 
+                            textDecoration: 'none',
+                            color: '#0ACF11', 
+                        }}
+                        multiText={[
+                            'Hi! Welcome to my website!\n'                          
+                        ]}
+                        cursorColor="#0ACF11"
+                        startDelay={2000}
+                        // multiTextDelay={1500}
+                        typeSpeed={35}
+                />
+            </div>          
+            <div>
+                <TypeWriterEffect
+                    textStyle={{ 
+                        fontFamily: 'Merienda', 
+                        fontWeight: 800, 
+                        fontSize: '1.5em', 
+                        textDecoration: 'none',
+                        color: '#0ACF11', 
+                    }}
+                    multiText={[
+                        "I'm James Kilonzo ...\n",
+                        'A full-stack software developer.\n',
+                        'I bring passion and expertise to every project.\n',
+                        "Let's create something extraordinary together!\n",
+                        ]}
+                    cursorColor="black"
+                    startDelay={3000}
+                    multiTextLoop={true}
+                    typeSpeed={35}
+                />
+            </div>              
         </div>
+          
       
         <div className='animate-text flex flex-col flex-wrap w-5/6 justify-center rounded-2xl mx-auto gap-4 mt-10 py-10'>
             <h1 className='text-center m-2'>Profile</h1>

@@ -14,7 +14,7 @@
       "@/*": ["src/*"]
     },
     "typeRoots": ["./node_modules/@types", "./src/@types"], // Additional type definition locations
-    "types": [], // Specify type packages to include (e.g., "node" for Node.js types)
+    "types": ["react", "react-dom"], // Specify type packages to include (e.g., "node" for Node.js types)
     "lib": ["DOM", "ESNext"] // Specify the libraries to include (e.g., "DOM" for browser-specific APIs)
   },
   "include": ["src/**/*.ts", "src/**/*.tsx"], // Specify the files to include in compilation
