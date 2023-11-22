@@ -201,3 +201,43 @@ background: linear-gradient(to bottom left, #1da1f2, #6253e8); */
   /* -webkit-background-clip: text;
   -webkit-text-fill-color: transparent; */
 }
+/* Add these styles to your CSS file */
+@keyframes borderRadiusAnimation {
+  0% {
+    border-radius: 0 50% 50% 50%;
+  }
+  12.5% {
+    border-radius: 0 0 50% 50%;
+  }
+  25% {
+    border-radius: 0 50% 0 0;
+  }
+  37.5% {
+    border-radius: 0 0 50% 0;
+  }
+  50% {
+    border-radius: 50% 50% 50% 50%;
+  }
+  55%{
+    border-radius: 0 0 0 50%;
+  }
+  62.5% {
+    border-radius: 0 0 50% 50%;
+  }
+  75% {
+    border-radius: 0 0 50% 50%;
+  }
+  87.5% {
+    border-radius: 0 50% 50% 50%;
+  }
+  100% {
+    border-radius: 50% 50% 50% 50%;
+  }
+ 
+}
+
+/* Apply the animation to your image */
+.image-animation  {
+  animation: borderRadiusAnimation 15s infinite; /* Change the duration as needed */
+}
+
