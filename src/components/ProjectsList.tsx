@@ -67,14 +67,14 @@ const Project: React.FC<ProjectProps> = ({ projects }) => {
             <div className='flex items-center justify-center font-extrabold text-2xl uppercase underline'>{projects.name}</div>
             <div className='mx-auto flex items-center'>{projects.desc}</div>
             <div className="tech-stack flex flex-wrap row-span-2 justify-around items-center ">
-                {projects.techs.map(item => <div key={item} className='text-sm md:text-xl bg-zinc-500 rounded-md p-2'>{item}</div>)}
+                {projects.techs.map(item => <div key={item} className='text-sm md:text-xl bg-indigo-950 rounded-md p-2'>{item}</div>)}
             </div>
             <div 
               className="text-green-500 font-bold row-span-2 grid grid-cols-2"
             >
                 <div className='flex flex-col justify-center items-center gap-2 text-2xl'>
-                  <a className="bg-zinc-200 p-2 m-2 rounded-md animate-pulse" href={projects.liveLink} target="_blank" rel="noreferrer">Live</a>
-                  <a className="bg-zinc-200 p-2 m-2 rounded-md" href={projects.githubLink} target="_blank" rel="noreferrer">Github</a>
+                  <a className="bg-white p-2 m-2 rounded-xl animate-pulse" href={projects.liveLink} target="_blank" rel="noreferrer">Live</a>
+                  <a className="bg-white p-2 m-2 rounded-xl" href={projects.githubLink} target="_blank" rel="noreferrer">Github</a>
                 </div>
                 <div style={backgroundStyle}>        
                 </div>

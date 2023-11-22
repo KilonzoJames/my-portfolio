@@ -5,19 +5,19 @@ function Techstack() {
     { 
       name: "REACT", 
       className: "react", 
-      icon:  <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/javascript/javascript-original.svg" alt="javascript" width="70" height="70"/>,
+      icon:  <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/react/react-original.svg" alt="react" width="50" height="50"/>,
       color: "shadow-yellow-500",
     },
     { 
       name: "JAVASCRIPT", 
       className: "javascript", 
-      icon: <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/typescript/typescript-original.svg" alt="typescript" width="70" height="70"/>,
+      icon: <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/javascript/javascript-original.svg" alt="javascript" width="70" height="70"/>,
       color: "shadow-blue-500",
     },
     { 
       name: "TYPESCRIPT", 
       className: "typescript",
-      icon: <img src="https://www.vectorlogo.zone/logos/tailwindcss/tailwindcss-icon.svg" alt="tailwind" width="70" height="70"/>,
+      icon:  <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/typescript/typescript-original.svg" alt="typescript" width="70" height="70"/>,
       color: "shadow-sky-500",
     },
     { 
@@ -29,7 +29,7 @@ function Techstack() {
     {
       name: "TAILWIND CSS",
       className: "tailwind-css",
-      icon: <img src="https://www.vectorlogo.zone/logos/tailwindcss/tailwindcss-icon.svg" alt="tailwind" width="70" height="70" />,
+      icon: <img src="https://www.vectorlogo.zone/logos/tailwindcss/tailwindcss-icon.svg" alt="tailwind" width="70" height="70"/>,
       color: "shadow-sky-500",
     },
     { 
@@ -93,7 +93,7 @@ function Techstack() {
     const techList = techstack.map((tech, index) => (
         <li 
         key={index} 
-        className={`skill py-4 w-[12rem] cursor-pointer hover:bg-green-400 hover:scale-90 duration-500  transition-all shadow-md ${tech.color} ${tech.className}`}
+        className={`skill py-4 w-[12rem] mr-4 cursor-pointer hover:bg-white hover:scale-90 duration-500  transition-all shadow-md ${tech.color} ${tech.className}`}
         >
           {tech.icon && <div>{tech.icon} </div>}
       {tech.name}

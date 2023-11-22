@@ -90,7 +90,7 @@ body{
 }
 
 .react:hover {
-	--skill-color: #3bbad0;
+	--skill-color: #00d8ff;
 }
 
 .javascript:hover {
@@ -108,25 +108,27 @@ body{
 
 .python:hover,
 .postgresql:hover,
-.sqlite:hover,
-.sql:hover {
+.sqlite:hover {
 	--skill-color: #00d8ff;
+}
+.sql:hover{
+  --skill-color:#a259ff
 }
 
 .postman:hover {
-	--skill-color: #539e43;
+	--skill-color: #eeab37;
 }
 
 .tailwind-css:hover {
-	--skill-color: #a259ff;
-}
-
-.bootstrap:hover {
 	--skill-color: #41a247;
 }
 
+.bootstrap:hover {
+	--skill-color: #a259ff;
+}
+
 .flask:hover {
-	--skill-color: #eeab37;
+	--skill-color: #539e43;
 }
 
 .git:hover {
