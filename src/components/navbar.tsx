@@ -90,7 +90,7 @@ function Navbar() {
                 <Navs/>
             </div>
         )}
-        <div className='text-4xl hover:scale-150 transition-all duration-500' onClick={toggleTheme}>
+        <div className='text-4xl hover:scale-150 transition-all duration-500 mr-8' onClick={toggleTheme}>
           {isDarkMode ? <FontAwesomeIcon icon={faMoon} /> : <FontAwesomeIcon icon={faSun} />}
         </div>
     </>

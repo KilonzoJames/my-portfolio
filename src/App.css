@@ -181,3 +181,23 @@ background: linear-gradient(to bottom left, #1da1f2, #6253e8); */
     line-height: 1;
   }
 }
+
+.header {
+  /* padding: 0 5%;
+  margin-top: -1%; */
+  border-top-left-radius: 100px;
+  border-top-right-radius: 0;
+  border-bottom-left-radius: 0px;
+  border-bottom-right-radius: 100px;
+
+}
+.text-gradient{
+    background-image: -webkit-linear-gradient(left, white, gray, white);
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+  /* background: -webkit-linear-gradient(left, #00f298, #07f7f7); */
+  /* background: linear-gradient(-19deg, darkgray, transparent); */
+  /* -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent; */
+}

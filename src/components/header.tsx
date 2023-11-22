@@ -16,8 +16,7 @@ function Logo(){
 function Header() {
   return (
     <div
-      className="header flex flex-wrap w-full top-0 left-0 mx-auto sticky z-[20] items-center justify-between p-8 shadow-md md:shadow-lg lg:shadow-xl"
-      style={{ backgroundColor: "#18163c" }}
+      className="header flex flex-wrap w-full top-0 mx-auto sticky z-[20] items-center justify-between p-8 shadow-md md:shadow-lg lg:shadow-xl"
     >
       <motion.ul
         initial={{ opacity: 0, x: -500 }}
