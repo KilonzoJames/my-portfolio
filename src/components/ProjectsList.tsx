@@ -62,7 +62,7 @@ const Project: React.FC<ProjectProps> = ({ projects }) => {
   
     return (
       <div 
-          className="projects relative grid grid-rows-6 w-[20em] mr-2 mb-2 mx-8 rounded-[10px] bg-sweetpurple font-bold shadow-md hover:scale-105 duration-500" 
+          className="projects relative grid grid-rows-6 w-[21em] h-[32em] mr-2 mb-2 mx-8 rounded-[10px] bg-sweetpurple font-bold shadow-md hover:scale-105 duration-500" 
           >
             <div className='flex items-center justify-center font-extrabold text-2xl uppercase underline'>{projects.name}</div>
             <div className='mx-auto flex items-center'>{projects.desc}</div>
@@ -74,7 +74,7 @@ const Project: React.FC<ProjectProps> = ({ projects }) => {
             >
                 <div className='flex flex-col justify-center items-center gap-2 text-2xl'>
                   <a className="bg-white p-2 m-2 rounded-xl animate-pulse" href={projects.liveLink} target="_blank" rel="noreferrer">Live</a>
-                  <a className="bg-white p-2 m-2 rounded-xl" href={projects.githubLink} target="_blank" rel="noreferrer">Github</a>
+                  <a className="bg-white text-indigo-500 p-2 m-2 rounded-xl" href={projects.githubLink} target="_blank" rel="noreferrer">Github</a>
                 </div>
                 <div style={backgroundStyle}>        
                 </div>
