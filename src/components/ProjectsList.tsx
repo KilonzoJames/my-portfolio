@@ -62,9 +62,9 @@ const Project: React.FC<ProjectProps> = ({ projects }) => {
   
     return (
       <div 
-          className="relative grid grid-rows-6 w-[20em] mr-2 mb-2 mx-8 rounded-[10px] border-2 border-gray-400 bg-sweetpurple font-bold" 
+          className="projects relative grid grid-rows-6 w-[20em] mr-2 mb-2 mx-8 rounded-[10px] border-2 border-gray-400 bg-sweetpurple font-bold" 
           >
-            <div className='flex items-center justify-center font-extrabold text-2xl uppercase'>{projects.name}</div>
+            <div className='flex items-center justify-center font-extrabold text-2xl uppercase underline'>{projects.name}</div>
             <div className='mx-auto flex items-center'>{projects.desc}</div>
             <div className="tech-stack flex flex-wrap row-span-2 justify-around items-center ">
                 {projects.techs.map(item => <div key={item} className='text-sm md:text-xl bg-zinc-500 rounded-md p-2'>{item}</div>)}
@@ -88,7 +88,7 @@ const Project: React.FC<ProjectProps> = ({ projects }) => {
 const ProjectsList = () => {
     return (
         <div className="projects-list flex flex-col mx-auto gap-12 p-[4vw] md:p-20">
-                <div className="flex justify-center text-3xl text-green-500 font-bold">
+                <div className="flex justify-center text-3xl text-green-500 font-bold underline">
                     <h1>CURRENT PROJECTS</h1>
                 </div>
                 <div className='flex flex-wrap gap-12 justify-center'>

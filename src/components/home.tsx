@@ -13,20 +13,20 @@ function Home() {
   return (
     <div className="relative w-full mx-auto text-center text-white transition-all duration-500" >
         <Header/>
-        <div id = "profile">
+        <div id = "profile" className='lg:h-screen lg:flex place-items-end'>
             <Profile/>
         </div>
-        <div id = "socials">
+        <div id = "socials" className='lg:h-screen lg:flex flex-col place-content-center'>
             <Socials/>
         </div>
-        <div id = "techstack">
+        <div id = "techstack" className='lg:h-screen lg:flex place-items-center'>
             <Techstack/>
         </div>
-        <div id = "projects">
+        <div id = "projects" className='lg:h-screen lg:flex place-items-center'>
             {/* <Projects/> */}
             <ProjectsList/>
         </div>
-        <div id = "contacts">
+        <div id = "contacts" className='lg:h-screen lg:flex place-items-center'>
             <Contacts/>
         </div>
         <div>

@@ -91,7 +91,7 @@ function Techstack() {
   return (
     <div className="relative p-[2vw]">
         <div className="flex flex-col justify-center">
-            <h2 className="text-3xl my-[2em] text-green-500 font-bold">TECH STACK</h2>
+            <h2 className="text-3xl my-[2em] text-green-500 font-bold underline">TECH STACK</h2>
             <div className='p-4'>
               {techListContainer}
             </div>

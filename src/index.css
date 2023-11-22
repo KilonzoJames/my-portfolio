@@ -2,3 +2,16 @@
 @import 'tailwindcss/base';
 @import 'tailwindcss/components';
 @import 'tailwindcss/utilities';
+
+@import url('https://fonts.googleapis.com/css2?family=Shojumaru&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Merienda:wght@500;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat+Alternates&display=swap');
+.name{
+    font-family: "Shojumaru";
+}
+body{
+    font-family: "Merienda";
+}
+.projects{
+    font-family: "Montserrat Alternates";
+}

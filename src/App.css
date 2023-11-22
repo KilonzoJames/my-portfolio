@@ -40,9 +40,6 @@ body{
     0 0 50 var(--color)
     0 0 75px var(--color)
 } */
-body{
-    font-family: 'Montserrat Alternates', sans-serif;
-}
 @keyframes moveFromRightToMiddle {
   from {
     transform: translateX(100%);
@@ -135,16 +132,50 @@ body{
 .git:hover {
 	--skill-color: #500603;
 }
-/* Light Mode Styles */
-.light {
-  background: linear-gradient(to bottom left, #1da1f2, #6253e8);
-  color: #000;
+/* Dark Mode Styles */
+.dark {
+  background: linear-gradient(to top, #211945 0%, #303030 40%, #121212 60%, #000000 100%);
+  color: #fff;
   transition: all 1s;
 }
 
-/* Dark Mode Styles */
-.dark {
-  background: linear-gradient(to bottom left, #211945, #211945);
-  color: #fff;
+.dark.header {
+  background: linear-gradient(to bottom left, #18163c 0%, #222222 40%, #121212 60%, #000000 100%);
+  color: #f5f5f5;
   transition: all 1s;
+}
+/* Light Mode Styles */
+.light {
+  background: linear-gradient(to top, #1da1f2 0%, #add4ff 40%, #6253e8 80%, #3a3a3a 100%);
+  color: #000;
+  transition: background 0.5s, color 0.5s;
+}
+
+.light.header {
+  background: linear-gradient(to bottom left, #1da1f2 0%, #6253e8 40%, #6253e8 60%, #3a3a3a 100%);
+  color: #f5f5f5;
+  transition: background 0.5s, color 0.5s;
+}
+
+/* background: linear-gradient(to bottom left, #211945, #211945);
+background: linear-gradient(to bottom left, #1da1f2, #6253e8); */
+
+.light.projects{
+  background: linear-gradient(to bottom left, #1da1f2 0%, #add4ff 40%, #6253e8 60%, #3a3a3a 100%);
+}
+.light.projects{
+  background: linear-gradient(to bottom left, #211945 0%, #303030 40%, #121212 60%, #000000 100%);
+}
+/* Default styling for text-4xl class */
+.text-4xl {
+  font-size: 3rem;
+  line-height: 1.2;
+}
+
+/* Adjust text-4xl class for small screens (640px and above) */
+@media (max-width: 640px) {
+  .text-4xl {
+    font-size: 2rem;
+    line-height: 1;
+  }
 }

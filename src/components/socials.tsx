@@ -19,8 +19,8 @@ function Socials() {
         },
       ];
   return (
-    <div className="my-10">
-        <h3 className='flex justify-center my-10 text-3xl text-green-500 font-bold'>SOCIALS</h3>
+    <>
+        <h3 className='my-10 text-3xl text-green-500 font-bold underline'>SOCIALS</h3>
         <div className="flex flex-wrap justify-center gap-32">
             {socialLinks.map((link, index) => (
             <div key={index} className="text-center">
@@ -43,7 +43,7 @@ function Socials() {
             </div>
             ))}
         </div>
-    </div>
+    </>
 );
 }
 

@@ -58,13 +58,20 @@ function Navbar() {
     useEffect( () => 
     {document.body.className = ThemeColour; }, [ThemeColour])
 
+    useEffect(() => {
+      document.body.className = isDarkMode ? 'dark' : 'light';
+      const header = document.querySelector('.header');
+     header?.classList?.remove('dark', 'light'); // Remove existing classes
+    header?.classList?.add(isDarkMode ? 'dark' : 'light');
+  }, [isDarkMode]);
+    
     function handleToggle() {
         setOpen((prevOpen) => !prevOpen);
     }    
 
   return (
     <>
-        <nav className={`navbar flex w-1/2 justify-end items-center uppercase ${ThemeColour}`}>
+        <nav className='flex w-1/2 justify-end items-center uppercase'>
             <div className='hidden md:flex justify-between w-full text-xl'>
                 <Navs/>
             </div>

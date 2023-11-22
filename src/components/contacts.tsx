@@ -3,7 +3,7 @@ import React from 'react'
 function Contacts() {
   return (
     <div className='relative'>
-        <h1 className="text-green-500 font-bold py-4 mb-4 text-3xl">GET IN TOUCH</h1>
+        <h1 className="text-green-500 font-bold py-4 mb-4 text-3xl underline">GET IN TOUCH</h1>
         <div className='text-xl mx-[4vw] p-[2vw]'>
         I'm always open to connecting with others. Whether you have questions, suggestions, or just want to say hello, feel free to reach out! I'm also open to collaborating on projects, so if you have an idea in mind, don't hesitate to let me know.
         </div>
