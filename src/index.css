@@ -15,3 +15,9 @@ body{
 .projects{
     font-family: "Montserrat Alternates";
 }
+@layer base {
+    h1 {
+      @apply text-green-500 font-bold py-4 mb-4 text-3xl border-b-4 inline;
+    }
+  }
+  
