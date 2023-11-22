@@ -22,7 +22,7 @@ function Home() {
         <div id = "techstack" className='lg:h-screen lg:flex place-items-center'>
             <Techstack/>
         </div>
-        <div id = "projects" className='lg:h-screen lg:flex place-items-center'>
+        <div id = "projects" className='lg:h-screen'>
             {/* <Projects/> */}
             <ProjectsList/>
         </div>

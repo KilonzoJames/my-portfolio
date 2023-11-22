@@ -60,7 +60,7 @@ function Contacts() {
             {
               divs.map((div, index) =>
               (
-                <div className='grid grid-row-3 w-60 h-72 shadow-md shadow-orange-500 ' >
+                <div className='grid grid-row-3 w-60 h-72 shadow-md shadow-orange-500'  key={index} >
                   <div className='flex justify-center items-center'>{div.icon}</div>
                   <div className='flex justify-center items-center font-extrabold uppercase'>{div.name}</div>
                   <div><button className='bg-green-500 rounded-md p-2'>{div.a_tag}</button></div>

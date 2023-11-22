@@ -2,6 +2,9 @@ import React from 'react';
 import Expense_Tracker from "../assets/screenshots/screencapture-an-expense-tracker-onrender-2023-10-16-15_51_08.png";
 import foodapp from "../assets/screenshots/screencapture-food-ordering-app-lokp-onrender-2023-09-18-19_56_19.png"
 import bank from "../assets/screenshots/screencapture-localhost-3001-2023-09-18-21_20_22.png"
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
+import Slider from "react-slick";
 
 interface ProjectProps {
     projects: {
@@ -86,15 +89,52 @@ const Project: React.FC<ProjectProps> = ({ projects }) => {
   
   // Map over the projects array to render each project
 const ProjectsList = () => {
+  const settings = {
+    dots: true,
+    infinite: true,
+    speed: 500,
+    slidesToShow: 3,
+    slidesToScroll: 1,
+    initialSlide: 0,
+    responsive: [
+      {
+        breakpoint: 1024,
+        settings: {
+          slidesToShow: 2,
+          slidesToScroll: 1,
+          initialSlide: 0,
+          infinite: true,
+          dots: true
+        }
+      },
+      {
+        breakpoint: 600,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1,
+          initialSlide: 0
+        }
+      },
+      {
+        breakpoint: 480,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1
+        }
+      }
+    ]
+  };
     return (
-        <div className="projects-list flex flex-col mx-auto gap-12 p-[4vw] md:p-20">
-                <div className="flex justify-center">
+        <div className="projects-list mx-auto p-[4vw] md:p-20">
+                <div className="flex justify-center mt-12">
                     <h2>CURRENT PROJECTS</h2>
                 </div>
-                <div className='flex flex-wrap gap-12 justify-center'>
+                <div className=' m-auto mt-12'>
+                  <Slider {...settings}>
                     {projects.map((project, index) => (
                     <Project key={index} projects={project} />
                     ))}
+                  </Slider>
                 </div>
         </div>
     );
