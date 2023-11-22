@@ -104,7 +104,7 @@ function Techstack() {
       
   return (
     <div className="relative p-[2vw]">
-        <div className="flex flex-col justify-center">
+        <div className="flex flex-col gap-16 justify-center">
             <div className="flex justify-center">
               <h1>TECH STACK</h1>
             </div>

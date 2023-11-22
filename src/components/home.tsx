@@ -16,7 +16,7 @@ function Home() {
         <div id = "profile" className='lg:h-screen lg:flex place-items-end'>
             <Profile/>
         </div>
-        <div id = "socials" className='lg:h-screen lg:flex flex-col place-content-center'>
+        <div id = "socials" className='lg:h-screen lg:flex flex-col place-content-center flex gap-16'>
             <Socials/>
         </div>
         <div id = "techstack" className='lg:h-screen lg:flex place-items-center'>

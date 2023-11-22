@@ -10,8 +10,7 @@ const divs = [
     name: "Contact", 
     a_tag: 
     <a 
-    href="https://wa.me/254733577480" 
-    target="_blank" rel="noopener noreferrer"
+    href="tel:+254728177480" 
     >     +254728 177 480
     </a>, 
   },
@@ -49,8 +48,10 @@ const divs = [
 ]
 function Contacts() {
   return (
-    <div className='relative'>
-        <h1 className="py-4 mb-4">GET IN TOUCH</h1>
+    <div className='relative flex flex-col gap-12'>
+        <div>
+          <h1 className="py-4 mb-4">GET IN TOUCH</h1>
+        </div>
         <div className='text-xl mx-[4vw] p-[2vw]'>
         I'm always open to connecting with others. Whether you have questions, suggestions, or just want to say hello, feel free to reach out! I'm also open to collaborating on projects, so if you have an idea in mind, don't hesitate to let me know.
         </div >

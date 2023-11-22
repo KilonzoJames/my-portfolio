@@ -9,8 +9,8 @@ function Profile() {
         <div className='animate-svg flex flex-col items-start text-green-500 font-bold text-4xl gap-4 my-4 p-4 mx-auto'>
             <div className='flex flex-col-reverse md:flex-row gap-8'>
                 <div className='flex flex-col lg:items-start gap-4'>
-                    <h1>Hello! </h1>
-                    <span>I'm James Kilonzo ...</span>
+                    <h2>Hello! </h2>
+                    <h2>I'm James Kilonzo ...</h2>
                     <a href="https://git.io/typing-svg"  >
                         <img src="https://readme-typing-svg.demolab.com?font=Exo&weight=800&size=40&duration=4500&pause=1000&color=0ACF11&vCenter=true&repeat=false&random=false&width=1000&height=100&lines=a+full-stack+software+developer." 
                         alt="Typing SVG" 
