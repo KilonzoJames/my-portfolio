@@ -93,25 +93,26 @@ function Techstack() {
     const techList = techstack.map((tech, index) => (
         <li 
         key={index} 
-        className={`skill py-4 w-[12rem] mr-4 cursor-pointer hover:bg-white hover:scale-90 duration-500  transition-all shadow-md ${tech.color} ${tech.className}`}
+        className={`skill py-4 w-[8rem] md:w-[12rem] mr-4 cursor-pointer hover:bg-white hover:scale-90 duration-500  transition-all shadow-md ${tech.color} ${tech.className}`}
         >
           {tech.icon && <div>{tech.icon} </div>}
       {tech.name}
         </li>
       ));
-    const techListContainer = <ul className="flex flex-wrap justify-center gap-4 mx-4">{techList}</ul>;
 
       
   return (
-    <div className="relative p-[2vw]">
-        <div className="flex flex-col gap-16 justify-center">
-            <div className="flex justify-center">
-              <h2>TECH STACK</h2>
-            </div>
-            <div className='p-4'>
-              {techListContainer}
-            </div>
+    <div className="flex flex-col mx-auto gap-32 p-4">
+        <div className="flex justify-center">
+          <h2>TECH STACK</h2>
         </div>
+        <div className='p-4'>
+          <ul 
+            className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 2xl:grid-cols-7 gap-16">
+            {techList}
+          </ul>;
+        </div>
+
     </div>  
   )
 }
