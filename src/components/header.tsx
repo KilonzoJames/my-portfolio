@@ -6,7 +6,7 @@ import {motion} from 'framer-motion'
 
 function Logo(){
     return (
-        <div className="flex text-4xl hover:scale-75 transition-all duration-500">
+        <div className="flex text-xl md:text-4xl hover:scale-75 transition-all duration-500">
               <span className='mx-8'><FontAwesomeIcon icon={faSnowflake} /></span>
               <a className="name text-green-500" href="/">KIL<span><FontAwesomeIcon icon={faCrosshairs}/></span>NZO JAMES</a>
         </div>

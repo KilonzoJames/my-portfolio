@@ -41,7 +41,7 @@ function Navs() {
     return (
       <>
         {navLinks.map((link, index) => (
-          <Link key={index} to={link.href} smooth={true} duration={500}>
+          <Link key={index} to={link.href} smooth={true} duration={500} className='mx-4'>
               <FontAwesomeIcon icon={link.icon} className="me-1" beat size="1x" />
               {link.text}   
           </Link>
@@ -67,13 +67,23 @@ function Navbar() {
     
     function handleToggle() {
         setOpen((prevOpen) => !prevOpen);
-    }    
+    } 
+    function ToggleThemeButton() {
+      return (
+        <div className="text-4xl hover:scale-150 transition-all duration-500 mr-8" onClick={toggleTheme}>
+          {isDarkMode ? <FontAwesomeIcon icon={faMoon} /> : <FontAwesomeIcon icon={faSun} />}
+        </div>
+      );
+    }   
 
   return (
     <>
-        <nav className='flex w-1/2 md:justify-end items-center uppercase'>
+        <nav className='flex md:1/3 lg:w-2/3 md:justify-end items-center uppercase'>
             <div className='hidden md:flex justify-between w-full text-xl'>
-                <Navs/>
+                <div>
+                  <Navs/>
+                </div>
+                <ToggleThemeButton/>
             </div>
             <div className='md:hidden'>
                 <button onClick={handleToggle}>
@@ -88,11 +98,9 @@ function Navbar() {
         {isOpen && (
             <div className='flex flex-col basis-full items-center gap-4 uppercase'>
                 <Navs/>
+                <ToggleThemeButton/>
             </div>
         )}
-        <div className='text-4xl hover:scale-150 transition-all duration-500 mr-8' onClick={toggleTheme}>
-          {isDarkMode ? <FontAwesomeIcon icon={faMoon} /> : <FontAwesomeIcon icon={faSun} />}
-        </div>
     </>
   )
 }
