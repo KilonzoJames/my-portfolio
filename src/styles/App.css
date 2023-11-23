@@ -162,12 +162,6 @@ body{
 /* background: linear-gradient(to bottom left, #211945, #211945);
 background: linear-gradient(to bottom left, #1da1f2, #6253e8); */
 
-.light.projects{
-  background: linear-gradient(to bottom left, #1da1f2 0%, #add4ff 40%, #6253e8 60%, #3a3a3a 100%);
-}
-.light.projects{
-  background: linear-gradient(to bottom left, #211945 0%, #303030 40%, #121212 60%, #000000 100%);
-}
 /* Default styling for text-4xl class */
 .text-4xl {
   font-size: 3rem;

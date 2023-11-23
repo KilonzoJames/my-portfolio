@@ -65,19 +65,20 @@ const Project: React.FC<ProjectProps> = ({ projects }) => {
   
     return (
       <div 
-          className="projects relative grid grid-rows-6 w-[21em] h-[32em] mr-2 mb-2 mx-8 rounded-[10px] bg-sweetpurple text-white font-bold shadow-md hover:scale-105 duration-500" 
+          className="project relative grid grid-rows-6 p-6
+          m-4 rounded-[10px] text-white font-bold shadow-md hover:scale-105 duration-500" 
           >
             <div className='flex items-center justify-center font-extrabold text-2xl uppercase underline'>{projects.name}</div>
             <div className='mx-auto flex items-center'>{projects.desc}</div>
-            <div className="tech-stack flex flex-wrap row-span-2 justify-around items-center ">
-                {projects.techs.map(item => <div key={item} className='text-sm md:text-xl bg-indigo-950 rounded-md p-2'>{item}</div>)}
+            <div className="tech-stack  flex flex-wrap row-span-2 justify-around items-center ">
+                {projects.techs.map(item => <div key={item} className='text-sm md:text-xl rounded-md p-2'>{item}</div>)}
             </div>
             <div 
               className="font-bold row-span-2 grid grid-cols-2"
             >
                 <div className='flex flex-col justify-center items-center gap-2 text-2xl'>
-                  <a className="bg-white text-green-500 p-2 m-2 rounded-xl animate-pulse" href={projects.liveLink} target="_blank" rel="noreferrer">Live</a>
-                  <a className="bg-indigo-950 m-2 p-1 rounded-xl" href={projects.githubLink} target="_blank" rel="noreferrer">Source<br/>Code</a>
+                  <a className="bg-white text-green-500 h-12 w-24 p-2 m-2 rounded-xl animate-pulse" href={projects.liveLink} target="_blank" rel="noreferrer">Live</a>
+                  <a className="btn h-16 w-24 m-2 p-1 rounded-xl" href={projects.githubLink} target="_blank" rel="noreferrer">Source<br/>Code</a>
                 </div>
                 <div style={backgroundStyle}>        
                 </div>
@@ -125,11 +126,11 @@ const ProjectsList = () => {
     ]
   };
     return (
-        <div className="projects-list mx-auto p-[4vw] md:p-20">
+        <div className="w-4/5 mx-auto md:p-20">
                 <div className="flex justify-center mt-12">
                     <h2>CURRENT PROJECTS</h2>
                 </div>
-                <div className=' m-auto mt-12'>
+                <div className='m-auto mt-12'>
                   <Slider {...settings}>
                     {projects.map((project, index) => (
                     <Project key={index} projects={project} />

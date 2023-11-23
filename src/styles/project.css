@@ -1,35 +1,6 @@
 :root {
 	--project-width: 250px;
-	--border-radius: 10px;
-	--blob-left: 238px;
 }
-
-.project {
-	background: rgb(34, 33, 52);
-	min-width: var(--project-width);
-	max-width: var(--project-width);
-	border-radius: var(--border-radius);
-	padding: 1.5rem;
-	margin: 0 2rem 2rem 0;
-	position: relative;
-}
-
-
-.project .tech-stack div {
-	min-height: 20px;
-	min-width: 60px;
-	max-height: 20px;
-	max-width: 60px;
-	font-size: 0.6rem;
-	padding: 0.4rem;
-	margin: 0 0.5rem 0.25rem 0;
-	display: grid;
-	place-items: center;
-	background: rgb(25, 23, 32);
-	border-radius: var(--border-radius);
-}
-
-
 .open {
 	background: rgb(245, 242, 245);
 	min-height: calc(var(--project-width) / 4.1);
@@ -47,3 +18,12 @@
 	font-size: calc(var(--project-width) / 26);
 	text-align: center;
 }
+.dark .project {
+	background: linear-gradient(135deg, rgba(253, 253, 253, 0.18) 0.01%, rgba(243, 243, 243, 0.00) 100%);
+  }
+.light .project {
+	background: linear-gradient(135deg, rgba(253, 253, 253, 0.18) 0.01%, rgba(243, 243, 243, 0.00) 100%);
+  }
+.btn{
+	background: linear-gradient(91deg, #EC008C 0%, #FC6767 100%);
+  }
