@@ -23,23 +23,5 @@ body{
 .slick-slide > div{
     margin: 0 10px;
 }
-@media (min-width: 768px) {
-  .projects {
-    width: 70%;
-    margin: 0;
-  }
-}
 
-@media (min-width: 600px) and (max-width: 767px) {
-  .projects {
-    width: 75%;
-    margin: 0;
-  }
-}
 
-@media (max-width: 599px) {
-  .projects {
-    width: 100%;
-    margin: 0;
-  }
-}

@@ -6,6 +6,7 @@ import './styles/App.css';
 import './styles/project.css'
 import './styles/header.css'
 import './styles/social.css'
+import './styles/techskill.css'
 
 function App() {
   return (

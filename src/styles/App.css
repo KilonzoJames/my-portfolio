@@ -3,43 +3,54 @@
   padding: 0;
 }
 body{
-    /* background-image: url('../assets/photo-1562813733-b31f71025d54.avif');
-    color: white; */
     background-size: cover;
     scroll-behavior: smooth;
 }
-.active{
-    background-color: #1d4ed8;
-}
-/* #nav a:not(.active):hover{
-    background-color: #5a0c1f;
-} */
 
-/* .social-icons a{
-    margin: 0 10px;
-    border-radius: 50%;
-    box-sizing: border-box;
-    width: 200px;
-    height: 200px;
-    display:flex;
-    justify-content: center;
-    align-items: center;
-    text-decoration: none;
-    transition: 0.5s;
-    background-color: #fff;
-    background-color: rgba(0, 0, 0, 0);
-    color: var(--color);
-    font-size:  2.5em;
-    -webkit-box-reflect: below 5px linear-gradient(to bottom,  rgba(0, 0, 0, 0), rgba(0, 0, 0, 0))
-} */
-/* a:hover{
-    background: var(--color);
-    color: #050801;
-    box-shadow: 0 0 5px var(--color),
-    0 0 25px var(--color),
-    0 0 50 var(--color)
-    0 0 75px var(--color)
-} */
+/* Dark Mode Styles */
+.dark {
+  background: linear-gradient(to top, #211945 0%, #303030 40%, #121212 60%, #000000 100%);
+  color: #fff;
+  transition: all 1s;
+}
+.dark.header {
+  background: linear-gradient(to left, gray 0%, gray 40%, #000000 60%, #000000 80%, #000000 100%);
+  color: #f5f5f5;
+  transition: all 1s;
+}
+
+/* Light Mode Styles */
+.light {
+  background: linear-gradient(to top, #2d7fb2 0%, #1e88ca 20%, #1da1f2 40%, #6253e8 60%, #6253e8 80%, #18163c 100%);
+  color: #000;
+  transition: background 0.5s, color 0.5s;
+}
+
+.light.header {
+  background: linear-gradient(to bottom left, #1da1f2 0%, #6253e8 40%, #6253e8 60%, #18163c 100%);
+  color: #f5f5f5;
+  transition: background 0.5s, color 0.5s;
+}
+
+/* Gradient Text Styles */
+.dark .text-gradient{
+  background-image: -webkit-linear-gradient(left, white, gray, white);
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+/* background: -webkit-linear-gradient(left, #00f298, #07f7f7); */
+/* background: linear-gradient(-19deg, darkgray, transparent); */
+/* -webkit-background-clip: text;
+-webkit-text-fill-color: transparent; */
+}
+.light .text-gradient {
+  background-image: -webkit-linear-gradient(left, black, rgb(67, 65, 65), black);
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+}
+
+/* KeyFrames*/
 @keyframes moveFromRightToMiddle {
   from {
     transform: translateX(100%);
@@ -56,186 +67,35 @@ body{
     transform: translateX(0);
   }
 }
-
 .animate-svg {
-  animation: moveFromLeftToMiddle 2s ease-in-out; /* Adjust the duration and timing function as needed */
+  animation: moveFromLeftToMiddle 2s ease-in-out; 
   overflow-y: auto;
 }
 .animate-text {
   animation: moveFromRightToMiddle 2s ease-in-out;
   overflow-y: auto;
 }
-
-/* Additional styling for the image animation if needed */
 .animate-image {
   animation: moveFromRightToMiddle 2s ease-in-out;
 }
 
-:root {
-	--skill-color: white;
-	--container-width: 600px;
-	--skill-size: calc(var(--container-width) / 5);
-}
+/* .active{
+    background-color: #1d4ed8;
+} */
+/* #nav a:not(.active):hover{
+    background-color: #5a0c1f;
+} */
 
-.skill {
-	margin-right: 0 20px 20px 0;
-    height: var(--skill-size); /* Use height instead of min-height */
-    width: var(--skill-size);
-	display: grid;
-	place-items: center;
-	padding: 5px;
-	border-radius: 20px;
-	color: var(--skill-color);
-    transition: all 390ms ease-in-out;
-}
-
-.react:hover {
-	--skill-color: #00d8ff;
-}
-
-.javascript:hover {
-	--skill-color: #fddd00;
-}
-
-.html:hover {
-	--skill-color: #f1662a;
-}
-
-.css:hover,
-.typescript:hover {
-	--skill-color: #1572b6;
-}
-
-.python:hover,
-.postgresql:hover,
-.sqlite:hover {
-	--skill-color: #00d8ff;
-}
-.sql:hover{
-  --skill-color:#a259ff
-}
-
-.postman:hover {
-	--skill-color: #eeab37;
-}
-
-.tailwind-css:hover {
-	--skill-color: #41a247;
-}
-
-.bootstrap:hover {
-	--skill-color: #a259ff;
-}
-
-.flask:hover {
-	--skill-color: #539e43;
-}
-
-.git:hover {
-	--skill-color: #500603;
-}
-/* Dark Mode Styles */
-.dark {
-  background: linear-gradient(to top, #211945 0%, #303030 40%, #121212 60%, #000000 100%);
-  color: #fff;
-  transition: all 1s;
-}
-
-.dark.header {
-  background: linear-gradient(to left, gray 0%, gray 40%, #000000 60%, #000000 80%, #000000 100%);
-  color: #f5f5f5;
-  transition: all 1s;
-}
-/* Light Mode Styles */
-.light {
-  background: linear-gradient(to top, #2d7fb2 0%, #1e88ca 20%, #1da1f2 40%, #6253e8 60%, #6253e8 80%, #18163c 100%);
-  color: #000;
-  transition: background 0.5s, color 0.5s;
-}
-
-.light.header {
-  background: linear-gradient(to bottom left, #1da1f2 0%, #6253e8 40%, #6253e8 60%, #18163c 100%);
-  color: #f5f5f5;
-  transition: background 0.5s, color 0.5s;
-}
+/* a:hover{
+    background: var(--color);
+    color: #050801;
+    box-shadow: 0 0 5px var(--color),
+    0 0 25px var(--color),
+    0 0 50 var(--color)
+    0 0 75px var(--color)
+} */
 
 /* background: linear-gradient(to bottom left, #211945, #211945);
 background: linear-gradient(to bottom left, #1da1f2, #6253e8); */
+/* -webkit-box-reflect: below 5px linear-gradient(to bottom,  rgba(0, 0, 0, 0), rgba(0, 0, 0, 0)) */
 
-/* Default styling for text-4xl class */
-.text-4xl {
-  font-size: 3rem;
-  line-height: 1.2;
-}
-
-/* Adjust text-4xl class for small screens (640px and above) */
-@media (max-width: 640px) {
-  .text-4xl {
-    font-size: 2rem;
-    line-height: 1;
-  }
-}
-
-.dark .text-gradient{
-    background-image: -webkit-linear-gradient(left, white, gray, white);
-    background-clip: text;
-    -webkit-background-clip: text;
-    color: transparent;
-  /* background: -webkit-linear-gradient(left, #00f298, #07f7f7); */
-  /* background: linear-gradient(-19deg, darkgray, transparent); */
-  /* -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent; */
-  }
-
-.light .text-gradient {
-    background-image: -webkit-linear-gradient(left, black, rgb(67, 65, 65), black);
-    background-clip: text;
-    -webkit-background-clip: text;
-    color: transparent;
-  }
-
-.text-flicker-in-glow{
-  animation: text-flicker-in-glow 10s steps(2) infinite both;
-}
-
-@keyframes text-flicker-in-glow {
-  0% {
-    opacity: 0;
-  }
-  10%, 20%, 30%, 45%, 57%, 65%, 75%, 86% {
-    opacity: 0;
-    text-shadow: none;
-  }
-  10.1%, 30.1%, 60.1%, 77.1%, 85.1%, 86.1%, 100% {
-    opacity: 1;
-    text-shadow: none;
-  }
-  10.2%, 20.6%, 30.2%, 60.2%, 65.1%, 75.1%, 86.2% {
-    opacity: 0;
-    text-shadow: none;
-  }
-  20.1%, 30.5%, 50%, 55%, 55.1%, 60%, 65.1%, 75%, 77.1%, 85%, 86.1% {
-    opacity: 1;
-    text-shadow: 0 0 30px hsla(0, 0%, 100%, 0.45), 0 0 60px hsla(0, 0%, 100%, 0.25);
-  }
-  57% {
-    opacity: 0;
-    text-shadow: none;
-  }
-  60.1%, 65%, 75.1% {
-    opacity: 0;
-    text-shadow: none;
-  }
-  60.1%, 65.1%, 75%, 86% {
-    opacity: 1;
-    text-shadow: 0 0 30px hsla(0, 0%, 100%, 0.55), 0 0 60px hsla(0, 0%, 100%, 0.35);
-  }
-  77.1%, 86.1% {
-    opacity: 1;
-    text-shadow: 0 0 30px hsla(0, 0%, 100%, 0.55), 0 0 60px hsla(0, 0%, 100%, 0.4), 0 0 110px hsla(0, 0%, 100%, 0.2), 0 0 100px hsla(0, 0%, 100%, 0.1);
-  }
-  85.1% {
-    opacity: 0;
-    text-shadow: none;
-  }
-}
