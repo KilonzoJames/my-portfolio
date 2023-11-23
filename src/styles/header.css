@@ -1,0 +1,32 @@
+@media (min-width: 992px) {
+    .md-shape {
+      /* padding: 0 5%;
+      margin-top: -1%; */
+      border-top-left-radius: 100px;
+      border-top-right-radius: 0;
+      border-bottom-left-radius: 0px;
+      border-bottom-right-radius: 100px;
+    }
+  }
+  
+
+  /* Add these styles to your CSS file */
+  @keyframes borderRadiusAnimation {
+    0% {
+      border-radius: 50% 50% 50% 50%;
+    }
+  
+    50% {
+      border-radius: 0% 100% 50% 50%;
+    }
+  
+    100% {
+      border-radius: 50% 50% 50% 50%;
+    }
+  }  
+  
+  /* Apply the animation to your image */
+  .image-animation  {
+    animation: borderRadiusAnimation 15s infinite; /* Change the duration as needed */
+  }
+  

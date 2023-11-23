@@ -11,7 +11,7 @@ function Profile() {
                 <img
                     src={image}
                     alt="logo"
-                    className='image-animation md:mx-auto shadow-md shadow-gray-800 h-72 w-72 object-cover'
+                    className='image-animation  md:mx-auto shadow-md shadow-gray-800 h-72 w-72 object-cover'
                 />
             </div>
             <div className='mb-4'>

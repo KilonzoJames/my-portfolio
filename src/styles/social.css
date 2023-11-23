@@ -1,0 +1,68 @@
+.socials{
+    background: #18163c;
+    transition: 1s;
+    transform: rotate(-30deg) skewY(25deg);
+    /* box-shadow: -15px 10px 1px #fff;  */
+    /* Create a circular shadow */
+}
+
+.socials:before{
+    content: "";
+    position: absolute;
+    height: 100%;
+    width: 20px;
+    background: #18163c;
+    top: 10px;
+    left: -20px;
+    transform: rotate(0deg) skewY(-45deg);
+    }
+.socials:after{
+    content: "";
+    position: absolute;
+    height: 20px;
+    width: 100%;
+    background: #18163c;
+    bottom: -20px;
+    left: -10px;
+    transform: rotate(0deg) skewx(-45deg);
+    }
+.socials:hover{
+    transform: rotate(-30deg) skew(25deg) translate(20px, -15px);
+    box-shadow: -50px 50px 10px #312c84 ;
+}
+
+/* .container:hover :nth-child(1) a {
+    background-color: #dd4b39;
+
+    &::before {
+        background: #b33a2b;
+    }
+
+    &::after {
+        background: #b33a2b;
+    }
+}
+
+.container:hover :nth-child(2) a {
+    background: #00aced;
+
+    &::before {
+        background: #097aa5;
+    }
+
+    &::after {
+        background: #53b9e0;
+    }
+}
+
+.container:hover :nth-child(3) a {
+    background: #3b5998;
+
+    &::before {
+        background: #365492;
+    }
+
+    &::after {
+        background: #4a69ad;
+    }
+} */

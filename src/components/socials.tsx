@@ -20,28 +20,26 @@ function Socials() {
       ];
   return (
     <>
-        <div className='flex justify-center'>
-          <h2 className='my-10'>SOCIALS</h2>
+        <div className='flex flex-col mx-auto'>
+          <h2 className='my-10'>FIND ME @ THESE SOCIAL SITES:</h2>
         </div>
-        <div className="flex flex-wrap justify-center gap-32">
+        <div className="container flex flex-wrap justify-center gap-32 mx-auto">
             {socialLinks.map((link, index) => (
-            <div key={index} className="text-center">
+            <div key={index}>
                 <a
                     key={index}
                     href={link.href}
                     target="_blank"
                     rel="noreferrer"
-                    className="bg-slate-300 cursor-pointer rounded-full hover:animate-spin w-[10rem] h-[10rem] justify-items-center flex items-center"
+                    className="socials w-[10rem] h-[13rem] flex place-items-center cursor-pointer"
                 >
                     <img
                     src={link.imgSrc}
                     alt={link.alt}
-                    width="72"
-                    height="72"
-                    className="mx-auto"
+                    className="mx-auto w-24 h-24"
                     />
                 </a>
-                <p className="mt-4 text-green-600 font-bold">{link.alt}</p>
+                <p className="m-8 text-green-600 text-2xl font-bold">{link.alt}</p>
             </div>
             ))}
         </div>

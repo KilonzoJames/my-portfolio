@@ -1,9 +1,11 @@
 import { Route, Routes } from 'react-router-dom';
 import React from 'react';
-import './App.css';
 import Home from './components/home';
 import NotFound from './components/notfound';
-import './project.css'
+import './styles/App.css';
+import './styles/project.css'
+import './styles/header.css'
+import './styles/social.css'
 
 function App() {
   return (

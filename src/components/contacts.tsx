@@ -56,7 +56,7 @@ function Contacts() {
         I'm always open to connecting with others. Whether you have questions, suggestions, or just want to say hello, feel free to reach out! I'm also open to collaborating on projects, so if you have an idea in mind, don't hesitate to let me know.
         </div >
 
-        <div className="grid lg:grid-cols-3 place-items-center">
+        <div className="grid lg:grid-cols-3 place-items-center gap-16">
             {
               divs.map((div, index) =>
               (
