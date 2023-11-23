@@ -17,9 +17,9 @@ function Header() {
   return (
     <div
       className="header md-shape flex flex-wrap w-full top-0 mx-auto sticky z-[20] items-center justify-between p-8 shadow-md md:shadow-lg lg:shadow-xl"
-    >
+      >
       <motion.ul
-        initial={{ opacity: 0, x: -500 }}
+        initial={{ opacity: 0, x: -100 }}
         animate={{ opacity: 1, x: 0 }}
         transition={{ type: "tween", duration: 2 }}
         >

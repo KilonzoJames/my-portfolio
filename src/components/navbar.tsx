@@ -3,6 +3,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faHome, faUser, faPhone, faBriefcase, faBars, faXmark, faMoon, faSun } from '@fortawesome/free-solid-svg-icons';
 import { Link } from 'react-scroll';
 import { useTheme } from './ThemeContext';
+import {motion} from 'framer-motion'
 
 const navLinks = [
     {
@@ -80,10 +81,20 @@ function Navbar() {
     <>
         <nav className='flex md:1/3 lg:w-2/3 md:justify-end items-center uppercase'>
             <div className='hidden md:flex justify-between w-full text-xl'>
-                <div>
+                <motion.div
+                 initial={{ opacity: 0, x: -500 }}
+                 animate={{ opacity: 1, x: 0 }}
+                 transition={{ type: "tween", duration: 2 }}
+                >
                   <Navs/>
-                </div>
-                <ToggleThemeButton/>
+                </motion.div>
+                <motion.div
+                  initial={{ opacity: 0, x: 500 }}
+                  animate={{ opacity: 1, x: 0 }}
+                  transition={{ type: "tween", duration: 2 }}
+                >
+                  <ToggleThemeButton/>
+                </motion.div>
             </div>
             <div className='md:hidden'>
                 <button onClick={handleToggle}>
