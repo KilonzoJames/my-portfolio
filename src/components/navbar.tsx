@@ -71,12 +71,12 @@ function Navbar() {
 
   return (
     <>
-        <nav className='flex w-1/2 justify-end items-center uppercase'>
+        <nav className='flex w-1/2 md:justify-end items-center uppercase'>
             <div className='hidden md:flex justify-between w-full text-xl'>
                 <Navs/>
             </div>
             <div className='md:hidden'>
-                <button className='absolute right-4 top-4 lg:absolute lg:right-10 lg:top-10' onClick={handleToggle}>
+                <button onClick={handleToggle}>
                 {isOpen ? (
                 <FontAwesomeIcon icon={faXmark} className="text-4xl"/>
                 ) : (
