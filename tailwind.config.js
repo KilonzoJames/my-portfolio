@@ -8,6 +8,7 @@ const tailwindConfig = {
     extend: {
       colors:{ 
          sweetpurple: '#18163c',
+         luminous: '#0ACF11',
       },
     },
   },
