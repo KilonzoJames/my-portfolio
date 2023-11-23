@@ -148,13 +148,13 @@ body{
 }
 /* Light Mode Styles */
 .light {
-  background: linear-gradient(to top, #2d7fb2 0%, #1e88ca 20%, #1da1f2 40%, #6253e8 60%, #6253e8 80%, #6253e8 100%);
+  background: linear-gradient(to top, #2d7fb2 0%, #1e88ca 20%, #1da1f2 40%, #6253e8 60%, #6253e8 80%, #18163c 100%);
   color: #000;
   transition: background 0.5s, color 0.5s;
 }
 
 .light.header {
-  background: linear-gradient(to bottom left, #1da1f2 0%, #6253e8 40%, #6253e8 60%, #3a3a3a 100%);
+  background: linear-gradient(to bottom left, #1da1f2 0%, #6253e8 40%, #6253e8 60%, #18163c 100%);
   color: #f5f5f5;
   transition: background 0.5s, color 0.5s;
 }
