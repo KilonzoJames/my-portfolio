@@ -6,7 +6,7 @@ import TypeWriterEffect from 'react-typewriter-effect';
 function Profile() {
   return (
     <div className='flex flex-col'>
-        <div className='animate-svg flex flex-col text-2xl lg:text-4xl gap-16 p-4 mx-auto'>
+        <div className='flex flex-col text-2xl lg:text-4xl gap-16 p-4 mx-auto'>
             <div className='flex justify-center hover:scale-105 transition-all duration-500'>
                 <img
                     src={image}
@@ -55,7 +55,7 @@ function Profile() {
         </div>
           
       
-        <div className='animate-text flex flex-col flex-wrap w-5/6 justify-center rounded-2xl mx-auto gap-4 mt-10 py-10'>
+        <div className='flex flex-col flex-wrap w-5/6 justify-center rounded-2xl mx-auto gap-4 mt-10 py-10'>
             <h2 className='text-center mx-auto m-2'>Profile</h2>
             <h2 className='font-extrabold text-center  m-2 '>Fullstack Web Developer</h2>
             <div className='text-gradient text-xl'
