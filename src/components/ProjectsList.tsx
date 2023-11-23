@@ -77,8 +77,8 @@ const Project: React.FC<ProjectProps> = ({ projects }) => {
               className="font-bold row-span-2 grid grid-cols-2"
             >
                 <div className='flex flex-col justify-center items-center gap-2 text-2xl'>
-                  <a className="bg-white text-green-500 h-12 w-24 p-2 m-2 rounded-xl animate-pulse" href={projects.liveLink} target="_blank" rel="noreferrer">Live</a>
-                  <a className="btn h-16 w-24 m-2 p-1 rounded-xl" href={projects.githubLink} target="_blank" rel="noreferrer">Source<br/>Code</a>
+                  <a className="bg-white text-green-500 h-12 w-24 p-2 m-2 rounded-full animate-pulse" href={projects.liveLink} target="_blank" rel="noreferrer">Live</a>
+                  <a className="btn h-16 w-24 m-2 p-1 rounded-2xl" href={projects.githubLink} target="_blank" rel="noreferrer">Source<br/>Code</a>
                 </div>
                 <div style={backgroundStyle}>        
                 </div>

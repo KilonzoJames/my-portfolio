@@ -2,7 +2,6 @@ import React from 'react'
 import Profile from './profile'
 import Socials from './socials'
 import Techstack from './techstack'
-import Projects from './projects'
 import Contacts from './contacts'
 import Footer from './footer'
 import Header from './header'
@@ -23,7 +22,6 @@ function Home() {
             <Techstack/>
         </div>
         <div id = "projects" className='lg:h-screen'>
-            {/* <Projects/> */}
             <ProjectsList/>
         </div>
         <div id = "contacts" className='lg:h-screen lg:flex place-items-center'>

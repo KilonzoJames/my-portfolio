@@ -1,14 +1,17 @@
 import React from 'react'
 import image from "../assets/IMG_20230919_073049.jpg"
 import TypeWriterEffect from 'react-typewriter-effect';
- 
+import {motion} from 'framer-motion'
 
 function Profile() {
   return (
     <div className='flex flex-col'>
         <div className='flex flex-col items-center text-2xl lg:text-4xl gap-16 p-4'>
             <div className='hover:scale-105 transition-all duration-500'>
-                <img
+                <motion.img
+                    initial={{ opacity: 0, scale: 0.01 }}
+                    animate={{ opacity: 1, scale: 1 }}
+                    transition={{ type: "tween", duration: 5, delay: 3.3 }}                
                     src={image}
                     alt="logo"
                     className='image-animation object-cover h-72 w-72 '
