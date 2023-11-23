@@ -65,7 +65,7 @@ const Project: React.FC<ProjectProps> = ({ projects }) => {
   
     return (
       <div 
-          className="projects relative grid grid-rows-6 w-[21em] h-[32em] mr-2 mb-2 mx-8 rounded-[10px] bg-sweetpurple font-bold shadow-md hover:scale-105 duration-500" 
+          className="projects relative grid grid-rows-6 w-[21em] h-[32em] mr-2 mb-2 mx-8 rounded-[10px] bg-sweetpurple text-white font-bold shadow-md hover:scale-105 duration-500" 
           >
             <div className='flex items-center justify-center font-extrabold text-2xl uppercase underline'>{projects.name}</div>
             <div className='mx-auto flex items-center'>{projects.desc}</div>
