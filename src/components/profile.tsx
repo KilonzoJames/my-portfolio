@@ -6,12 +6,12 @@ import TypeWriterEffect from 'react-typewriter-effect';
 function Profile() {
   return (
     <div className='flex flex-col'>
-        <div className='flex flex-col text-2xl lg:text-4xl gap-16 p-4 mx-auto'>
-            <div className='flex justify-center hover:scale-105 transition-all duration-500'>
+        <div className='flex flex-col items-center text-2xl lg:text-4xl gap-16 p-4'>
+            <div className='hover:scale-105 transition-all duration-500'>
                 <img
                     src={image}
                     alt="logo"
-                    className='image-animation  md:mx-auto shadow-md shadow-gray-800 h-72 w-72 object-cover'
+                    className='image-animation object-cover h-72 w-72 '
                 />
             </div>
             <div className='mb-4'>
