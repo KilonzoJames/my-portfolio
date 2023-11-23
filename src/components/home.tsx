@@ -11,7 +11,7 @@ import ProjectsList from './ProjectsList'
 
 function Home() {
   return (
-    <div className="relative w-full mx-auto text-center text-white transition-all duration-500" >
+    <div className="relative w-full mx-auto text-center transition-all duration-500" >
         <Header/>
         <div id = "profile" className='lg:h-screen lg:flex place-items-end mt-16 md:mt-32 '>
             <Profile/>

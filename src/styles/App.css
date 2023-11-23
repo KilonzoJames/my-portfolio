@@ -148,7 +148,7 @@ body{
 }
 /* Light Mode Styles */
 .light {
-  background: linear-gradient(to top, #1da1f2 0%, #add4ff 40%, #6253e8 80%, #3a3a3a 100%);
+  background: linear-gradient(to top, #1da1f2 0%, #1da1f2 20%, #1da1f2 40%, #6253e8 60%, #6253e8 80%, #6253e8 100%);
   color: #000;
   transition: background 0.5s, color 0.5s;
 }
@@ -182,13 +182,23 @@ background: linear-gradient(to bottom left, #1da1f2, #6253e8); */
   }
 }
 
-.text-gradient{
-  background-image: -webkit-linear-gradient(left, white, gray, white);
-  background-clip: text;
-  -webkit-background-clip: text;
-  color: transparent;
-/* background: -webkit-linear-gradient(left, #00f298, #07f7f7); */
-/* background: linear-gradient(-19deg, darkgray, transparent); */
-/* -webkit-background-clip: text;
--webkit-text-fill-color: transparent; */
-}
+.dark .text-gradient{
+    background-image: -webkit-linear-gradient(left, white, gray, white);
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+  /* background: -webkit-linear-gradient(left, #00f298, #07f7f7); */
+  /* background: linear-gradient(-19deg, darkgray, transparent); */
+  /* -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent; */
+  }
+
+.light .text-gradient {
+    background-image: -webkit-linear-gradient(left, black, gray, black);
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+  }
+
+
+
