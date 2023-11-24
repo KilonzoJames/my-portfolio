@@ -108,9 +108,9 @@ function Techstack() {
         </div>
         <div className='p-4'>
           <ul 
-            className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 2xl:grid-cols-7 gap-16">
+            className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 2xl:grid-cols-spacing 2xl:grid-cols-spacing-lg 2xl:grid-rows-spacing-lg gap-16">
             {techList}
-          </ul>;
+          </ul>
         </div>
 
     </div>  

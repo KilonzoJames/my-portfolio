@@ -10,6 +10,14 @@ const tailwindConfig = {
          sweetpurple: '#18163c',
          luminous: '#0ACF11',
       },
+      gridTemplateColumns: {
+        'spacing': 'repeat(4, 1fr)',
+        // 'spacing-lg': 'repeat(3, 1fr) repeat(2, 1fr)',
+      },
+      gridTemplateRows: {
+        'spacing': 'repeat(4, 1fr)',
+        // 'spacing-lg': '1fr repeat(2, 1fr) 1fr',
+      }, 
     },
   },
   plugins: [],
