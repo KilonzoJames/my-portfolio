@@ -110,42 +110,41 @@ function Techstack() {
       if (isWideScreen) {
         switch (index) {
           case 0:
-            return '1 / 3/ 2 / 4';// Assign '1 / 3/ 2 / 4' to the first line
+            return '1 / 4 / 2 / 5'; // Top of the triangle
           case 1:
-            return '2 / 2 / 3 / 3';
-          case 2:
             return '2 / 3 / 3 / 4';
+          case 2:
+            return '2 / 5 / 3 / 6';
           case 3:
-            return '2 / 4 / 3 / 5';
+            return '3 / 2 / 4 / 3';
           case 4:
-            return '3 / 1 / 4 / 2';
-          case 5:
-            return '3 / 2 / 4 / 3'; // Center the number 5
-          case 6:
             return '3 / 3 / 4 / 4';
+          case 5:
+            return '3 / 5 / 4 / 6'; // Center the number 5
+          case 6:
+            return '3 / 6 / 4 / 7';
           case 7:
-            return '3 / 4 / 4 / 5';
+            return '4 / 1 / 5 / 2';
           case 8:
-            return '3 / 5 / 4 / 6';
-          case 9:
             return '4 / 2 / 5 / 3';
-          case 10:
+          case 9:
             return '4 / 3 / 5 / 4';
-          case 11:
+          case 10:
             return '4 / 4 / 5 / 5';
+          case 11:
+            return '4 / 5 / 5 / 6';
           case 12:
-            return '5 / 2 / 6 / 3';
+            return '4 / 6 / 5 / 7';
           case 13:
-            return '5 / 4 / 6 / 5';
+            return '4 / 7 / 5 / 8';
           default:
-            return '';
+            return ''; // Handle out-of-bounds index
         }
       } else {
         // If not a wide screen, you can return default values or adjust as needed
         return '';
       }
     }
-    
     
     const gridArea = getGridArea(index); // Function to determine grid area based on index
     return (
