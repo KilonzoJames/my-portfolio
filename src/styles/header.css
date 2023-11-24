@@ -45,7 +45,9 @@
     text-shadow: none;
   }
 }
-
+.header{
+  box-shadow: rgba(0, 179, 159, 0.2) 0px 10px 25px;
+}
 /* Add these styles to Navbar when its beyond the md breakpoint */
 @media (min-width: 992px) {
     .md-shape {
