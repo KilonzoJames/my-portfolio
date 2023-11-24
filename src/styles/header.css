@@ -1,6 +1,7 @@
 /* Add these styles to your Name in the Header*/
 .text-flicker-in-glow{
-  animation: text-flicker-in-glow 10s steps(2) infinite both;
+  animation: text-flicker-in-glow 10s steps(2) 3 ;
+  animation-delay: 10s;
 }
 
 @keyframes text-flicker-in-glow {

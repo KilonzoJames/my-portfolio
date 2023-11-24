@@ -21,7 +21,7 @@ function Header() {
       <motion.ul
         initial={{ opacity: 0, x: -100 }}
         animate={{ opacity: 1, x: 0 }}
-        transition={{ type: "tween", duration: 2 }}
+        transition={{ type: "tween", duration: 1 }}
         >
         <Logo />
       </motion.ul>

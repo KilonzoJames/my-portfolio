@@ -9,9 +9,9 @@ function Profile() {
         <div className='flex flex-col items-center text-2xl lg:text-4xl gap-16 p-4'>
             <div className='hover:scale-105 transition-all duration-500'>
                 <motion.img
-                    initial={{ opacity: 0, scale: 0.01 }}
+                    initial={{ opacity: 0, scale: 0.6 }}
                     animate={{ opacity: 1, scale: 1 }}
-                    transition={{ type: "tween", duration: 5, delay: 6 }}                
+                    transition={{ type: "tween", duration: 2, delay: 1.5 }}                
                     src={image}
                     alt="logo"
                     className='image-animation object-cover h-72 w-72 '
@@ -30,7 +30,7 @@ function Profile() {
                             'Hi! Welcome to my website!\n'                          
                         ]}
                         cursorColor="#0ACF11"
-                        startDelay={2000}
+                        startDelay={3000}
                         // multiTextDelay={1500}
                         typeSpeed={35}
                 />
