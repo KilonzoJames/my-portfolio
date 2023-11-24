@@ -22,7 +22,7 @@ function Profile() {
                         textStyle={{ 
                             fontFamily: 'Outfit', 
                             fontWeight: 800, 
-                            fontSize: '1.5em', 
+                            // fontSize: '1.5em', 
                             textDecoration: 'none',
                             color: '#0ACF11', 
                         }}
@@ -40,7 +40,7 @@ function Profile() {
                     textStyle={{ 
                         fontFamily: 'Merienda', 
                         fontWeight: 800, 
-                        fontSize: '1.5em', 
+                        // fontSize: '1.5em', 
                         textDecoration: 'none',
                         color: '#0ACF11', 
                     }}
