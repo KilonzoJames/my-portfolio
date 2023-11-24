@@ -90,15 +90,55 @@ function Techstack() {
   
   
   
-    const techList = techstack.map((tech, index) => (
-        <li 
-        key={index} 
+  const techList = techstack.map((tech, index) => {
+    function getGridArea(index: number): string {
+      switch (index) {
+        case 0:
+          return '1 / 3/ 2 / 4'; // Assign '1 / 3/ 2 / 4' to the first li
+        case 1:
+          return '2 / 2 / 3 / 3';
+        case 2:
+          return '2/ 3 / 3/ 4';
+        case 3:
+          return '2 / 4 / 3 / 5';
+        case 4:
+          return '3 / 1 / 4 / 2';
+        case 5:
+          return '3 / 2 / 4 / 3'; // Center the number 5
+        case 6:
+          return '3 / 3 / 4 / 4';
+        case 7:
+          return '3 / 4 / 4/ 5';
+        case 8:
+          return '3 / 5 / 4/ 6';
+        case 9:
+          return '4 / 2 / 5 / 3';
+        case 10:
+          return '4 / 3/ 5 / 4';
+        case 11:
+          return '4/ 4/ 5/ 5';
+        case 12:
+          return '5 / 2/ 6/ 3';
+        case 13:
+          return '5 / 4/ 6 / 5';
+        default:
+          return ''; // Handle out-of-bounds index
+      }
+    }
+    
+    const gridArea = getGridArea(index); // Function to determine grid area based on index
+    return (
+      <li
+        key={index}
         className={`skill py-4 w-[8rem] md:w-[12rem] mr-4 cursor-pointer hover:bg-white hover:scale-90 duration-500  transition-all shadow-md ${tech.color} ${tech.className}`}
-        >
-          {tech.icon && <div>{tech.icon} </div>}
-      {tech.name}
-        </li>
-      ));
+        // style={{ gridArea }}
+      >
+        {tech.icon && <div>{tech.icon}</div>}
+        {tech.name}
+      </li>
+    );
+  });
+  
 
       
   return (
@@ -106,10 +146,11 @@ function Techstack() {
         <div className="flex justify-center">
           <h2>TECH STACK</h2>
         </div>
-        <div className='p-4'>
-          <ul 
-            className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 2xl:grid-cols-spacing 2xl:grid-cols-spacing-lg 2xl:grid-rows-spacing-lg gap-16">
-            {techList}
+        <div className="p-4">
+          <ul
+            className='grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 gap-16 '
+          >    
+                {techList}          
           </ul>
         </div>
 
