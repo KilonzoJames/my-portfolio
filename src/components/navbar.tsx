@@ -42,7 +42,7 @@ function Navs() {
     return (
       <>
         {navLinks.map((link, index) => (
-          <Link key={index} to={link.href} smooth={true} duration={500} className='mx-4'>
+          <Link key={index} to={link.href} smooth={true} duration={500} className='mx-4 p-2 shadow-md hover:border-dotted hover:rounded-lg hover:border-2 cursor-grab'>
               <FontAwesomeIcon icon={link.icon} className="me-1" beat size="1x" />
               {link.text}   
           </Link>
