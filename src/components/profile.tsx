@@ -6,7 +6,7 @@ import {motion} from 'framer-motion'
 function Profile() {
   return (
     <div className='flex flex-col'>
-        <div className='flex flex-col items-center sm:text-2xl lg:text-4xl gap-16 p-4'>
+        <div className='flex flex-col items-center text-2xl lg:text-4xl gap-16 p-4'>
             <div className='hover:scale-105 transition-all duration-500'>
                 <motion.img
                     initial={{ opacity: 0, scale: 0.6 }}
@@ -20,9 +20,9 @@ function Profile() {
             <div className='mb-4'>
                 <TypeWriterEffect
                         textStyle={{ 
-                            fontFamily: 'Outfit', 
+                            fontFamily: '', 
                             fontWeight: 800, 
-                            // fontSize: '1.5em', 
+                            // fontSize: '1em', 
                             textDecoration: 'none',
                             color: '#0ACF11', 
                         }}
@@ -38,9 +38,9 @@ function Profile() {
             <div className='mb-4'>
                 <TypeWriterEffect
                     textStyle={{ 
-                        fontFamily: 'Merienda', 
+                        fontFamily: '', 
                         fontWeight: 800, 
-                        // fontSize: '1.5em', 
+                        // fontSize: '1em', 
                         textDecoration: 'none',
                         color: '#0ACF11', 
                     }}
