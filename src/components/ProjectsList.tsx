@@ -68,7 +68,7 @@ const Project: React.FC<ProjectProps> = ({ projects }) => {
           className="project relative grid grid-rows-6 p-6
           m-4 rounded-[10px] text-white font-bold shadow-md hover:scale-105 duration-500" 
           >
-            <div className='flex items-center justify-center font-extrabold text-2xl uppercase underline'>{projects.name}</div>
+            <div className='Shojumaru flex items-center justify-center font-extrabold text-2xl uppercase underline'>{projects.name}</div>
             <div className='mx-auto flex items-center'>{projects.desc}</div>
             <div className="tech-stack  flex flex-wrap row-span-2 justify-around items-center ">
                 {projects.techs.map(item => <div key={item} className='text-sm md:text-xl rounded-md p-2'>{item}</div>)}

@@ -11,7 +11,7 @@
 	display: grid;
 	place-items: center;
 	padding: 5px;
-	border-radius: 20px;
+	border-radius: 40px;
 	color: var(--skill-color);
     transition: all 390ms ease-in-out;
 }
@@ -60,4 +60,10 @@
 
 .git:hover {
 	--skill-color: #500603;
+}
+.light .skill{
+    background: linear-gradient(135deg, rgba(253, 253, 253, 0.18) 0.01%, rgba(243, 243, 243, 0.00) 100%);
+}
+.light .contact{
+    background: linear-gradient(135deg, rgba(253, 253, 253, 0.18) 0.01%, rgba(243, 243, 243, 0.00) 100%);
 }

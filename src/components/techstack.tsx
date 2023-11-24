@@ -93,7 +93,7 @@ function Techstack() {
     const techList = techstack.map((tech, index) => (
         <li 
         key={index} 
-        className={`skill py-4 w-[8rem] md:w-[12rem] mr-4 cursor-pointer hover:bg-white hover:scale-90 duration-500  transition-all shadow-md ${tech.color} ${tech.className}`}
+        className={`skill py-4 w-[8rem] md:w-[12rem] mr-4 cursor-pointer hover:bg-white hover:rounded-full hover:scale-90 duration-500  transition-all shadow-md ${tech.color} ${tech.className}`}
         >
           {tech.icon && <div>{tech.icon} </div>}
       {tech.name}

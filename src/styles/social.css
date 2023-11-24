@@ -5,7 +5,9 @@
     /* box-shadow: -15px 10px 1px #fff;  */
     /* Create a circular shadow */
 }
-
+.light .socials{
+    background: linear-gradient(135deg, rgba(253, 253, 253, 0.18) 0.01%, rgba(243, 243, 243, 0.00) 100%);
+}
 .socials:before{
     content: "";
     position: absolute;

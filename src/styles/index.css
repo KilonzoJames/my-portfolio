@@ -6,22 +6,34 @@
 @import url('https://fonts.googleapis.com/css2?family=Shojumaru&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Merienda:wght@500;600&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Montserrat+Alternates&display=swap');
-.name{
-    font-family: "Shojumaru";
+
+.slick-slide > div{
+    margin: 0 10px;
 }
-body{
-    font-family: "Merienda";
-}
-.projects{
-    font-family: "Montserrat Alternates";
-}
-@layer base {
+@layer base {   
+    body{
+        font-family: "Merienda";
+    }
     h2 {
       @apply text-green-500 font-bold py-4 mb-4 text-3xl border-b-4 inline;
     }
   }
-.slick-slide > div{
-    margin: 0 10px;
-}
 
+@layer components {
+    .Shojumaru{
+        font-family: "Shojumaru";
+    }
+    
+    .Montserrat{
+        font-family: "Montserrat Alternates";
+    }
+    .custom-button {
+        background-color: #3490dc;
+        color: #fff;
+        padding: 0.5rem 1rem;
+        border-radius: 0.25rem;
+        cursor: pointer;
+    }
+}
+  
 
