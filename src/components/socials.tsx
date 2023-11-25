@@ -25,7 +25,9 @@ function Socials() {
         </div>
         <div className="container flex flex-wrap justify-center gap-32 mx-auto">
             {socialLinks.map((link, index) => (
-            <div key={index}>
+            <div 
+              key={index}
+              >
                 <a
                     key={index}
                     href={link.href}
