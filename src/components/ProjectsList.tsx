@@ -2,6 +2,7 @@ import React from 'react';
 import Expense_Tracker from "../assets/screenshots/screencapture-an-expense-tracker-onrender-2023-10-16-15_51_08.png";
 import foodapp from "../assets/screenshots/screencapture-food-ordering-app-lokp-onrender-2023-09-18-19_56_19.png"
 import bank from "../assets/screenshots/screencapture-localhost-3001-2023-09-18-21_20_22.png"
+import hunt from '../assets/screenshots/screencapture-the-hunt-onrender-2023-12-16-12_21_21.png'
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import Slider from "react-slick";
@@ -39,19 +40,20 @@ const projects = [
     {
       name: "Banking App",
       desc: "Manage your finances with our banking app.",
-      liveLink: "https://github.com/KilonzoJames/Bank-of-Flatiron",
-      githubLink: "https://github.com/yourusername/banking-app",
+      liveLink: "https://bank-of-flatiron-2uyz.onrender.com/",
+      githubLink: "https://github.com/KilonzoJames/Bank-of-Flatiron",
       techs: ["React", "JavaScript", "CSS", "HTML"],
       isOpenSource: true,
       backgroundImage: bank
     },
     {
-      name: "Demo Site",
-      desc: "A demonstration website.",
-      liveLink: "https://www.demo-site.org",
-      githubLink: "https://github.com/yourusername/demo-site",
-      techs: ["HTML", "CSS", "JavaScript"],
-      isOpenSource: true
+      name: "Snake Game",
+      desc: "A simple snake game.",
+      liveLink: "https://the-hunt.onrender.com/",
+      githubLink: "https://github.com/KilonzoJames/the-hunt",
+      techs: ["HTML", "CSS", "React"],
+      isOpenSource: true,
+      backgroundImage: hunt,
     }
   ];
 
