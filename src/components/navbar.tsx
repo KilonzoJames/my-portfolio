@@ -42,7 +42,6 @@ const navLinks = [
    
   ];
 function Navs() {
-  const isOpen = useSelector((state: RootState) => state.isOpen)
   const dispatch = useDispatch()
     return (
       <>
