@@ -1,9 +1,12 @@
-import React, { useState, useEffect } from 'react'
+import React, { useEffect } from 'react'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faHome, faUser, faPhone, faBriefcase, faBars, faXmark, faMoon, faSun } from '@fortawesome/free-solid-svg-icons';
 import { Link } from 'react-scroll';
 import { useTheme } from './ThemeContext';
 import {motion} from 'framer-motion'
+import { useSelector, useDispatch } from 'react-redux'
+import { invert } from '../redux/open'
+import type { RootState } from  '../redux/store'
 
 const navLinks = [
     {
@@ -39,10 +42,12 @@ const navLinks = [
    
   ];
 function Navs() {
+  const isOpen = useSelector((state: RootState) => state.isOpen)
+  const dispatch = useDispatch()
     return (
       <>
         {navLinks.map((link, index) => (
-          <Link key={index} to={link.href} smooth={true} duration={500} className='mx-4 p-2 shadow-md hover:border-dotted hover:rounded-lg hover:border-2 cursor-grab'>
+          <Link key={index} to={link.href} smooth={true} duration={500} className='mx-4 p-2 shadow-md hover:border-dotted hover:rounded-lg hover:border-2 cursor-grab' onClick={() => dispatch(invert())}>
               <FontAwesomeIcon icon={link.icon} className="me-1" beat size="1x" />
               {link.text}   
           </Link>
@@ -52,9 +57,10 @@ function Navs() {
   }
   
 function Navbar() {
-    const [isOpen, setOpen] = useState(false)
     const { isDarkMode, toggleTheme } = useTheme();
     const ThemeColour = isDarkMode ? 'dark' : 'light' ;
+    const isOpen = useSelector((state: RootState) => state.isOpen)
+    const dispatch = useDispatch()
 
     useEffect( () => 
     {document.body.className = ThemeColour; }, [ThemeColour])
@@ -66,9 +72,6 @@ function Navbar() {
     header?.classList?.add(isDarkMode ? 'dark' : 'light');
   }, [isDarkMode]);
     
-    function handleToggle() {
-        setOpen((prevOpen) => !prevOpen);
-    } 
     function ToggleThemeButton() {
       return (
         <div className="text-4xl hover:scale-150 transition-all duration-500 mr-8" onClick={toggleTheme}>
@@ -97,7 +100,7 @@ function Navbar() {
                 </motion.div>
             </div>
             <div className='md:hidden'>
-                <button onClick={handleToggle}>
+                <button onClick={() => dispatch(invert())}>
                 {isOpen ? (
                 <FontAwesomeIcon icon={faXmark} className="text-4xl"/>
                 ) : (
@@ -107,7 +110,7 @@ function Navbar() {
             </div>
         </nav>
         {isOpen && (
-            <div className='flex flex-col basis-full items-center gap-4 uppercase'>
+            <div className={`h-screen justify-center space-y-12 flex flex-col basis-full items-center uppercase `}>
                 <Navs/>
                 <ToggleThemeButton/>
             </div>
