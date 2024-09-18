@@ -16,6 +16,30 @@ function Techstack() {
   }, []);
 
   const techstack = [
+    {
+      name: "Bash",
+      className: "bash",
+      icon: <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/bash/bash-original.svg" alt="bash" width="70" height="70"/>,
+      color: "shadow-green-500",
+    },
+    { 
+      name: "PYTHON", 
+      className: "python", 
+      icon: <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/python/python-original.svg" alt="python" width="70" height="70"/>,
+      color: "shadow-yellow-500",
+    },
+    { 
+      name: "FLASK", 
+      className: "flask", 
+      icon: <img src="https://www.vectorlogo.zone/logos/pocoo_flask/pocoo_flask-icon.svg" alt="flask" width="70" height="70"/>,
+      color: "shadow-zinc-500",
+    },
+    {
+      name: "C",
+      className: "c",
+      icon: <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/c/c-original.svg" alt="c" width="70" height="70"/>,
+      color: "shadow-blue-700",
+    },
     { 
       name: "REACT", 
       className: "react", 
@@ -59,18 +83,6 @@ function Techstack() {
       color: "shadow-orange-500",
     },
     { 
-      name: "FLASK", 
-      className: "flask", 
-      icon: <img src="https://www.vectorlogo.zone/logos/pocoo_flask/pocoo_flask-icon.svg" alt="flask" width="70" height="70"/>,
-      color: "shadow-zinc-500",
-    },
-    { 
-      name: "PYTHON", 
-      className: "python", 
-      icon: <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/python/python-original.svg" alt="python" width="70" height="70"/>,
-      color: "shadow-yellow-500",
-    },
-    { 
       name: "PostgreSQL", 
       className: "postgresql",
       icon: <img src="https://www.vectorlogo.zone/logos/postgresql/postgresql-icon.svg" alt="postgresql" width="70" height="70"/>,
@@ -100,6 +112,7 @@ function Techstack() {
       icon: <img src="https://www.vectorlogo.zone/logos/git-scm/git-scm-icon.svg" alt="git" width="70" height="70"/>,
       color: "shadow-red-500",
     },
+    
   ];
   
   
@@ -110,32 +123,37 @@ function Techstack() {
       if (isWideScreen) {
         switch (index) {
           case 0:
-            return '1 / 4 / 2 / 5'; // Top of the triangle
+            return '1 / 4 / 2 / 5'; // Top of the trianglecase 1:
           case 1:
             return '2 / 3 / 3 / 4';
           case 2:
-            return '2 / 5 / 3 / 6';
+            return '2 / 4 / 3 / 5';
           case 3:
-            return '3 / 2 / 4 / 3';
+            return '2 / 5 / 3 / 6';
           case 4:
-            return '3 / 3 / 4 / 4';
+            return '3 / 2 / 4 / 3';
           case 5:
-            return '3 / 5 / 4 / 6'; // Center the number 5
+            return '3 / 3 / 4 / 4';
           case 6:
-            return '3 / 6 / 4 / 7';
+            return '3 / 4 / 4 / 5';
+            // Center the number 5
           case 7:
-            return '4 / 1 / 5 / 2';
+            return '3 / 5 / 4 / 6';
           case 8:
-            return '4 / 2 / 5 / 3';
+            return '3 / 6 / 4 / 7';
           case 9:
-            return '4 / 3 / 5 / 4';
+            return '4 / 1 / 5 / 2';
           case 10:
-            return '4 / 4 / 5 / 5';
+            return '4 / 2 / 5 / 3';
           case 11:
-            return '4 / 5 / 5 / 6';
+            return '4 / 3 / 5 / 4';
           case 12:
-            return '4 / 6 / 5 / 7';
+            return '4 / 4 / 5 / 5';
           case 13:
+            return '4 / 5 / 5 / 6';
+          case 14:
+            return '4 / 6 / 5 / 7';
+          case 15:
             return '4 / 7 / 5 / 8';
           default:
             return ''; // Handle out-of-bounds index
