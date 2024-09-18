@@ -1,5 +1,5 @@
 import React from 'react';
-import Expense_Tracker from "../assets/screenshots/screencapture-an-expense-tracker-onrender-2023-10-16-15_51_08.png";
+import e_learning_platform from "../assets/screenshots/screencapture-e-learning-platform-1-vercel-app-2024-09-18-20_33_14.png";
 import foodapp from "../assets/screenshots/screencapture-food-ordering-app-lokp-onrender-2023-09-18-19_56_19.png"
 import bank from "../assets/screenshots/screencapture-localhost-3001-2023-09-18-21_20_22.png"
 import hunt from '../assets/screenshots/screencapture-the-hunt-onrender-2023-12-16-12_21_21.png'
@@ -20,13 +20,13 @@ interface ProjectProps {
   }
 const projects = [
     {
-      name: "Expense Tracker",
-      desc: "Track your expenses and income.",
-      liveLink: "https://an-expense-tracker.onrender.com/#/",
-      githubLink: "https://github.com/KilonzoJames/Expense-Tracker",
+      name: "E-Learning Platform",
+      desc: "Learn a course online.",
+      liveLink: "https://e-learning-platform-1.vercel.app/",
+      githubLink: "https://github.com/KilonzoJames/E-Learning-Platform",
       techs: ["Flask", "Python", "Postgresql","CSS", "TailwindCss", "React",],
       isOpenSource: true,
-      backgroundImage: Expense_Tracker
+      backgroundImage: e_learning_platform
     },
     {
       name: "Food Ordering App",
