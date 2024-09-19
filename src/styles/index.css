@@ -1,43 +1,55 @@
 /* src/index.css */
-@import 'tailwindcss/base';
-@import 'tailwindcss/components';
-@import 'tailwindcss/utilities';
+@import "tailwindcss/base";
+@import "tailwindcss/components";
+@import "tailwindcss/utilities";
 
-@import url('https://fonts.googleapis.com/css2?family=Shojumaru&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Merienda:wght@500;600&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Montserrat+Alternates&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Qanelas+Soft:wght@300;400;500;700&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Shojumaru&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Merienda:wght@500;600&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat+Alternates&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Qanelas+Soft:wght@300;400;500;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700&display=swap");
 /* Good font: Mouse Memoirs */
 
-.slick-slide > div{
-    margin: 0 10px;
+.slick-slide > div {
+  margin: 0 10px;
 }
-@layer base {   
-    body{
-        font-family: "Merienda";
-        /* font-family: 'Qanelas Soft', 'Open Sans', sans-serif; */
-    }
-    h2 {
-      @apply text-green-500 font-bold py-4 mb-4 text-3xl border-b-4 border-luminous inline;
-    }
+@layer base {
+  body {
+    font-family: "Merienda";
+    /* font-family: 'Qanelas Soft', 'Open Sans', sans-serif; */
   }
+  h2 {
+    @apply text-green-500 font-bold py-4 mb-4 text-3xl border-b-4 border-luminous inline;
+  }
+}
 
 @layer components {
-    .Shojumaru{
-        font-family: "Shojumaru";
-    }
-    
-    .Montserrat{
-        font-family: "Montserrat Alternates";
-    }
-    .custom-button {
-        background-color: #3490dc;
-        color: #fff;
-        padding: 0.5rem 1rem;
-        border-radius: 0.25rem;
-        cursor: pointer;
-    }
-}
-  
+  .Shojumaru {
+    font-family: "Shojumaru";
+  }
 
+  .Montserrat {
+    font-family: "Montserrat Alternates";
+  }
+  .custom-button {
+    background-color: #3490dc;
+    color: #fff;
+    padding: 0.5rem 1rem;
+    border-radius: 0.25rem;
+    cursor: pointer;
+  }
+  @keyframes blink {
+    0% {
+      opacity: 0; /* On */
+    }
+    100% {
+      opacity: 1; /* On */
+    }
+  }
+  
+  .animate-blink {
+    animation: blink 650ms alternate infinite ease-in-out;
+  }
+  
+  
+}
