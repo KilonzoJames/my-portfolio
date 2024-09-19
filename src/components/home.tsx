@@ -15,7 +15,7 @@ useEffect(() => {
     // initial loading delay
     setTimeout(() => {
       setIsLoading(false);
-    }, 1500); // 2-second delay (adjust as needed)
+    }, 500); // 2-second delay (adjust as needed)
   }, []);
 
   return (
