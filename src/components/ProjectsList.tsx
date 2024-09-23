@@ -22,7 +22,7 @@ const projects = [
     {
       name: "E-Learning Platform",
       desc: "Learn a course online.",
-      liveLink: "https://e-learning-platform-1.vercel.app/",
+      liveLink: "https://e-learning-platform-1-e1qdylgcl-kilonzojames-projects.vercel.app/",
       githubLink: "https://github.com/KilonzoJames/E-Learning-Platform",
       techs: ["Flask", "Python", "Postgresql","CSS", "TailwindCss", "React",],
       isOpenSource: true,
