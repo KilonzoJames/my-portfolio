@@ -31,7 +31,7 @@ const projects = [
     {
       name: "Food Ordering App",
       desc: "Order your favorite food online.",
-      liveLink: "https://food-ordering-app-lokp.onrender.com/#/homepage",
+      liveLink: "https://food-ordering-app-lime.vercel.app/",
       githubLink: "https://github.com/KilonzoJames/Food-ordering-App",
       techs: ["React", "JavaScript", "CSS", "HTML"],
       isOpenSource: true,
