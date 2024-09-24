@@ -33,7 +33,7 @@ function Socials() {
                     href={link.href}
                     target="_blank"
                     rel="noreferrer"
-                    className="socials w-[10rem] h-[13rem] flex place-items-center cursor-pointer"
+                    className="socials w-[12rem] h-[12rem] rounded-full flex place-items-center cursor-pointer"
                 >
                     <img
                     src={link.imgSrc}
