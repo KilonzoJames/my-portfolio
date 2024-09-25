@@ -26,13 +26,13 @@ useEffect(() => {
             ( 
                 <div className="relative w-full mx-auto text-center transition-all duration-500" >
                     <Header/>
-                    <div id = "profile" className='lg:h-screen lg:flex place-items-end mt-16 md:mt-32 '>
+                    <div id = "profile" className='lg:flex place-items-end md:mt-32 '>
                         <Profile/>
                     </div>
                     <div id = "socials" className='lg:h-screen lg:flex flex-col place-content-center flex gap-16'>
                         <Socials/>
                     </div>
-                    <div id = "techstack" className='lg:h-screen lg:flex place-items-center'>
+                    <div id = "techstack" className='lg:flex place-items-center'>
                         <Techstack/>
                     </div>
                     <div id = "projects" className='lg:h-screen'>
