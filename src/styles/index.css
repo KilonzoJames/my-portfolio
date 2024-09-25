@@ -50,6 +50,12 @@
   .animate-blink {
     animation: blink 650ms alternate infinite ease-in-out;
   }
-  
+  .text-shadow-glow {
+    text-shadow: 0 0 10px rgba(255, 255, 255, 0.6), 0 0 20px rgba(255, 255, 255, 0.4);
+  }  
+  .hover-text:hover {
+    color: #ff1835;
+    transition: color 0.5s;
+  }
   
 }
