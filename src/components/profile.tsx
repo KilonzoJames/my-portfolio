@@ -12,7 +12,7 @@ function Profile() {
             initial={{ opacity: 0, scale: 0.6 }}
             animate={{ opacity: 1, scale: 1 }}
             transition={{ type: "tween", duration: 2, delay: 1.5 }}
-            src={image}
+            src="https://res.cloudinary.com/dzif8ltvg/image/upload/v1727444795/rmu6lxt2wvdca6gz14ms.jpg"
             alt="logo"
             className="image-animation object-cover h-72 w-72 "
           />
