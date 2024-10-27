@@ -1,20 +1,70 @@
-import { Route, Routes } from 'react-router-dom';
-import React from 'react';
-import Home from './components/home';
-import NotFound from './components/notfound';
-import './styles/App.css';
-import './styles/project.css'
-import './styles/header.css'
-import './styles/social.css'
-import './styles/techskill.css'
+import { Route, Routes, useLocation } from "react-router-dom";
+import React, { useState, useEffect } from "react";
+import NotFound from "./components/notfound";
+import Header from "./components/header";
+import Footer from "./components/footer";
+import Profile from "./components/profile";
+import Socials from "./components/socials";
+import Techstack from "./components/techstack";
+import Contacts from "./components/contacts";
+import ProjectsList from "./components/ProjectsList";
+import Courses from "./components/Courses";
+import Loader from "./components/Loader";
+import "./styles/App.css";
+import "./styles/project.css";
+import "./styles/header.css";
+import "./styles/social.css";
+import "./styles/techskill.css";
 
 function App() {
-  return (
-      <Routes>
-        <Route path="/" element={<Home/>} />
-        <Route path="*" element={<NotFound/>} />
-      </Routes>
-  );
+    const [isLoading, setIsLoading] = useState(true);
+    const location = useLocation();
+
+    useEffect(() => {
+        // initial loading delay
+        setTimeout(() => {
+            setIsLoading(false);
+        }, 250); // 2-second delay (adjust as needed)
+    }, []);
+
+    // Only show Header and Footer on valid paths
+    const isNotFoundPage = ![
+        "/",
+        "/socials",
+        "/techstack",
+        "/projects",
+        "/contacts",
+        "/course",
+    ].includes(location.pathname);
+
+    return (
+        <div className="app">
+            {isLoading ? (
+                <Loader />
+            ) : (
+                <>
+                    {!isNotFoundPage && <Header />}{" "}
+                    {/* Display Header unless NotFound page */}
+                    <div className="content">
+                        <Routes>
+                            <Route path="/" element={<Profile />} />
+                            <Route path="/socials" element={<Socials />} />
+                            <Route path="/techstack" element={<Techstack />} />
+                            <Route
+                                path="/projects"
+                                element={<ProjectsList />}
+                            />
+                            <Route path="/contacts" element={<Contacts />} />
+                            <Route path="/course" element={<Courses />} />
+                            <Route path="*" element={<NotFound />} />
+                        </Routes>
+                    </div>
+                    {!isNotFoundPage && <Footer />}
+                    {/* Display Footer unless NotFound page */}{" "}
+                </>
+            )}
+        </div>
+    );
 }
 
 export default App;
