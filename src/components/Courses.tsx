@@ -189,21 +189,23 @@ const Certs = [
 const CourseNames = [
     {
         name: "Google Cybersecurity",
-        color: "Certificate logo",
+        color: "bg-green-200", // Coral
     },
     {
         name: "Google IT Support",
-        color: "Certificate logo",
+        color: "bg-slate-100", // Slate Blue
     },
     {
         name: "Google IT Automation with Python",
-        color: "Certificate logo",
+        color: "bg-blue-200", // Medium Sea Green
     },
     {
         name: "Google AI Essentials",
-        color: "Certificate logo",
+        color: "bg-yellow-200", // Gold
     },
 ];
+
+
 
 function Courses() {
     return (
@@ -220,7 +222,7 @@ function Courses() {
                             {matchingCerts.map((matchingCert) => (
                                 (
                                     <div
-                                        className="card bg-white border-b-8 border-b-green-600 shadow-green-500 shadow-md rounded-lg max-w-md mx-auto w-[20rem] md:w-[20rem] hover:scale-90 duration-1000 bg-gradient-to-r from-primary/50 via-secondary/50 to-accent/50 bg-[length:var(--bg-size)_100%]"
+                                        className={`card ${course.color} border-b-8 border-b-green-600 shadow-green-500 shadow-md rounded-lg max-w-md mx-auto w-[20rem] md:w-[20rem] hover:scale-90 duration-1000 bg-gradient-to-r from-primary/50 via-secondary/50 to-accent/50 bg-[length:var(--bg-size)_100%]`}
                                         >
                                         <a
                                             href={matchingCert.coursera_link}
