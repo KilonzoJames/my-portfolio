@@ -31,7 +31,7 @@ function Techstack() {
     { 
       name: "FLASK", 
       className: "flask", 
-      icon: <img src="https://www.vectorlogo.zone/logos/pocoo_flask/pocoo_flask-icon.svg" alt="flask" width="70" height="70"/>,
+      icon: <img src="https://img.icons8.com/?size=100&id=MHcMYTljfKOr&format=png&color=ffffff" alt="flask" width="70" height="70"/>,
       color: "shadow-zinc-500",
     },
     {
@@ -180,7 +180,7 @@ function Techstack() {
 
       
   return (
-    <div className="flex flex-col mx-auto gap-32 p-4 h-screen justify-center">
+    <div className="flex flex-col mx-auto gap-32 p-4 justify-center">
         <div className="flex justify-center">
           <h2>TECH STACK</h2>
         </div>

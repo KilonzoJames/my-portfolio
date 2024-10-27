@@ -19,11 +19,11 @@ function Socials() {
         },
       ];
   return (
-    <div className='flex flex-col h-screen justify-center'>
+    <div className='flex flex-col justify-center items-center md:h-screen'>
         <div className='flex flex-col mx-auto'>
           <h2>FIND ME @ </h2>
         </div>
-        <div className="container flex flex-wrap justify-center gap-32 mx-auto mt-12">
+        <div className="container flex flex-wrap justify-center md:gap-32 mx-auto mt-12 ">
             {socialLinks.map((link, index) => (
             <div 
               key={index}

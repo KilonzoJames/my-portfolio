@@ -6,7 +6,7 @@ import { motion } from "framer-motion";
 function Profile() {
   return (
     <div className="flex flex-col">
-      <div className="flex flex-col justify-center items-center text-2xl lg:text-4xl gap-16 p-4 h-screen">
+      <div className="flex flex-col justify-center items-center text-2xl lg:text-4xl gap-16 p-4">
         <div className="hover:scale-105 transition-all duration-500">
           <motion.img
             initial={{ opacity: 0, scale: 0.6 }}
@@ -55,7 +55,7 @@ function Profile() {
         </div>
       </div>
 
-      <div className="flex flex-col flex-wrap w-5/6 justify-center items-center rounded-2xl mx-auto gap-20 py-10 h-screen">
+      <div className="flex flex-col flex-wrap w-5/6 justify-center items-center rounded-2xl mx-auto gap-20 py-10">
         <h2 className="text-center mx-auto m-2">Profile</h2>
         <h2 className="font-extrabold text-center  m-2 ">
           Fullstack Web Developer

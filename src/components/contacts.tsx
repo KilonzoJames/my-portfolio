@@ -53,7 +53,7 @@ const divs = [
 ];
 function Contacts() {
     return (
-        <div className="flex flex-col gap-12 h-screen justify-center items-center">
+        <div className="flex flex-col gap-12 justify-center items-center">
             <div className="mb-8">
                 <h2 className="py-4">GET IN TOUCH</h2>
             </div>

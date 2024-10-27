@@ -146,7 +146,7 @@ const ProjectsList = () => {
         ],
     };
     return (
-        <div className="h-screen ">
+        <div>
             <div className="w-4/5 mx-auto md:p-20">
                 <div className="flex justify-center items-center md:mt-12">
                     <h2>CURRENT PROJECTS</h2>
