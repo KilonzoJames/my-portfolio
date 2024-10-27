@@ -11,51 +11,72 @@
 /* Good font: Mouse Memoirs */
 
 .slick-slide > div {
-  margin: 0 10px;
+    margin: 0 10px;
 }
 @layer base {
-  body {
-    font-family: "Merienda";
-    /* font-family: 'Qanelas Soft', 'Open Sans', sans-serif; */
-  }
-  h2 {
-    @apply text-green-500 font-bold py-4 mb-4 text-3xl border-b-4 border-luminous inline;
-  }
+    body {
+        font-family: "Merienda";
+        /* font-family: 'Qanelas Soft', 'Open Sans', sans-serif; */
+    }
+    h2 {
+        @apply text-green-500 font-bold py-4 mb-4 text-3xl border-b-4 border-luminous inline;
+    }
 }
 
 @layer components {
-  .Shojumaru {
-    font-family: "Shojumaru";
-  }
+    .Shojumaru {
+        font-family: "Shojumaru";
+    }
 
-  .Montserrat {
-    font-family: "Montserrat Alternates";
-  }
-  .custom-button {
-    background-color: #3490dc;
-    color: #fff;
-    padding: 0.5rem 1rem;
-    border-radius: 0.25rem;
-    cursor: pointer;
-  }
-  @keyframes blink {
-    0% {
-      opacity: 0; /* On */
+    .Montserrat {
+        font-family: "Montserrat Alternates";
     }
-    100% {
-      opacity: 1; /* On */
+    .custom-button {
+        background-color: #3490dc;
+        color: #fff;
+        padding: 0.5rem 1rem;
+        border-radius: 0.25rem;
+        cursor: pointer;
     }
-  }
-  
-  .animate-blink {
-    animation: blink 650ms alternate infinite ease-in-out;
-  }
-  .text-shadow-glow {
-    text-shadow: 0 0 10px rgba(255, 255, 255, 0.6), 0 0 20px rgba(255, 255, 255, 0.4);
-  }  
-  .hover-text:hover {
-    color: #ff1835;
-    transition: color 0.5s;
-  }
-  
+    @keyframes blink {
+        0% {
+            opacity: 0; /* On */
+        }
+        100% {
+            opacity: 1; /* On */
+        }
+    }
+
+    .animate-blink {
+        animation: blink 650ms alternate infinite ease-in-out;
+    }
+    .text-shadow-glow {
+        text-shadow: 0 0 10px rgba(255, 255, 255, 0.6),
+            0 0 20px rgba(255, 255, 255, 0.4);
+    }
+    .hover-text:hover {
+        color: #ff1835;
+        transition: color 0.5s;
+    }
+    @keyframes animated-gradient {
+        0% {
+            background-position: 100% 0;
+        }
+        100% {
+            background-position: 0 0;
+        }
+    }
+
+    .title-gradient {
+        display: inline-block;
+        background: linear-gradient(to left, #0000ff, #00ff00); /* Adjust as needed */
+        background-size: 200% 100%;
+        background-position: 100% 0; /* Start from the right */
+        color: transparent;
+        background-clip: text;
+        -webkit-background-clip: text;
+        animation: animated-gradient 5.5s ease-in-out infinite; /* Faster animation */
+        overflow: hidden;
+
+    }
 }
