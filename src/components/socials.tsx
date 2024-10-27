@@ -8,7 +8,7 @@ function Socials() {
           alt: 'GITHUB',
         },
         {
-          href: 'https://www.x.com/ki_lonzo',
+          href: 'https://x.com/se_venly',
           imgSrc: 'https://cdn2.iconfinder.com/data/icons/threads-by-instagram/24/x-logo-twitter-new-brand-contained-outline-512.png',
           alt: 'TWITTER',
         },
@@ -19,11 +19,11 @@ function Socials() {
         },
       ];
   return (
-    <>
+    <div className='flex flex-col h-screen justify-center'>
         <div className='flex flex-col mx-auto'>
-          <h2 className='my-10'>FIND ME @ THESE SOCIAL SITES:</h2>
+          <h2>FIND ME @ </h2>
         </div>
-        <div className="container flex flex-wrap justify-center gap-32 mx-auto">
+        <div className="container flex flex-wrap justify-center gap-32 mx-auto mt-12">
             {socialLinks.map((link, index) => (
             <div 
               key={index}
@@ -38,14 +38,14 @@ function Socials() {
                     <img
                     src={link.imgSrc}
                     alt={link.alt}
-                    className="mx-auto w-24 h-24"
+                    className="mx-auto w-32 h-32"
                     />
                 </a>
                 <p className="m-8 text-green-600 text-2xl font-bold">{link.alt}</p>
             </div>
             ))}
         </div>
-    </>
+    </div>
 );
 }
 

@@ -180,7 +180,7 @@ function Techstack() {
 
       
   return (
-    <div className="flex flex-col mx-auto gap-32 p-4">
+    <div className="flex flex-col mx-auto gap-32 p-4 h-screen justify-center">
         <div className="flex justify-center">
           <h2>TECH STACK</h2>
         </div>
