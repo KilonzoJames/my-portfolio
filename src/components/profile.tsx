@@ -11,7 +11,7 @@ function Profile() {
           <motion.img
             initial={{ opacity: 0, scale: 0.6 }}
             animate={{ opacity: 1, scale: 1 }}
-            transition={{ type: "tween", duration: 2, delay: 1.5 }}
+            transition={{ type: "tween", duration: 2, delay: 1 }}
             src="https://res.cloudinary.com/dzif8ltvg/image/upload/v1727444795/rmu6lxt2wvdca6gz14ms.jpg"
             alt="logo"
             className="image-animation object-cover h-72 w-72 "
@@ -64,7 +64,7 @@ function Profile() {
           className="text-gradient text-mediumfont"
           initial={{ opacity: 0, scale: 0.06 }}
           animate={{ opacity: 1, scale: 1 }}
-          transition={{ type: "tween", duration: 2, delay: 4 }}
+          transition={{ type: "tween", duration: 2, delay: 2 }}
         >
           I am a cybersecurity analyst, an advocate for Linux, and full-stack
           software developer with proficiency in Python, API development, and

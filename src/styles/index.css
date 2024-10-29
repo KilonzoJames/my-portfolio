@@ -19,7 +19,7 @@
         /* font-family: 'Qanelas Soft', 'Open Sans', sans-serif; */
     }
     h2 {
-        @apply text-green-500 font-bold py-4 mb-4 text-3xl border-b-4 border-luminous inline;
+        @apply text-green-500 font-bold py-4 mb-4 text-3xl border-b-4 border-luminous;
     }
 }
 
