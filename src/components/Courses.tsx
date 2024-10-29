@@ -215,7 +215,7 @@ function Courses() {
 
                 return (
                     <div>
-                        <div className="flex justify-center items-center">
+                        <div className="flex justify-center items-center mx-4">
                             <h2 className="text-slate-400">{course.name}</h2>
                         </div>
                         <div key={course.name} className="course-card p-8 grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 2xl:grid-cols-5 gap-12">
