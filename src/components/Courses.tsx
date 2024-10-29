@@ -222,7 +222,7 @@ function Courses() {
                             {matchingCerts.map((matchingCert) => (
                                 (
                                     <div
-                                        className={`card ${course.color} border-b-8 border-b-green-600 shadow-green-500 shadow-md rounded-lg max-w-md mx-auto w-[20rem] md:w-[20rem] hover:scale-90 duration-1000 bg-gradient-to-r from-primary/50 via-secondary/50 to-accent/50 bg-[length:var(--bg-size)_100%]`}
+                                        className={`card ${course.color} border-b-8 border-b-green-600 shadow-green-500 shadow-md rounded-lg max-w-md mx-auto w-[16rem] sm:w-[20rem] hover:scale-90 duration-1000`}
                                         >
                                         <a
                                             href={matchingCert.coursera_link}
