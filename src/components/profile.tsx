@@ -61,7 +61,7 @@ function Profile() {
           Fullstack Web Developer
         </h2>
         <motion.div
-          className="text-gradient text-xl"
+          className="text-gradient text-mediumfont"
           initial={{ opacity: 0, scale: 0.06 }}
           animate={{ opacity: 1, scale: 1 }}
           transition={{ type: "tween", duration: 2, delay: 4 }}

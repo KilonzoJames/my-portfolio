@@ -52,7 +52,7 @@ function Footer() {
 
   return (
     <div>
-      <footer className="relative lg:text-2xl bg-zinc-950 text-luminous flex justify-center items-center p-12 lg:p-16 mt-8">
+      <footer className="relative text-mediumfont lg:text-2xl bg-zinc-950 text-luminous flex justify-center items-center p-12 lg:p-16 mt-8">
         &copy;{new Date().getFullYear()} - Template designed & built by
         <div className="h-9 w-24 overflow-hidden ml-2">
           <div ref={scope}>
