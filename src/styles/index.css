@@ -69,7 +69,11 @@
 
     .title-gradient {
         display: inline-block;
-        background: linear-gradient(to left, #0000ff, #00ff00); /* Adjust as needed */
+        background: linear-gradient(
+            to left,
+            #0000ff,
+            #00ff00
+        ); /* Adjust as needed */
         background-size: 200% 100%;
         background-position: 100% 0; /* Start from the right */
         color: transparent;
@@ -77,6 +81,5 @@
         -webkit-background-clip: text;
         animation: animated-gradient 5.5s ease-in-out infinite; /* Faster animation */
         overflow: hidden;
-
     }
 }
