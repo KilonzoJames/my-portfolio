@@ -82,4 +82,7 @@
         animation: animated-gradient 5.5s ease-in-out infinite; /* Faster animation */
         overflow: hidden;
     }
+    .Agustina{
+        font-family: Agustina Regular;
+    }
 }
