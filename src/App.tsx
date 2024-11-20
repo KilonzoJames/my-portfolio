@@ -1,4 +1,4 @@
-import { Route, Routes, useLocation } from "react-router-dom";
+import { Routes, Route, useLocation } from "react-router-dom";
 import React, { useState, useEffect } from "react";
 import NotFound from "./components/notfound";
 import Header from "./components/header";
@@ -28,7 +28,7 @@ function App() {
     }, []);
 
     // Only show Header and Footer on valid paths
-    const isNotFoundPage = ![
+    const HomePage = [
         "/",
         "/socials",
         "/techstack",
@@ -42,26 +42,43 @@ function App() {
             {isLoading ? (
                 <Loader />
             ) : (
-                <>
-                    {!isNotFoundPage && <Header />}{" "}
-                    {/* Display Header unless NotFound page */}
-                    <div className="content">
-                        <Routes>
-                            <Route path="/" element={<Profile />} />
-                            <Route path="/socials" element={<Socials />} />
-                            <Route path="/techstack" element={<Techstack />} />
-                            <Route
-                                path="/projects"
-                                element={<ProjectsList />}
-                            />
-                            <Route path="/contacts" element={<Contacts />} />
-                            <Route path="/course" element={<Courses />} />
-                            <Route path="*" element={<NotFound />} />
-                        </Routes>
-                    </div>
-                    {!isNotFoundPage && <Footer />}
-                    {/* Display Footer unless NotFound page */}{" "}
-                </>
+                <Routes>
+                    {/* Routes that include Header and Footer */}
+                    <Route
+                        path="/*"
+                        element={
+                            <div className="app">
+                                {HomePage && <Header />}
+                                <Routes>
+                                    <Route path="/" element={<Profile />} />
+                                    <Route
+                                        path="/socials"
+                                        element={<Socials />}
+                                    />
+                                    <Route
+                                        path="/techstack"
+                                        element={<Techstack />}
+                                    />
+                                    <Route
+                                        path="/projects"
+                                        element={<ProjectsList />}
+                                    />
+                                    <Route
+                                        path="/contacts"
+                                        element={<Contacts />}
+                                    />
+                                    <Route
+                                        path="/course"
+                                        element={<Courses />}
+                                    />
+                                </Routes>
+                                {HomePage && <Footer />}{" "}
+                            </div>
+                        }
+                    />
+                    {/* NotFound Route outside Header/Footer */}
+                    <Route path="*" element={<NotFound />} />
+                </Routes>
             )}
         </div>
     );

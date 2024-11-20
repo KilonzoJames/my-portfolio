@@ -173,7 +173,6 @@ const Certs = [
         coursera_link:
             "https://www.coursera.org/account/accomplishments/verify/YPZ1A5CYXFVE",
         coursename: "Google Cybersecurity",
-
     },
     {
         title: "Technical Support Fundamentals",
@@ -183,6 +182,14 @@ const Certs = [
         coursera_link:
             "https://www.coursera.org/account/accomplishments/verify/Z7S7L7TTGCGB",
         coursename: "Google IT Support",
+    },
+    {
+        title: "Jr Penetration Tester",
+        description: "TryHackMe",
+        img_link:
+            "https://cdn.icon-icons.com/icons2/3915/PNG/512/tryhackme_logo_icon_249349.png",
+        coursera_link: "https://tryhackme-certificates.s3-eu-west-1.amazonaws.com/THM-OPP6EMW92U.pdf",
+        coursename: "Jr Penetration Tester",
     },
 ];
 
@@ -203,59 +210,64 @@ const CourseNames = [
         name: "Google AI Essentials",
         color: "bg-yellow-200", // Gold
     },
+    {
+        name: "Jr Penetration Tester",
+        color: "bg-red-200", // Gold
+    },
 ];
-
-
 
 function Courses() {
     return (
         <div className="courses-container">
             {CourseNames.map((course) => {
-                const matchingCerts = Certs.filter((cert) => cert.coursename === course.name);
+                const matchingCerts = Certs.filter(
+                    (cert) => cert.coursename === course.name
+                );
 
                 return (
                     <div>
                         <div className="flex justify-center items-center mx-4">
                             <h2 className="text-slate-400">{course.name}</h2>
                         </div>
-                        <div key={course.name} className="course-card p-8 grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 2xl:grid-cols-5 gap-12">
+                        <div
+                            key={course.name}
+                            className="course-card p-8 grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 2xl:grid-cols-5 gap-12">
                             {matchingCerts.map((matchingCert) => (
-                                (
-                                    <div
-                                        className={`card ${course.color} border-b-8 border-b-green-600 shadow-green-500 shadow-md rounded-[2.3rem] max-w-md mx-auto w-[16rem] sm:w-[20rem] hover:scale-90 duration-1000`}
-                                        >
-                                        <a
-                                            href={matchingCert.coursera_link}
-                                            target="_blank"
-                                            rel="noopener noreferrer">
-                                            <div>
-                                                <div className="relative group w-full h-1/3">
-                                                    <img
-                                                        className="aspect-[3/2] object-contain"
-                                                        src={matchingCert.img_link}
-                                                        alt="Google"
-                                                    />
-                                                    <div className="absolute inset-0 bg-gray-800 bg-opacity-0 group-hover:bg-opacity-50 transition duration-300 flex items-center justify-center">
-                                                        <h3 className="text-white text-xl font-semibold opacity-0 group-hover:opacity-100 transition duration-300">
-                                                         Coursera Certificate
-                                                        </h3>
-                                                    </div>
-                                                </div>
-
-                                                <div className="flex flex-col items-center justify-between p-4">
-                                                        <h2 className="title-gradient font-bold text-xl animate-text-gradient border-blue-600">{matchingCert.title}</h2>
-                                                        <h3 className="text-gray-500 font-bold text-xl">
-                                                            {matchingCert.description}
-                                                        </h3>
+                                <div
+                                    className={`card ${course.color} border-b-8 border-b-green-600 shadow-green-500 shadow-md rounded-[2.3rem] max-w-md mx-auto w-[16rem] sm:w-[20rem] hover:scale-90 duration-1000`}>
+                                    <a
+                                        href={matchingCert.coursera_link}
+                                        target="_blank"
+                                        rel="noopener noreferrer">
+                                        <div>
+                                            <div className="image relative group w-full h-1/3">
+                                                <img
+                                                    className="aspect-[3/2] object-contain"
+                                                    src={matchingCert.img_link}
+                                                    alt="Google"
+                                                />
+                                                <div className="alt absolute inset-0 bg-gray-800 bg-opacity-0 group-hover:bg-opacity-50 transition duration-300 flex items-center justify-center">
+                                                    <h3 className="text-white text-xl font-semibold opacity-0 group-hover:opacity-100 transition duration-300">
+                                                        Coursera Certificate
+                                                    </h3>
                                                 </div>
                                             </div>
-                                        </a>
-                                    </div>
-                                )
-                            ))
-                            }
+
+                                            <div className="flex flex-col items-center justify-between p-4">
+                                                <h2 className="title-gradient font-bold text-xl animate-text-gradient border-blue-600">
+                                                    {matchingCert.title}
+                                                </h2>
+                                                <h3 className="text-gray-500 font-bold text-xl">
+                                                    {matchingCert.description}
+                                                </h3>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+                            ))}
                         </div>
-                    </div>);
+                    </div>
+                );
             })}
         </div>
     );
