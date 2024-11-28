@@ -8,6 +8,11 @@ function Socials() {
           alt: 'GITHUB',
         },
         {
+          href: 'https://tryhackme.com/r/p/Sevenly',
+          imgSrc: 'https://cdn.icon-icons.com/icons2/3915/PNG/512/tryhackme_logo_icon_249349.png',
+          alt: 'TryHackMe',
+        },
+        {
           href: 'https://x.com/se_venly',
           imgSrc: 'https://cdn2.iconfinder.com/data/icons/threads-by-instagram/24/x-logo-twitter-new-brand-contained-outline-512.png',
           alt: 'TWITTER',
@@ -16,7 +21,7 @@ function Socials() {
           href: 'https://www.linkedin.com/in/james-kilonzo-392249104',
           imgSrc: 'https://cdn2.iconfinder.com/data/icons/social-media-grunge-1/28/social-media-line-drawn-grunge-linkedin-128.png',
           alt: 'LINKEDIN',
-        },
+        },       
       ];
   return (
     <div className='flex flex-col justify-center items-center md:h-screen'>
