@@ -9,7 +9,7 @@ function Socials() {
         },
         {
           href: 'https://tryhackme.com/r/p/Sevenly',
-          imgSrc: 'https://cdn.icon-icons.com/icons2/3915/PNG/512/tryhackme_logo_icon_249349.png',
+          imgSrc: 'https://tryhackme-images.s3.amazonaws.com/user-avatars/83d369e0ec4156eef0b33faeed69346d.png',
           alt: 'TryHackMe',
         },
         {

@@ -187,9 +187,33 @@ const Certs = [
         title: "Jr Penetration Tester",
         description: "TryHackMe",
         img_link:
-            "https://cdn.icon-icons.com/icons2/3915/PNG/512/tryhackme_logo_icon_249349.png",
+            "https://tryhackme-images.s3.amazonaws.com/user-avatars/83d369e0ec4156eef0b33faeed69346d.png",
         coursera_link: "https://tryhackme-certificates.s3-eu-west-1.amazonaws.com/THM-OPP6EMW92U.pdf",
-        coursename: "Jr Penetration Tester",
+        coursename: "TryHackMe",
+    },
+    {
+        title: "Pre Security",
+        description: "TryHackMe",
+        img_link:
+            "https://tryhackme-images.s3.amazonaws.com/user-avatars/83d369e0ec4156eef0b33faeed69346d.png",
+        coursera_link: "https://tryhackme-certificates.s3-eu-west-1.amazonaws.com/THM-RBFYADSJ6Z.pdf",
+        coursename: "TryHackMe",
+    },
+    {
+        title: "Web Fundamentals",
+        description: "TryHackMe",
+        img_link:
+            "https://tryhackme-images.s3.amazonaws.com/user-avatars/83d369e0ec4156eef0b33faeed69346d.png",
+        coursera_link: "https://tryhackme-certificates.s3-eu-west-1.amazonaws.com/THM-NTLU9LCYS1.pdf",
+        coursename: "TryHackMe",
+    },
+    {
+        title: "CompTIA Pentest+",
+        description: "TryHackMe",
+        img_link:
+            "https://tryhackme-images.s3.amazonaws.com/user-avatars/83d369e0ec4156eef0b33faeed69346d.png",
+        coursera_link: "https://tryhackme-certificates.s3-eu-west-1.amazonaws.com/THM-8PZLGBPRJO.pdf",
+        coursename: "TryHackMe",
     },
 ];
 
@@ -211,7 +235,7 @@ const CourseNames = [
         color: "bg-yellow-200", // Gold
     },
     {
-        name: "Jr Penetration Tester",
+        name: "TryHackMe",
         color: "bg-red-200", // Gold
     },
 ];
