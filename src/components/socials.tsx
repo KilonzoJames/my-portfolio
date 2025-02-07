@@ -1,4 +1,5 @@
 import React from 'react'
+import tryhackme_icon from "../assets/tryhackme_logo_icon_249349.png"
 
 function Socials() {
     const socialLinks = [
@@ -9,7 +10,7 @@ function Socials() {
         },
         {
           href: 'https://tryhackme.com/r/p/Sevenly',
-          imgSrc: 'https://tryhackme-images.s3.amazonaws.com/user-avatars/83d369e0ec4156eef0b33faeed69346d.png',
+          imgSrc: tryhackme_icon,
           alt: 'TryHackMe',
         },
         {
