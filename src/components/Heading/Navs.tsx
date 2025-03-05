@@ -54,7 +54,7 @@ function Navs() {
             {navLinks.map((link, index) => (
                 <button
                     key={index}
-                    className={`${isOpen ? "flex" : "mx-4 p-3 shadow-md hover:rounded-lg hover:border-2 cursor-grab transition-all duration-100"}`}
+                    className={`${isOpen ? "flex" : "mx-4 p-2 shadow-md hover:rounded-lg hover:border-2 cursor-grab transition-all duration-100"}`}
                     onClick={() => {
                         if (isOpen) {
                             dispatch(invert());
