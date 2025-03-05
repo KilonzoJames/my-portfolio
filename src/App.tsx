@@ -1,7 +1,7 @@
 import { Routes, Route, useLocation } from "react-router-dom";
 import React, { useState, useEffect } from "react";
 import NotFound from "./components/notfound";
-import Header from "./components/header";
+import Header from "./components/Heading/Header";
 import Footer from "./components/footer";
 import Profile from "./components/profile";
 import Socials from "./components/socials";

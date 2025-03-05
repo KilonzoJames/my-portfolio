@@ -1,4 +1,5 @@
 import React from "react";
+import { useTranslation } from "react-i18next";
 
 const divs = [
     {
@@ -52,16 +53,15 @@ const divs = [
     },
 ];
 function Contacts() {
+    const { t } = useTranslation();
+
     return (
         <div className="flex flex-col gap-12 justify-center items-center">
             <div className="mb-8">
                 <h2 className="py-4">GET IN TOUCH</h2>
             </div>
             <div className="text-gradient text-mediumfont mx-[4vw] p-[2vw]">
-                I'm always open to connecting with others. Whether you have
-                questions, suggestions, or just want to say hello, feel free to
-                reach out! I'm also open to collaborating on projects, so if you
-                have an idea in mind, don't hesitate to let me know.
+                {t("contacts")}
             </div>
 
             <div className="grid lg:grid-cols-3 place-items-center gap-16">
