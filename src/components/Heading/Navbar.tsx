@@ -35,7 +35,7 @@ function Navbar() {
             </nav>
             {isOpen && (
                 <div
-                    className={`h-screen justify-center items-center space-y-12 flex flex-col basis-full uppercase `}>
+                    className={`h-screen text-xl justify-center items-center space-y-12 flex flex-col basis-full uppercase `}>
                     <Navs />
                     <ToggleLanguage />
                     <ToggleThemeButton />

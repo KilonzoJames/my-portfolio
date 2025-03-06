@@ -15,6 +15,14 @@ const resources = {
             },
             contacts:
                 "I'm always open to connecting with others. Whether you have questions, suggestions, or just want to say hello, feel free to reach out! I'm also open to collaborating on projects, so if you have an idea in mind, don't hesitate to let me know.",
+            navigation: {
+                link1: "Home",
+                link2: "Projects",
+                link3: "Certifications",
+                link4: "Techstack",
+                link5: "Socials",
+                link6: "Contacts",
+            },
         },
     },
     es: {
@@ -29,6 +37,14 @@ const resources = {
             },
             contacts:
                 "Siempre estoy abierta a conectarme con otras personas. Si tienes preguntas, sugerencias o simplemente quieres saludar, ¡no dudes en contactarme! También estoy abierta a colaborar en proyectos, así que si tienes una idea en mente, no dudes en hacérmela saber.",
+            navigation: {
+                link1: "Hogar",
+                link2: "Proyectos",
+                link3: "Certificaciones",
+                link4: "Pila tecnológica",
+                link5: "Sociales",
+                link6: "Contactos",
+            },
         },
     },
     sw: {
@@ -43,6 +59,14 @@ const resources = {
             },
             contacts:
                 "Mimi niko wazi kila wakati kuungana na wengine. Ikiwa una maswali, mapendekezo, au unataka tu kusema hujambo, jisikie huru kuwasiliana nawe! Pia niko tayari kushirikiana katika miradi, kwa hivyo ikiwa una wazo fulani, usisite kunijulisha.",
+            navigation: {
+                link1: "Nyumbani",
+                link2: "Miradi",
+                link3: "Vyeti",
+                link4: "Rundo la kiteknolojia",
+                link5: "Kijamii",
+                link6: "Anwani",
+            },
         },
     },
 };
