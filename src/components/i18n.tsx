@@ -14,7 +14,7 @@ const resources = {
                 line3: " These projects are not just about code; they're about creating something meaningful, pushing boundaries, and leaving a mark in the digital world. It's a journey full of difficulties, but every difficulty presents a chance for development and education. 🌟 So, here's to the exciting road ahead, where every project is a new story waiting to be written! 💻",
             },
             contacts:
-                "I'm always open to connecting with others. Whether you have questions, suggestions, or just want to say hello, feel free to reach out! I'm also open to collaborating on projects, so if you have an idea in mind, don't hesitate to let me know.",
+                "I value connections and conversations that foster learning and new perspectives. Feel free to reach out with questions, suggestions, or just to connect. I'm also open to project collaborations, so if you have an idea in mind, don’t hesitate to share it. Beyond my tech interests—cybersecurity, software development, and cryptocurrency—I’m learning Spanish and pushing my limits with endurance running.",
             navigation: {
                 link1: "Home",
                 link2: "Projects",
@@ -37,7 +37,7 @@ const resources = {
                 line3: "Estos proyectos no se tratan solo de código; se trata de crear algo significativo, superar límites y dejar una marca en el mundo digital. Es un viaje lleno de dificultades, pero cada dificultad presenta una oportunidad para el desarrollo y la educación. 🌟 Así que, ¡a por el emocionante camino que tenemos por delante, donde cada proyecto es una nueva historia esperando ser escrita!",
             },
             contacts:
-                "Siempre estoy abierta a conectarme con otras personas. Si tienes preguntas, sugerencias o simplemente quieres saludar, ¡no dudes en contactarme! También estoy abierta a colaborar en proyectos, así que si tienes una idea en mente, no dudes en hacérmela saber.",
+                "Valoro las conexiones y las conversaciones que fomentan el aprendizaje y las nuevas perspectivas. No dudes en contactarme si tienes preguntas, sugerencias o simplemente para conectarte. También estoy abierto a colaborar en proyectos, así que si tienes una idea en mente, no dudes en compartirla. Más allá de mis intereses tecnológicos (ciberseguridad, desarrollo de software y criptomonedas), estoy aprendiendo español y superando mis límites con las carreras de resistencia.",
             navigation: {
                 link1: "Hogar",
                 link2: "Proyectos",
@@ -60,7 +60,7 @@ const resources = {
                 line3: " Miradi hii sio tu kuhusu kanuni; zinahusu kuunda kitu cha maana, kusukuma mipaka, na kuacha alama katika ulimwengu wa kidijitali. Ni safari iliyojaa matatizo, lakini kila ugumu unatoa nafasi kwa maendeleo na elimu. 🌟 Kwa hivyo, hapa kuna barabara ya kusisimua inayokuja, ambapo kila mradi ni hadithi mpya inayosubiri kuandikwa! 💻",
             },
             contacts:
-                "Mimi niko wazi kila wakati kuungana na wengine. Ikiwa una maswali, mapendekezo, au unataka tu kusema hujambo, jisikie huru kuwasiliana nawe! Pia niko tayari kushirikiana katika miradi, kwa hivyo ikiwa una wazo fulani, usisite kunijulisha.",
+                "Ninathamini miunganisho na mazungumzo ambayo yanakuza kujifunza na mitazamo mipya. Jisikie huru kuwasiliana na maswali, mapendekezo, au kuunganisha tu. Pia niko tayari kwa ushirikiano wa mradi, kwa hivyo ikiwa una wazo akilini, usisite kulishiriki. Zaidi ya maslahi yangu ya teknolojia—usalama mtandaoni, ukuzaji wa programu na cryptocurrency—ninajifunza Kihispania na kusukuma mipaka yangu kwa uvumilivu unaoendelea.",
             navigation: {
                 link1: "Nyumbani",
                 link2: "Miradi",
