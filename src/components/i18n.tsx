@@ -23,6 +23,7 @@ const resources = {
                 link5: "Socials",
                 link6: "Contacts",
             },
+            footer: "Template designed & built by",
         },
     },
     es: {
@@ -45,6 +46,7 @@ const resources = {
                 link5: "Sociales",
                 link6: "Contactos",
             },
+            footer: "Plantilla diseñada y construida por",
         },
     },
     sw: {
@@ -67,6 +69,7 @@ const resources = {
                 link5: "Kijamii",
                 link6: "Anwani",
             },
+            footer: "Kiolezo kilichoundwa na kujengwa na",
         },
     },
 };
