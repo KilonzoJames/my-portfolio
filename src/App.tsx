@@ -5,7 +5,7 @@ import Header from "./components/Heading/Header";
 import Footer from "./components/footer";
 import Profile from "./components/profile";
 import Socials from "./components/socials";
-import Techstack from "./components/techstack";
+import Techstack from "./components/Tech/Techstack";
 import Contacts from "./components/contacts";
 import ProjectsList from "./components/ProjectsList";
 import Courses from "./components/Courses";
