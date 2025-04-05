@@ -79,7 +79,7 @@ function Techstack() {
                     height="50"
                 />
             ),
-            color: "shadow-yellow-500",
+            color: "shadow-cyan-500",
         },
         {
             name: "JAVASCRIPT",
@@ -92,7 +92,8 @@ function Techstack() {
                     height="70"
                 />
             ),
-            color: "shadow-blue-500",
+            color: "shadow-yellow-500",
+
         },
         {
             name: "TYPESCRIPT",
@@ -170,7 +171,7 @@ function Techstack() {
                     height="70"
                 />
             ),
-            color: "shadow-cyan-500",
+            color: "shadow-indigo-500",
         },
         {
             name: "SQLite",
@@ -190,13 +191,13 @@ function Techstack() {
             className: "sql",
             icon: (
                 <img
-                    src="https://www.vectorlogo.zone/logos/sqlite/sqlite-icon.svg"
-                    alt="postman"
+                    src="https://www.svgrepo.com/show/331760/sql-database-generic.svg"
+                    alt="sql"
                     width="70"
                     height="70"
                 />
             ),
-            color: "shadow-cyan-500",
+            color: "shadow-sky-500",
         },
         {
             name: "POSTMAN",
@@ -235,7 +236,7 @@ function Techstack() {
                     height="70"
                 />
             ),
-            color: "shadow-red-500",
+            color: "shadow-indigo-500",
         },
         {
             name: "RUST",
@@ -261,7 +262,33 @@ function Techstack() {
                     height="70"
                 />
             ),
-            color: "shadow-red-500",
+            color: "shadow-rose-500",
+        },
+        {
+            name: "Figma",
+            className: "figma",
+            icon: (
+                <img
+                    src="https://www.vectorlogo.zone/logos/figma/figma-icon.svg"
+                    alt="figma"
+                    width="70"
+                    height="70"
+                />
+            ),
+            color: "shadow-pink-500",
+        },
+        {
+            name: "MySQL",
+            className: "mysql",
+            icon: (
+                <img
+                    src="https://www.vectorlogo.zone/logos/mysql/mysql-icon.svg"
+                    alt="mysql"
+                    width="70"
+                    height="70"
+                />
+            ),
+            color: "shadow-blue-500",
         },
     ];
 
@@ -308,6 +335,10 @@ function Techstack() {
                         return "5 / 4 / 6 / 5";
                     case 18:
                         return "5 / 5 / 6 / 6";
+                    case 19:
+                        return "5 / 6 / 6 / 7";
+                    case 20:
+                        return "5 / 7 / 6 / 8";
                     default:
                         return ""; // Handle out-of-bounds index
                 }
