@@ -55,15 +55,24 @@ function Footer() {
 
     return (
         <div>
-            <footer className="flex Agustina font-semibold justify-center items-center text-smallfont lg:text-2xl bg-black text-luminous p-12 lg:p-16 mt-8">
-                &copy; {new Date().getFullYear()} - {t("footer")}
-                <div className="h-9 w-24 overflow-hidden">
-                    <div ref={scope}>
-                        {NAMES.map(({ text, className }, i) => (
-                            <div className={className} key={i}>
-                                {text}
+            <footer className="flex Agustina font-semibold justify-center items-center text-smallfont lg:text-xl bg-black text-luminous py-12 lg:py-16 mt-8">
+                <div className="footer_container w-full md:w-1/2">
+                    <div className="flex justify-between items-center">
+                        <div className="flex">
+                            <span>{t("footer")} </span>
+                            <div className="h-9 w-24 overflow-hidden">
+                                <div ref={scope}>
+                                    {NAMES.map(({ text, className }, i) => (
+                                        <div className={className} key={i}>
+                                            {text}
+                                        </div>
+                                    ))}
+                                </div>
                             </div>
-                        ))}
+                        </div>
+                        <div className="mr-4">
+                            <span>&copy; {new Date().getFullYear()}</span>
+                        </div>
                     </div>
                 </div>
             </footer>
