@@ -184,19 +184,6 @@ const Techlist = [
         color: "shadow-sky-500",
     },
     {
-        name: "POSTMAN",
-        className: "postman",
-        icon: (
-            <img
-                src="https://www.vectorlogo.zone/logos/getpostman/getpostman-icon.svg"
-                alt="git"
-                width="70"
-                height="70"
-            />
-        ),
-        color: "shadow-orange-500",
-    },
-    {
         name: "GIT",
         className: "git",
         icon: (
@@ -247,19 +234,6 @@ const Techlist = [
             />
         ),
         color: "shadow-rose-500",
-    },
-    {
-        name: "Figma",
-        className: "figma",
-        icon: (
-            <img
-                src="https://www.vectorlogo.zone/logos/figma/figma-icon.svg"
-                alt="figma"
-                width="70"
-                height="70"
-            />
-        ),
-        color: "shadow-pink-500",
     },
     {
         name: "MySQL",
