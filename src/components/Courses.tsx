@@ -216,6 +216,14 @@ const Certs = [
         coursera_link: "https://tryhackme-certificates.s3-eu-west-1.amazonaws.com/THM-8PZLGBPRJO.pdf",
         coursename: "TryHackMe",
     },
+    {
+        title: "Advent of Cyber 2024",
+        description: "TryHackMe",
+        img_link:
+            tryhackme_icon,
+        coursera_link: "https://tryhackme-certificates.s3-eu-west-1.amazonaws.com/THM-LS51NMP9VO.pdf",
+        coursename: "TryHackMe",
+    },
 ];
 
 const CourseNames = [
