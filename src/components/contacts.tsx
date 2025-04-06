@@ -56,38 +56,39 @@ function Contacts() {
     const { t } = useTranslation();
 
     return (
-        <div className="flex flex-col gap-12 justify-center items-center">
-            <div className="mb-8">
-                <h2 className="py-4">GET IN TOUCH</h2>
-            </div>
-            <div className="text-gradient text-mediumfont mx-[4vw] p-[2vw]">
-                {t("contacts")}
-            </div>
-
-            <div className="grid lg:grid-cols-3 place-items-center gap-16">
-                {divs.map((div, index) => (
-                    <div
-                        className="contact grid grid-row-3 w-60 h-72 shadow-md shadow-green-600"
-                        key={index}>
-                        <div className="flex justify-center items-center">
-                            {div.icon}
+        <div className="flex justify-center items-center">
+            <div className="w-full md:w-1/2 flex flex-col justify-center items-center gap-12">
+                <div className="my-8">
+                    <h2>GET IN TOUCH</h2>
+                </div>
+                <div className="text-gradient text-mediumfont mb-12">
+                    {t("contacts")}
+                </div>
+                <div className="grid lg:grid-cols-3 place-items-center gap-24">
+                    {divs.map((div, index) => (
+                        <div
+                            className="contact grid grid-row-3 w-60 h-72 shadow-md shadow-green-600"
+                            key={index}>
+                            <div className="flex justify-center items-center">
+                                {div.icon}
+                            </div>
+                            <div className="flex justify-center items-center font-extrabold uppercase">
+                                {div.name}
+                            </div>
+                            <div className="flex justify-center items-center">
+                                <button className="bg-green-500 rounded-md p-2">
+                                    {div.a_tag}
+                                </button>
+                            </div>
                         </div>
-                        <div className="flex justify-center items-center font-extrabold uppercase">
-                            {div.name}
-                        </div>
-                        <div className="flex justify-center items-center">
-                            <button className="bg-green-500 rounded-md p-2">
-                                {div.a_tag}
-                            </button>
-                        </div>
-                    </div>
-                ))}
-            </div>
-            <div className="flex justify-center items-center cursor-pointer hover:scale-110 duration-500">
-                <strong className="border p-3 rounded-[20px] shadow-md shadow-fuchsia-50  flex items-center">
-                    <span className="inline-block w-[8px] h-[8px] rounded-full bg-red-600 animate-blink mr-2"></span>
-                    Open to work
-                </strong>
+                    ))}
+                </div>
+                <div className="flex justify-center items-center cursor-pointer hover:scale-110 duration-500">
+                    <strong className="border p-3 rounded-[20px] shadow-md shadow-fuchsia-50  flex items-center">
+                        <span className="inline-block w-[8px] h-[8px] rounded-full bg-red-600 animate-blink mr-2"></span>
+                        Open to work
+                    </strong>
+                </div>
             </div>
         </div>
     );
