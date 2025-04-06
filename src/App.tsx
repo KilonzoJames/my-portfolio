@@ -4,7 +4,7 @@ import NotFound from "./components/notfound";
 import Header from "./components/Heading/Header";
 import Footer from "./components/footer";
 import Profile from "./components/profile";
-import Socials from "./components/socials";
+import Socials from "./components/Socials/Socials";
 import Techstack from "./components/Tech/Techstack";
 import Contacts from "./components/contacts";
 import ProjectsList from "./components/ProjectsList";
