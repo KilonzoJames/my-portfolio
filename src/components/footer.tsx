@@ -56,7 +56,7 @@ function Footer() {
     return (
         <div>
             <footer className="flex Agustina font-semibold justify-center items-center text-smallfont lg:text-xl bg-black text-luminous py-12 lg:py-16 mt-8">
-                <div className="footer_container w-full md:w-1/2">
+                <div className="footer_container w-4/5 md:w-1/2">
                     <div className="flex justify-between items-center">
                         <div className="flex">
                             <span>{t("footer")} </span>
@@ -70,7 +70,7 @@ function Footer() {
                                 </div>
                             </div>
                         </div>
-                        <div className="mr-4">
+                        <div>
                             <span>&copy; {new Date().getFullYear()}</span>
                         </div>
                     </div>

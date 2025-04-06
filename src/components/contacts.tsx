@@ -57,7 +57,7 @@ function Contacts() {
 
     return (
         <div className="flex justify-center items-center">
-            <div className="w-full md:w-1/2 flex flex-col justify-center items-center gap-12">
+            <div className="w-4/5 md:w-1/2 flex flex-col justify-center items-center gap-12">
                 <div className="my-8">
                     <h2>GET IN TOUCH</h2>
                 </div>

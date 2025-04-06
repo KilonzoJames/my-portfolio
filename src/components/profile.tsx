@@ -60,7 +60,7 @@ function Profile() {
                 </div>
             </div>
 
-            <div className="w-full md:w-1/2 flex flex-col mx-auto gap-20 py-10">
+            <div className="w-4/5 md:w-1/2 flex flex-col mx-auto gap-20 py-10">
                 <h2 className="text-center mx-auto m-2">Profile</h2>
                 <h2 className="font-extrabold text-center  m-2 ">
                     Fullstack Web Developer
