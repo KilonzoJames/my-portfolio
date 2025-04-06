@@ -23,7 +23,7 @@ const resources = {
                 link5: "Socials",
                 link6: "Contacts",
             },
-            footer: "Template designed & built by",
+            footer: "Powered by TypeScript and good vibes — from the desk of",
         },
     },
     es: {
@@ -46,7 +46,7 @@ const resources = {
                 link5: "Sociales",
                 link6: "Contactos",
             },
-            footer: "Plantilla diseñada y construida por",
+            footer: "Desarrollado con TypeScript y buenas vibras: desde el escritorio de",
         },
     },
     sw: {
@@ -69,7 +69,7 @@ const resources = {
                 link5: "Kijamii",
                 link6: "Anwani",
             },
-            footer: "Kiolezo kilichoundwa na kujengwa na",
+            footer: "Inaendeshwa na TypeScript na mitetemo nzuri - kutoka kwa dawati la",
         },
     },
 };
