@@ -60,7 +60,7 @@ function Profile() {
                 </div>
             </div>
 
-            <div className="flex flex-col flex-wrap w-5/6 justify-center items-center rounded-2xl mx-auto gap-20 py-10">
+            <div className="w-full md:w-1/2 flex flex-col mx-auto gap-20 py-10">
                 <h2 className="text-center mx-auto m-2">Profile</h2>
                 <h2 className="font-extrabold text-center  m-2 ">
                     Fullstack Web Developer
@@ -78,6 +78,14 @@ function Profile() {
                     <br />
                     {line3}
                 </motion.div>
+                <div className="flex items-center justify-end">
+                    <span>Visitor Count:</span>
+                    <img
+                        src="https://visit-counter.vercel.app/counter.png?page=https://ki-lonzo.onrender.com/"
+                        alt="Visitors"
+                        className="inline-block ml-2"
+                    />
+                </div>
             </div>
         </div>
     );
