@@ -58,8 +58,18 @@ function Contacts() {
     return (
         <div className="flex justify-center items-center">
             <div className="w-4/5 md:w-1/2 flex flex-col justify-center items-center gap-12">
-                <div className="my-8">
-                    <h2>GET IN TOUCH</h2>
+                <div className="w-full flex justify-between items-center my-8">
+                    <div>
+                        <h2>LET'S GET IN TOUCH</h2>
+                    </div>
+                    <div>
+                        <img
+                            src="https://i.pinimg.com/736x/ce/e7/c7/cee7c733367aa5561344ce35d44c840f.jpg"
+                            alt="Holding hands"
+                            className="w-[10.06rem] h-[6.81rem] rounded-full"
+                        />
+                        <span className="flex justify-end text-gray-500">Pun intended ...</span>
+                    </div>
                 </div>
                 <div className="text-gradient text-mediumfont mb-12">
                     {t("contacts")}
