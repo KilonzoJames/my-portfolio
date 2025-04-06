@@ -1,7 +1,7 @@
 // Recently, I've gathered a collection of exceptional websites in UI/UX design that left me in awe upon my initial exploration. I believe these websites can greatly enrich your UI skills. Here's a list of my top 8 favorite websites (in no particular order).
 // Raycast is a productivity tool that enables fast task completion. Its homepage captivated me with its UI design, featuring my favorite gradient colors and various shades of red (the theme color).
 import React from "react";
-import tryhackme_icon from "../assets/tryhackme_logo_icon_249349.png"
+import tryhackme_icon from "../assets/tryhackme_logo_icon_249349.png";
 
 const Certs = [
     {
@@ -187,41 +187,41 @@ const Certs = [
     {
         title: "Jr Penetration Tester",
         description: "TryHackMe",
-        img_link:
-            tryhackme_icon,
-        coursera_link: "https://tryhackme-certificates.s3-eu-west-1.amazonaws.com/THM-OPP6EMW92U.pdf",
+        img_link: tryhackme_icon,
+        coursera_link:
+            "https://tryhackme-certificates.s3-eu-west-1.amazonaws.com/THM-OPP6EMW92U.pdf",
         coursename: "TryHackMe",
     },
     {
         title: "Pre Security",
         description: "TryHackMe",
-        img_link:
-            tryhackme_icon,
-        coursera_link: "https://tryhackme-certificates.s3-eu-west-1.amazonaws.com/THM-RBFYADSJ6Z.pdf",
+        img_link: tryhackme_icon,
+        coursera_link:
+            "https://tryhackme-certificates.s3-eu-west-1.amazonaws.com/THM-RBFYADSJ6Z.pdf",
         coursename: "TryHackMe",
     },
     {
         title: "Web Fundamentals",
         description: "TryHackMe",
-        img_link:
-            tryhackme_icon,
-        coursera_link: "https://tryhackme-certificates.s3-eu-west-1.amazonaws.com/THM-NTLU9LCYS1.pdf",
+        img_link: tryhackme_icon,
+        coursera_link:
+            "https://tryhackme-certificates.s3-eu-west-1.amazonaws.com/THM-NTLU9LCYS1.pdf",
         coursename: "TryHackMe",
     },
     {
         title: "CompTIA Pentest+",
         description: "TryHackMe",
-        img_link:
-            tryhackme_icon,
-        coursera_link: "https://tryhackme-certificates.s3-eu-west-1.amazonaws.com/THM-8PZLGBPRJO.pdf",
+        img_link: tryhackme_icon,
+        coursera_link:
+            "https://tryhackme-certificates.s3-eu-west-1.amazonaws.com/THM-8PZLGBPRJO.pdf",
         coursename: "TryHackMe",
     },
     {
         title: "Advent of Cyber 2024",
         description: "TryHackMe",
-        img_link:
-            tryhackme_icon,
-        coursera_link: "https://tryhackme-certificates.s3-eu-west-1.amazonaws.com/THM-LS51NMP9VO.pdf",
+        img_link: tryhackme_icon,
+        coursera_link:
+            "https://tryhackme-certificates.s3-eu-west-1.amazonaws.com/THM-LS51NMP9VO.pdf",
         coursename: "TryHackMe",
     },
 ];
@@ -251,57 +251,65 @@ const CourseNames = [
 
 function Courses() {
     return (
-        <div className="courses-container">
-            {CourseNames.map((course) => {
-                const matchingCerts = Certs.filter(
-                    (cert) => cert.coursename === course.name
-                );
+        <div className="flex justify-center">
+            <div className="courses-container md:w-2/3">
+                {CourseNames.map((course) => {
+                    const matchingCerts = Certs.filter(
+                        (cert) => cert.coursename === course.name
+                    );
 
-                return (
-                    <div>
-                        <div className="flex justify-center items-center mx-4">
-                            <h2 className="text-slate-400">{course.name}</h2>
-                        </div>
-                        <div
-                            key={course.name}
-                            className="course-card p-8 grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 2xl:grid-cols-5 gap-12">
-                            {matchingCerts.map((matchingCert) => (
-                                <div
-                                    className={`card ${course.color} border-b-8 border-b-green-600 shadow-green-500 shadow-md rounded-[2.3rem] max-w-md mx-auto w-[16rem] sm:w-[20rem] hover:scale-90 duration-1000`}>
-                                    <a
-                                        href={matchingCert.coursera_link}
-                                        target="_blank"
-                                        rel="noopener noreferrer">
-                                        <div>
-                                            <div className="image relative group w-full h-1/3">
-                                                <img
-                                                    className="aspect-[3/2] object-contain"
-                                                    src={matchingCert.img_link}
-                                                    alt="Google"
-                                                />
-                                                <div className="alt absolute inset-0 bg-gray-800 bg-opacity-0 group-hover:bg-opacity-50 transition duration-300 flex items-center justify-center">
-                                                    <h3 className="text-white text-xl font-semibold opacity-0 group-hover:opacity-100 transition duration-300">
-                                                        Coursera Certificate
+                    return (
+                        <div>
+                            <div className="flex justify-center items-center m-4">
+                                <h2 className="text-slate-400">
+                                    {course.name}
+                                </h2>
+                            </div>
+                            <div
+                                key={course.name}
+                                className="course-card p-8 grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 2xl:grid-cols-4 gap-12">
+                                {matchingCerts.map((matchingCert) => (
+                                    <div
+                                        className={`card ${course.color} border-b-8 border-b-green-600 shadow-green-500 shadow-md rounded-[2.3rem] max-w-md mx-auto w-[16rem] hover:scale-90 duration-1000`}>
+                                        <a
+                                            href={matchingCert.coursera_link}
+                                            target="_blank"
+                                            rel="noopener noreferrer">
+                                            <div>
+                                                <div className="image relative group w-full h-1/3">
+                                                    <img
+                                                        className="aspect-[3/2] object-contain"
+                                                        src={
+                                                            matchingCert.img_link
+                                                        }
+                                                        alt="Google"
+                                                    />
+                                                    <div className="alt absolute inset-0 bg-gray-800 bg-opacity-0 group-hover:bg-opacity-50 transition duration-300 flex items-center justify-center">
+                                                        <h3 className="text-white text-xl font-semibold opacity-0 group-hover:opacity-100 transition duration-300">
+                                                            Coursera Certificate
+                                                        </h3>
+                                                    </div>
+                                                </div>
+
+                                                <div className="flex flex-col items-center justify-between p-4">
+                                                    <h2 className="title-gradient font-bold text-xl animate-text-gradient border-blue-600">
+                                                        {matchingCert.title}
+                                                    </h2>
+                                                    <h3 className="text-gray-500 font-bold text-xl">
+                                                        {
+                                                            matchingCert.description
+                                                        }
                                                     </h3>
                                                 </div>
                                             </div>
-
-                                            <div className="flex flex-col items-center justify-between p-4">
-                                                <h2 className="title-gradient font-bold text-xl animate-text-gradient border-blue-600">
-                                                    {matchingCert.title}
-                                                </h2>
-                                                <h3 className="text-gray-500 font-bold text-xl">
-                                                    {matchingCert.description}
-                                                </h3>
-                                            </div>
-                                        </div>
-                                    </a>
-                                </div>
-                            ))}
+                                        </a>
+                                    </div>
+                                ))}
+                            </div>
                         </div>
-                    </div>
-                );
-            })}
+                    );
+                })}
+            </div>
         </div>
     );
 }
