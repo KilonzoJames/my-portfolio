@@ -13,7 +13,7 @@ function Techstack() {
 
                 {/* Spiral layout for large screens */}
                 <div className="aspect-square hidden lg:block w-full max-h-[calc(100vh-1rem)]">
-                    <div className="flex flex-col text-sm text-right text-gray-500">
+                    <div className="merienda-class flex flex-col text-sm text-right text-gray-500">
                         <span>Psst... wanna see some magic! </span>
                         <span> Hover to reveal the hidden pathways.</span>
                     </div>

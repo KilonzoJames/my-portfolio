@@ -68,7 +68,7 @@ function Contacts() {
                             alt="Holding hands"
                             className="w-[10.06rem] h-[6.81rem] rounded-full"
                         />
-                        <div className="flex flex-col justify-end text-gray-500">
+                        <div className="merienda-class flex flex-col justify-end text-gray-500">
                             <span>It’s not just a touch,</span>
                             <span>it’s a connection...</span>
                         </div>
