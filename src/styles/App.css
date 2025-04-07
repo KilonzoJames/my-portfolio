@@ -23,7 +23,8 @@ body{
 
 /* Light Mode Styles */
 .light {
-  background: linear-gradient(to top, #2d7fb2 0%, #1e88ca 20%, #1da1f2 40%, #030035 60%, #030035 80%, #18163c 100%);
+  background: linear-gradient(to top, #f0f0f0 0%, #d1e0e6 100%);
+  /* background: linear-gradient(to top, #2d7fb2 0%, #1e88ca 20%, #1da1f2 40%, #030035 60%, #030035 80%, #18163c 100%); */
   color: #000;
   transition: background 0.5s, color 0.5s;
 }
