@@ -68,7 +68,7 @@ function Navs() {
                     key={index}
                     className={`${
                         isOpen
-                            ? "flex m-12 hover:border-2 hover:rounded-lg p-2"
+                            ? "flex my-8 hover:border-2 hover:rounded-lg"
                             : "mx-4 p-2 shadow-md hover:rounded-lg hover:border-2 cursor-grab transition-all duration-100"
                     }`}
                     onClick={() => {

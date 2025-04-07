@@ -35,10 +35,16 @@ function Navbar() {
             </nav>
             {isOpen && (
                 <div
-                    className={`h-screen text-xl justify-center items-center space-y-12 flex flex-col basis-full uppercase `}>
-                    <Navs />
-                    <ToggleLanguage />
-                    <ToggleThemeButton />
+                    className={`h-[40vh] text-lg justify-center items-center flex flex-col basis-full uppercase`}>
+                    <div className="h-full flex flex-row gap-12">
+                        <div className="h-full flex flex-col">
+                            <Navs />
+                        </div>
+                        <div className="h-full flex flex-col items-center justify-around">
+                                <ToggleLanguage />
+                                <ToggleThemeButton />
+                        </div>
+                    </div>
                 </div>
             )}
         </>
