@@ -8,6 +8,9 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat+Alternates&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Qanelas+Soft:wght@300;400;500;700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Monoton&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Rubik+Vinyl&display=swap");
+
 /* Good font: Mouse Memoirs */
 
 .slick-slide > div {
@@ -30,6 +33,16 @@
 
     .Montserrat {
         font-family: "Montserrat Alternates";
+    }
+    .monoton-regular {
+        font-family: "Monoton", sans-serif;
+        font-weight: 400;
+        font-style: normal;
+    }
+    .rubik-vinyl-regular {
+        font-family: "Rubik Vinyl", system-ui;
+        font-weight: 400;
+        font-style: normal;
     }
     .custom-button {
         background-color: #3490dc;
@@ -82,7 +95,7 @@
         animation: animated-gradient 5.5s ease-in-out infinite; /* Faster animation */
         overflow: hidden;
     }
-    .Agustina{
+    .Agustina {
         font-family: Agustina Regular;
     }
 }
