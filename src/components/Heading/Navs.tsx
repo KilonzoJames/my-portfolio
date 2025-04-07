@@ -79,7 +79,7 @@ function Navs() {
                         navigate(`/${link.href}`);
                         // Use navigate with path
                     }}>
-                    <div>
+                    <div className="nova-cut-regular font-extrabold">
                         <FontAwesomeIcon
                             icon={link.icon}
                             className="me-1"
