@@ -57,7 +57,7 @@ function Footer() {
         <div>
             <footer className="flex nova-cut-regular font-semibold justify-center items-center text-smallfont lg:text-xl bg-black text-luminous py-12 lg:py-16 mt-8">
                 <div className="footer_container w-4/5 md:w-1/2">
-                    <div className="flex justify-between items-center">
+                    <div className="flex flex-col md:flex-row justify-between items-center">
                         <div className="flex">
                             <span>{t("footer")} </span>
                             <div className="h-9 w-24 overflow-hidden">
