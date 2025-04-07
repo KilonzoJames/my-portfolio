@@ -67,12 +67,12 @@ const Project: React.FC<ProjectProps> = ({ projects }) => {
 
     return (
         <div
-            className="merienda-class project relative grid grid-rows-6 h-[550px] p-6
+            className="im-fell-french-canon-sc-regular project relative grid grid-rows-6 h-[550px] p-6
           m-4 rounded-[10px] text-white font-bold shadow-md hover:scale-105 duration-500">
             <div className="Shojumaru flex items-center justify-center font-extrabold text-2xl uppercase underline">
                 {projects.name}
             </div>
-            <div className="mx-auto flex items-center">{projects.desc}</div>
+            <div className="merienda-class mx-auto flex items-center">{projects.desc}</div>
             <div className="tech-stack  flex flex-wrap row-span-2 justify-around items-center ">
                 {projects.techs.map((item) => (
                     <div
@@ -103,7 +103,7 @@ const Project: React.FC<ProjectProps> = ({ projects }) => {
                 </div>
                 <div style={backgroundStyle}></div>
             </div>
-            {projects.isOpenSource && <div className="open">Open Source</div>}
+            {projects.isOpenSource && <div className="open merienda-class">Open Source</div>}
         </div>
     );
 };

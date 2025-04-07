@@ -15,6 +15,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Aboreto&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Wallpoet&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Nova+Cut&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=IM+Fell+French+Canon+SC&display=swap');
 
 /* Good font: Mouse Memoirs */
 
@@ -36,6 +37,11 @@
     .Shojumaru {
         font-family: "Shojumaru";
     }
+    .im-fell-french-canon-sc-regular {
+        font-family: "IM Fell French Canon SC", serif;
+        font-weight: 400;
+        font-style: normal;
+      }
     .merienda-class {
         font-family: "Merienda", cursive;
         font-optical-sizing: auto;
