@@ -71,7 +71,7 @@ function Footer() {
                             </div>
                         </div>
                         <div>
-                            <span>&copy; {new Date().getFullYear()}</span>
+                            <p>&copy; {new Date().getFullYear()}. All rights reserved.</p>
                         </div>
                     </div>
                 </div>
