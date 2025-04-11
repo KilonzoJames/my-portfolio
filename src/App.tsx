@@ -3,7 +3,7 @@ import { Routes, Route, useLocation } from "react-router-dom";
 import NotFound from "./components/notfound";
 import Header from "./components/Heading/Header";
 import Footer from "./components/footer";
-import Profile from "./components/profile";
+import Profile from "./components/Profile/Profile";
 import Socials from "./components/Socials/Socials";
 import Techstack from "./components/Tech/Techstack";
 import Contacts from "./components/contacts";

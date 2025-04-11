@@ -3,8 +3,8 @@ import React from "react";
 import TypeWriterEffect from "react-typewriter-effect";
 import { motion } from "framer-motion";
 import { useTranslation } from "react-i18next";
-import FakeTerminal from "./Profile/FakeTerminal";
-import ParticleBackground from "./Profile/ParticleBackground";
+import FakeTerminal from "./FakeTerminal";
+import ParticleBackground from "./ParticleBackground";
 
 function Profile() {
     const { t } = useTranslation();
