@@ -3,14 +3,20 @@ import React from "react";
 import TypeWriterEffect from "react-typewriter-effect";
 import { motion } from "framer-motion";
 import { useTranslation } from "react-i18next";
+import FakeTerminal from "./Profile/FakeTerminal";
 
 function Profile() {
-    const { t } = useTranslation();    
+    const { t } = useTranslation();
     const line1 = t("profile.line1");
     const line2 = t("profile.line2");
     const line3 = t("profile.line3");
     return (
         <div className="flex flex-col">
+            <div className="h-screen flex justify-center items-center">
+                <div className="h-full w-4/5 md:w-1/2">
+                    <FakeTerminal />
+                </div>
+            </div>
             <div className="flex flex-col justify-center items-center text-2xl lg:text-4xl gap-16 p-4">
                 <div className="hover:scale-105 transition-all duration-500">
                     <motion.img
