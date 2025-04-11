@@ -138,9 +138,10 @@ const FakeTerminal = () => {
                 <div className="w-6" /> {/* spacer to center the title */}
             </div>
 
-            <div className="p-4 min-h-[300px] whitespace-pre-wrap">
-                <pre>{typedText}</pre>
-
+            <div className="p-4 min-h-[300px] whitespace-pre-wrap break-words text-sm sm:text-base">
+                <pre className="whitespace-pre-wrap break-words">
+                    {typedText}
+                </pre>
                 {!isTyping && (
                     <input
                         type="text"
