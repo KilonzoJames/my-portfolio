@@ -1,7 +1,6 @@
 // Recently, I've gathered a collection of exceptional websites in UI/UX design that left me in awe upon my initial exploration. I believe these websites can greatly enrich your UI skills. Here's a list of my top 8 favorite websites (in no particular order).
 // Raycast is a productivity tool that enables fast task completion. Its homepage captivated me with its UI design, featuring my favorite gradient colors and various shades of red (the theme color).
 import React from "react";
-import tryhackme_icon from "../assets/tryhackme_logo_icon_249349.png";
 
 const Certs = [
     {
@@ -187,7 +186,8 @@ const Certs = [
     {
         title: "Jr Penetration Tester",
         description: "TryHackMe",
-        img_link: tryhackme_icon,
+        img_link:
+            "https://web.archive.org/web/20230601051507if_/https://cdn.icon-icons.com/icons2/3915/PNG/512/tryhackme_logo_icon_249349.png",
         coursera_link:
             "https://tryhackme-certificates.s3-eu-west-1.amazonaws.com/THM-OPP6EMW92U.pdf",
         coursename: "TryHackMe",
@@ -195,7 +195,8 @@ const Certs = [
     {
         title: "Pre Security",
         description: "TryHackMe",
-        img_link: tryhackme_icon,
+        img_link:
+            "https://web.archive.org/web/20230601051507if_/https://cdn.icon-icons.com/icons2/3915/PNG/512/tryhackme_logo_icon_249349.png",
         coursera_link:
             "https://tryhackme-certificates.s3-eu-west-1.amazonaws.com/THM-RBFYADSJ6Z.pdf",
         coursename: "TryHackMe",
@@ -203,7 +204,8 @@ const Certs = [
     {
         title: "Web Fundamentals",
         description: "TryHackMe",
-        img_link: tryhackme_icon,
+        img_link:
+            "https://web.archive.org/web/20230601051507if_/https://cdn.icon-icons.com/icons2/3915/PNG/512/tryhackme_logo_icon_249349.png",
         coursera_link:
             "https://tryhackme-certificates.s3-eu-west-1.amazonaws.com/THM-NTLU9LCYS1.pdf",
         coursename: "TryHackMe",
@@ -211,7 +213,8 @@ const Certs = [
     {
         title: "CompTIA Pentest+",
         description: "TryHackMe",
-        img_link: tryhackme_icon,
+        img_link:
+            "https://web.archive.org/web/20230601051507if_/https://cdn.icon-icons.com/icons2/3915/PNG/512/tryhackme_logo_icon_249349.png",
         coursera_link:
             "https://tryhackme-certificates.s3-eu-west-1.amazonaws.com/THM-8PZLGBPRJO.pdf",
         coursename: "TryHackMe",
@@ -219,7 +222,8 @@ const Certs = [
     {
         title: "Advent of Cyber 2024",
         description: "TryHackMe",
-        img_link: tryhackme_icon,
+        img_link:
+            "https://web.archive.org/web/20230601051507if_/https://cdn.icon-icons.com/icons2/3915/PNG/512/tryhackme_logo_icon_249349.png",
         coursera_link:
             "https://tryhackme-certificates.s3-eu-west-1.amazonaws.com/THM-LS51NMP9VO.pdf",
         coursename: "TryHackMe",
