@@ -24,7 +24,7 @@ function App() {
         // initial loading delay
         const timer = setTimeout(() => {
             setShowSplash(false);
-        }, 3500); // Show splash for 5 seconds (adjust as needed)
+        }, 1000); // Show splash for 5 seconds (adjust as needed)
         return () => clearTimeout(timer);
     }, []);
 
