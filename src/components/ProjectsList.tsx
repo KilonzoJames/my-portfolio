@@ -68,7 +68,7 @@ const Project: React.FC<ProjectProps> = ({ projects }) => {
     return (
         <div
             className="im-fell-french-canon-sc-regular project relative grid grid-rows-6 h-[550px] p-6
-          m-4 rounded-[10px] text-white font-bold shadow-md hover:scale-105 duration-500">
+          m-4 rounded-[10px] text-white font-bold shadow-md hover:scale-105 duration-500 mb-8">
             <div className="Shojumaru flex items-center justify-center font-extrabold text-2xl uppercase underline">
                 {projects.name}
             </div>
