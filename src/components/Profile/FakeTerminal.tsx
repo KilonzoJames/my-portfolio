@@ -101,7 +101,7 @@ const FakeTerminal = () => {
                 break;
             case "help":
                 response =
-                    "> Available commands: whoami, goals, socials, projects, pwd, help, clear";
+                    "> Available commands: whoami, goals, socials, projects, pwd, help, clear, su root";
                 break;
             case "goals":
                 response = "> Discover, Create & Secure";
@@ -115,6 +115,10 @@ const FakeTerminal = () => {
                 break;
             case "pwd":
                 response = "> /home/kilonzo";
+                break;
+            case "su root":
+                response =
+                    "You do not have enough privileges to access /root 🤖\n🤫 Nah, just messing with you. Carry on, Operator.";
                 break;
             default:
                 response = `> command not found: ${input}`;
