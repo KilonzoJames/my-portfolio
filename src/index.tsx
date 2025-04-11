@@ -11,7 +11,7 @@ import "./components/i18n";
 const root = ReactDOM.createRoot(document.getElementById("root")!);
 root.render(
     <Suspense fallback={<div>Loading translations...</div>}>
-        <React.StrictMode>
+        {/* <React.StrictMode> */}
             <HashRouter>
                 <ThemeProvider>
                     <Provider store={store}>
@@ -19,6 +19,6 @@ root.render(
                     </Provider>
                 </ThemeProvider>
             </HashRouter>
-        </React.StrictMode>{" "}
+        {/* </React.StrictMode>{" "} */}
     </Suspense>
 );

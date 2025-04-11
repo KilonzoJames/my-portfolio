@@ -4,6 +4,7 @@ import TypeWriterEffect from "react-typewriter-effect";
 import { motion } from "framer-motion";
 import { useTranslation } from "react-i18next";
 import FakeTerminal from "./Profile/FakeTerminal";
+import ParticleBackground from "./Profile/ParticleBackground";
 
 function Profile() {
     const { t } = useTranslation();
@@ -12,8 +13,9 @@ function Profile() {
     const line3 = t("profile.line3");
     return (
         <div className="flex flex-col">
-            <div className="h-screen flex justify-center items-center">
-                <div className="h-full w-4/5 md:w-1/2">
+            <div className="relative h-screen flex justify-center items-center  overflow-hidden">
+                <ParticleBackground />
+                <div className="h-full w-4/5 md:w-1/2 z-10">
                     <FakeTerminal />
                 </div>
             </div>
