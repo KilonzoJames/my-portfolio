@@ -1,0 +1,22 @@
+@keyframes marquee-left {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(-100%); /* Corrected to -100% for the container */
+    }
+}
+.marquee-container {
+    display: flex;
+    width: 100%;
+    overflow: hidden; /* Hide overflow */
+}
+.marquee-text {
+    display: flex;
+    white-space: nowrap;
+    animation: marquee-left 100s linear infinite; /* Apply animation */
+    width: fit-content; /* Important: Make the width fit the content */
+}
+.marquee-text span {
+    padding-right: 2rem; /* Space between each repetition of the text */
+}

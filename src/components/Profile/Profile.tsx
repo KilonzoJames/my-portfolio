@@ -5,6 +5,7 @@ import { motion } from "framer-motion";
 import { useTranslation } from "react-i18next";
 import FakeTerminal from "./FakeTerminal";
 import ParticleBackground from "./ParticleBackground";
+import WelcomeBanner from "./WelcomeBanner";
 
 function Profile() {
     const { t } = useTranslation();
@@ -19,6 +20,8 @@ function Profile() {
                     <FakeTerminal />
                 </div>
             </div>
+
+            <WelcomeBanner />
 
             <div className="flex flex-col justify-center items-center text-2xl lg:text-4xl gap-16 p-4 z-10">
                 <div className="hover:scale-105 transition-all duration-500">
