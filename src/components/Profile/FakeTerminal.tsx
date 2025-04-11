@@ -46,7 +46,7 @@ const FakeTerminal = () => {
                 "[authenticating terminal access...]\n",
                 "Injecting custom shell configuration...\n",
                 "Initializing environment variables...\n",
-                "Loading portfolio: /home/kilonzo (v1.0)\n",
+                "Loading portfolio v1.0...\n",
                 "Access granted. Systems online. Welcome back, Operator.\n",
                 ">>> Awaiting your command...\n",
             ];
@@ -86,31 +86,41 @@ const FakeTerminal = () => {
 
     // 💡 Command processing
     const processCommand = (input: string) => {
+        const trimmedInput = input.trim().toLowerCase();
+
+        if (trimmedInput === "clear") {
+            setTypedText(""); // Clear the terminal output
+            return;
+        }
         let response = "";
 
-        switch (input.trim().toLowerCase()) {
+        switch (trimmedInput) {
             case "whoami":
                 response =
                     "> James Kilonzo | Developer. CyberSentinel. Technophile.";
                 break;
             case "help":
                 response =
-                    "> Available commands: whoami, help, projects, socials, goals";
+                    "> Available commands: whoami, goals, socials, projects, pwd, help, clear";
                 break;
-            case "projects":
-                response = "> Displaying projects...\n> (Project info here)";
+            case "goals":
+                response = "> Discover, Create & Secure";
                 break;
             case "socials":
                 response = "> Twitter: @se_venly\n> GitHub: @kilonzojames";
                 break;
-            case "goals":
-                response ="> Discover, Create & Secure";
+            case "projects":
+                response =
+                    "> Displaying projects...\n> (Project info /#/projects)";
+                break;
+            case "pwd":
+                response = "> /home/kilonzo";
                 break;
             default:
                 response = `> command not found: ${input}`;
         }
 
-        setTypedText((prev) => `${prev}\n${response}\n\n└─$ `);
+        setTypedText((prev) => `${prev}\n\n> ${input}\n${response}\n`);
         typedTextRef.current += `\n${response}\n\n└─$ `;
     };
 
