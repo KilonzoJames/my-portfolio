@@ -55,7 +55,7 @@ function Footer() {
 
     return (
         <div>
-            <footer className="flex nova-cut-regular font-semibold justify-center items-center text-smallfont lg:text-xl bg-black text-luminous py-12 lg:py-16">
+            <footer className="flex nova-cut-regular font-semibold justify-center items-center bg-black text-luminous py-12 lg:py-16">
                 <div className="footer_container w-4/5 md:w-1/2">
                     <div className="flex flex-col md:flex-row justify-between items-center">
                         <div className="flex">
