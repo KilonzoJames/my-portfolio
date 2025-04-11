@@ -41,7 +41,7 @@ function Techstack() {
                     <h2 className="text-center mx-auto">
                         Cybersecurity Skills
                     </h2>
-                    <div className="p-8 grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 2xl:grid-cols-4 gap-12">
+                    <div className="p-8 grid grid-cols-2 xl:grid-cols-3 2xl:grid-cols-4 gap-12">
                         {cyberskills.map((skill, i) => (
                             <div
                                 key={i}
