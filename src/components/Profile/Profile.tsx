@@ -12,14 +12,15 @@ function Profile() {
     const line2 = t("profile.line2");
     const line3 = t("profile.line3");
     return (
-        <div className="flex flex-col">
-            <div className="relative h-screen flex justify-center items-center  overflow-hidden">
-                <ParticleBackground />
+        <div className="relative overflow-hidden flex flex-col">
+            <ParticleBackground />
+            <div className="h-screen flex justify-center items-center">
                 <div className="h-full w-4/5 md:w-1/2 z-10">
                     <FakeTerminal />
                 </div>
             </div>
-            <div className="flex flex-col justify-center items-center text-2xl lg:text-4xl gap-16 p-4">
+
+            <div className="flex flex-col justify-center items-center text-2xl lg:text-4xl gap-16 p-4 z-10">
                 <div className="hover:scale-105 transition-all duration-500">
                     <motion.img
                         initial={{ opacity: 0, scale: 0.6 }}
@@ -68,7 +69,7 @@ function Profile() {
                 </div>
             </div>
 
-            <div className="w-4/5 md:w-1/2 flex flex-col mx-auto gap-20 py-10">
+            <div className="w-4/5 md:w-1/2 flex flex-col mx-auto gap-20 py-10 z-10">
                 <h2 className="text-center mx-auto m-2">Profile</h2>
                 <h2 className="font-extrabold text-center  m-2 ">
                     Fullstack Web Developer
