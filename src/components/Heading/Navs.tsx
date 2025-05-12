@@ -26,8 +26,10 @@ function Navs() {
         link5: string;
         link6: string;
     }
-    const { link1, link2, link3, link4, link5, link6 } = t("navigation", { returnObjects: true }) as navigation;
-    
+    const { link1, link2, link3, link4, link5, link6 } = t("navigation", {
+        returnObjects: true,
+    }) as navigation;
+
     const navLinks = [
         {
             text: link1,
@@ -68,8 +70,8 @@ function Navs() {
                     key={index}
                     className={`${
                         isOpen
-                            ? "flex my-8 hover:border-2 hover:rounded-lg"
-                            : "mx-4 p-2 shadow-md hover:rounded-lg hover:border-2 cursor-grab transition-all duration-100"
+                            ? "flex my-8 border-2 border-transparent rounded-lg hover:border-white  hover:shadow-lg transition-all duration-100"
+                            : "mx-4 shadow-md rounded-lg border-b-2 border-transparent hover:border-white hover:shadow-lg cursor-grab transition-all duration-100"
                     }`}
                     onClick={() => {
                         if (isOpen) {
@@ -79,7 +81,7 @@ function Navs() {
                         navigate(`/${link.href}`);
                         // Use navigate with path
                     }}>
-                    <div className="nova-cut-regular font-extrabold">
+                    <div className="merriweather font-bold">
                         <FontAwesomeIcon
                             icon={link.icon}
                             className="me-1"

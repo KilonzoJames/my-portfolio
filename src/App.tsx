@@ -33,14 +33,15 @@ function App() {
     }
 
     // Only show Header and Footer on valid paths
-    const HomePage = [
-        "/",
+    const pathsWithHeader = [
         "/socials",
         "/techstack",
         "/projects",
         "/contacts",
         "/course",
-    ].includes(location.pathname);
+    ];
+    const showHeader = pathsWithHeader.includes(location.pathname);
+    const showFooter = ["/", ...pathsWithHeader].includes(location.pathname);
 
     return (
         <div className="app">
@@ -50,7 +51,7 @@ function App() {
                     path="/*"
                     element={
                         <div className="app">
-                            {HomePage && <Header />}
+                            {showHeader && <Header />}
                             <Routes>
                                 <Route path="/" element={<Profile />} />
                                 <Route path="/socials" element={<Socials />} />
@@ -68,7 +69,7 @@ function App() {
                                 />
                                 <Route path="/course" element={<Courses />} />
                             </Routes>
-                            {HomePage && <Footer />}{" "}
+                            {showFooter && <Footer />}{" "}
                         </div>
                     }
                 />

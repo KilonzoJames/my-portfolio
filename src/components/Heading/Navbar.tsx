@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import { motion } from "framer-motion";
 import { useSelector } from "react-redux";
 import type { RootState } from "../../redux/store";
@@ -10,10 +10,24 @@ import ToggleThemeButton from "./ToggleThemeButton";
 function Navbar() {
     const isOpen = useSelector((state: RootState) => state.open.isOpen);
 
+    function useIsMediumScreen() {
+        const [isMd, setIsMd] = useState(false);
+
+        useEffect(() => {
+            const checkScreen = () => setIsMd(window.innerWidth <= 768);
+            checkScreen();
+            window.addEventListener("resize", checkScreen);
+            return () => window.removeEventListener("resize", checkScreen);
+        }, []);
+
+        return isMd;
+    }
+    const isMd = useIsMediumScreen();
+
     return (
         <>
-            <nav className="flex md:1/3 lg:w-2/3 md:justify-end items-center uppercase">
-                <div className="hidden md:flex justify-between w-full text-xl">
+            <nav className="flex lg:w-2/3 md:justify-end items-center uppercase">
+                <div className="hidden md:flex justify-between items-center w-full">
                     <motion.div
                         initial={{ opacity: 0, x: -500 }}
                         animate={{ opacity: 1, x: 0 }}
@@ -33,7 +47,7 @@ function Navbar() {
                     <Bars />
                 </div>
             </nav>
-            {isOpen && (
+            {isOpen && isMd && (
                 <div
                     className={`h-1/2 flex justify-center items-center text-lg basis-full`}>
                     <div className="h-full flex flex-row gap-12">

@@ -1,6 +1,7 @@
 import React from "react";
 import { useEffect, useRef, useState } from "react";
 import ScrambleText from "./ScrambleText";
+import Header from "../Heading/Header";
 
 function Home() {
     const backgroundRef = useRef<HTMLDivElement | null>(null); // ✅ tell TypeScript the ref is a div
@@ -21,8 +22,10 @@ function Home() {
 
     return (
         <div>
+            <Header />
+
             {/* Spinner overlay */}
-            <div className="z-20 absolute top-10 right-4 -translate-y-1/2">
+            <div className="z-20 absolute mt-8 right-4 -translate-y-1/2">
                 <div className="w-24 h-24 border-t-4 border-l-2 border-luminous rounded-full animate-spin"></div>
             </div>
 
