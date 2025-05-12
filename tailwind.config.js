@@ -7,6 +7,7 @@ const tailwindConfig = {
                 sweetpurple: "#18163c",
                 luminous: "#0ACF11",
                 crimson: "#B22222",
+                citizen: "#005100",
             },
             gridTemplateColumns: {
                 spacing: "repeat(5, 1fr)",
