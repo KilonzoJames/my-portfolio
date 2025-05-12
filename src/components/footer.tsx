@@ -55,7 +55,7 @@ function Footer() {
 
     return (
         <div>
-            <footer className="flex nova-cut-regular font-semibold justify-center items-center bg-black text-luminous py-12 lg:py-16">
+            <footer className="flex merriweather font-semibold justify-center items-center bg-black text-luminous py-12 text-sm">
                 <div className="footer_container w-4/5 md:w-1/2">
                     <div className="flex flex-col md:flex-row justify-between items-center">
                         <div className="flex">
@@ -70,9 +70,28 @@ function Footer() {
                                 </div>
                             </div>
                         </div>
-                        <div>
-                            <p>&copy; {new Date().getFullYear()}. All rights reserved.</p>
+                        {/* Country Flag */}
+                        <div className="flex items-center">
+                            <div className="flex items-center gap-2">
+                                <img
+                                    loading="lazy"
+                                    width="29"
+                                    height="20"
+                                    src="https://flagcdn.com/w40/ke.png"
+                                    alt="Kenya"
+                                />
+                                <span className="text-opacity-70">
+                                    Kenya
+                                </span>
+                            </div>
                         </div>
+                    </div>
+                    <hr className="border-2 border-dotted border-citizen mb-3" />
+                    <div className="flex justify-center">
+                        <p>
+                            &copy; {new Date().getFullYear()}. All rights
+                            reserved.
+                        </p>
                     </div>
                 </div>
             </footer>
