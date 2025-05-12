@@ -15,6 +15,10 @@ function Profile() {
     return (
         <div className="relative overflow-hidden flex flex-col">
             <ParticleBackground />
+            {/* Spinner overlay */}
+            <div className="absolute top-10 right-4 -translate-y-1/2">
+                <div className="w-24 h-24 border-t-8 border-l-2 border-luminous rounded-full animate-spin"></div>
+            </div>
             <div className="h-screen flex justify-center items-center">
                 <div className="h-full w-4/5 md:w-1/2 z-10">
                     <FakeTerminal />
