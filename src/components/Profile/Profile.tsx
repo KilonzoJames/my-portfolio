@@ -6,6 +6,7 @@ import { useTranslation } from "react-i18next";
 import FakeTerminal from "./FakeTerminal";
 import ParticleBackground from "./ParticleBackground";
 import WelcomeBanner from "./WelcomeBanner";
+import Home from "./Home";
 
 function Profile() {
     const { t } = useTranslation();
@@ -15,16 +16,7 @@ function Profile() {
     return (
         <div className="relative overflow-hidden flex flex-col">
             <ParticleBackground />
-            {/* Spinner overlay */}
-            <div className="absolute top-10 right-4 -translate-y-1/2">
-                <div className="w-24 h-24 border-t-8 border-l-2 border-luminous rounded-full animate-spin"></div>
-            </div>
-            <div className="h-screen flex justify-center items-center">
-                <div className="h-full w-4/5 md:w-1/2 z-10">
-                    <FakeTerminal />
-                </div>
-            </div>
-
+            <Home />
             <WelcomeBanner />
 
             <div className="flex flex-col justify-center items-center text-2xl lg:text-4xl gap-16 p-4 z-10">
@@ -101,6 +93,11 @@ function Profile() {
                         alt="Visitors"
                         className="inline-block ml-2"
                     />
+                </div>
+            </div>
+            <div className="h-screen flex justify-center items-center">
+                <div className="h-full w-4/5 md:w-1/2 z-10">
+                    <FakeTerminal />
                 </div>
             </div>
         </div>
