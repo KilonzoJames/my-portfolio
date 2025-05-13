@@ -3,7 +3,7 @@ import React from "react";
 function Intro() {
     return (
         <div className="z-20 relative h-screen w-4/5 md:w-1/2 flex flex-col justify-center mx-auto gap-10">
-            <div className="font-thin nova-cut-regular">Hi, my name is</div>
+            <div className="font-thin nova-cut-regular sm:text-xl">Hi, my name is</div>
             <div className="text-white font-bold text-3xl sm:text-5xl md:text-6xl lg:text-7xl mt-4 rubik-vinyl-regular uppercase">
                 James Kilonzo
             </div>

@@ -1,7 +1,7 @@
 import React from "react";
 const ProfileCard = () => {
     return (
-        <div className="rounded-2xl p-6 md:p-10 w-full max-w-3xl mx-auto shadow-lg border border-gray-800 text-white space-y-6">
+        <div className="rounded-2xl p-6 md:p-10 w-full max-w-3xl mx-auto shadow-lg border border-gray-800 text-white space-y-6 Montserrat">
             <div>
                 <h2 className="text-2xl font-bold text-luminous mb-2">
                     🌀 About Me
@@ -40,7 +40,7 @@ const ProfileCard = () => {
                     ].map((tech, index) => (
                         <span
                             key={index}
-                            className="bg-green-600 text-xs px-3 py-1 rounded-full font-medium">
+                            className="bg-green-600 text-xs px-3 py-1 rounded-full font-medium aboreto-regular">
                             {tech}
                         </span>
                     ))}

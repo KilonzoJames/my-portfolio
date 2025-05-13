@@ -70,7 +70,7 @@ function Home() {
                         </div>
                     </ScrambleText>
 
-                    <h1 className="italic Shojumaru text-lime-400 mt-2">
+                    <h1 className="italic Shojumaru text-lime-400 sm:text-4xl mt-2">
                         {"// "}Welcome to my portfolio!
                     </h1>
 
