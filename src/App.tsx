@@ -10,6 +10,7 @@ import Contacts from "./components/contacts";
 import ProjectsList from "./components/ProjectsList";
 import Courses from "./components/Courses";
 import SplashScreen from "./components/SplashScreen";
+import FakeTerminal from "./components/Profile/FakeTerminal";
 import "./styles/App.css";
 import "./styles/project.css";
 import "./styles/header.css";
@@ -39,6 +40,7 @@ function App() {
         "/projects",
         "/contacts",
         "/course",
+        "/misc",
     ];
     const showHeader = pathsWithHeader.includes(location.pathname);
     const showFooter = ["/", ...pathsWithHeader].includes(location.pathname);
@@ -54,20 +56,24 @@ function App() {
                             {showHeader && <Header />}
                             <Routes>
                                 <Route path="/" element={<Profile />} />
-                                <Route path="/socials" element={<Socials />} />
-                                <Route
-                                    path="/techstack"
-                                    element={<Techstack />}
-                                />
                                 <Route
                                     path="/projects"
                                     element={<ProjectsList />}
                                 />
+                                <Route path="/course" element={<Courses />} />
+                                <Route
+                                    path="/techstack"
+                                    element={<Techstack />}
+                                />
+                                <Route path="/socials" element={<Socials />} />
                                 <Route
                                     path="/contacts"
                                     element={<Contacts />}
                                 />
-                                <Route path="/course" element={<Courses />} />
+                                <Route
+                                    path="/misc"
+                                    element={<FakeTerminal />}
+                                />
                             </Routes>
                             {showFooter && <Footer />}{" "}
                         </div>

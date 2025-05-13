@@ -6,9 +6,12 @@ import { invert } from "../../redux/open";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
     faHome,
-    faPhone,
     faBriefcase,
     faCertificate,
+    faTools,
+    faShareAlt,
+    faEnvelope,
+    faGripHorizontal,
 } from "@fortawesome/free-solid-svg-icons";
 import { useTranslation } from "react-i18next";
 
@@ -25,8 +28,9 @@ function Navs() {
         link4: string;
         link5: string;
         link6: string;
+        link7: string;
     }
-    const { link1, link2, link3, link4, link5, link6 } = t("navigation", {
+    const { link1, link2, link3, link4, link5, link6, link7 } = t("navigation", {
         returnObjects: true,
     }) as navigation;
 
@@ -48,18 +52,23 @@ function Navs() {
         },
         {
             text: link4,
-            icon: faBriefcase,
+            icon: faTools,
             href: "techstack",
         },
         {
             text: link5,
-            icon: faBriefcase,
+            icon: faShareAlt,
             href: "socials",
         },
         {
             text: link6,
-            icon: faPhone,
+            icon: faEnvelope,
             href: "contacts",
+        },
+        {
+            text: link7,
+            icon: faGripHorizontal,
+            href: "misc",
         },
     ];
 
