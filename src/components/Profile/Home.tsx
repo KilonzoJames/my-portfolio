@@ -54,8 +54,9 @@ function Home() {
 
                 {/* Optional radial overlay */}
                 <div
+                // from-slate-900/0 to-slate-900 
                     id="radialGradient"
-                    className="absolute inset-0 bg-gradient-radial from-slate-900/0 to-slate-900 pointer-events-none"></div>
+                    className="absolute inset-0 bg-gradient-radial pointer-events-none"></div>
 
                 {/* Centered heading */}
                 <div className="z-20 flex flex-col justify-center items-center text-center text-3xl">
