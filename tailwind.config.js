@@ -9,6 +9,22 @@ const tailwindConfig = {
                 crimson: "#B22222",
                 citizen: "#005100",
             },
+            // backgroundImage: {
+            /* On Home page */
+            //     "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
+            // },
+            animation: {
+                /* On SplashScreen page */
+                "fade-in-up": "fadeInUp 1.5s ease-out forwards",
+                "ping-slow": "ping 4s cubic-bezier(0, 0, 0.2, 1) infinite",
+            },
+            keyframes: {
+                /* On SplashScreen page */
+                fadeInUp: {
+                    "0%": { opacity: 0, transform: "translateY(20px)" },
+                    "100%": { opacity: 1, transform: "translateY(0)" },
+                },
+            },
             gridTemplateColumns: {
                 spacing: "repeat(5, 1fr)",
             },
