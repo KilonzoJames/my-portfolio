@@ -21,7 +21,7 @@ export default function WelcomeBanner() {
                         <div
                             key={i}
                             className="flex items-center gap-[1rem] shrink-0">
-                            <p className="sm:text-[3vw] font-bold uppercase text-gray-400 whitespace-nowrap group-hover:text-white transition marquee-text">
+                            <p className="sm:text-[3vw] font-bold protest-guerrilla-regular text-gray-400 whitespace-nowrap group-hover:text-white transition marquee-text">
                                 {text}
                                 <span>{text}</span>
                                 <span>{text}</span>
