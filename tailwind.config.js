@@ -9,10 +9,10 @@ const tailwindConfig = {
                 crimson: "#B22222",
                 citizen: "#005100",
             },
-            // backgroundImage: {
-            /* On Home page */
-            //     "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
-            // },
+            backgroundImage: {
+            /* On About and Home page */
+                "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
+            },
             animation: {
                 /* On SplashScreen page */
                 "fade-in-up": "fadeInUp 1.5s ease-out forwards",
