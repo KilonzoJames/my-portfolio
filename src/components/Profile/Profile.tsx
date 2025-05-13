@@ -4,6 +4,7 @@ import ParticleBackground from "./ParticleBackground";
 import Home from "./Home";
 import WelcomeBanner from "./WelcomeBanner";
 import About from "./About";
+import Intro from "../Profile/Intro";
 
 function Profile() {
     return (
@@ -11,6 +12,7 @@ function Profile() {
             <ParticleBackground />
             <Home />
             <WelcomeBanner />
+            <Intro />
             <About />
         </div>
     );

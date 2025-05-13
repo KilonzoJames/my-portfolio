@@ -25,7 +25,7 @@ function Home() {
             <Header />
 
             {/* Spinner overlay */}
-            <div className="z-20 absolute mt-8 right-4 -translate-y-1/2">
+            <div className="absolute mt-8 right-4 -translate-y-1/2">
                 <div className="w-24 h-24 border-t-4 border-l-2 border-luminous rounded-full animate-spin"></div>
             </div>
 
