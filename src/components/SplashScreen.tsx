@@ -21,11 +21,19 @@ const SplashScreen = () => {
                 </div>
             )}
 
-            {step === 1 && (
-                <div className="list animate-fade-in-up">
-                    Cybersecurity | SoftwareDev
-                </div>
-            )}
+            <div className="list">
+                {step === 1 && (
+                    <>
+                        <div className="hidden md:block animate-fade-in-up">
+                            Cybersecurity | SoftwareDev
+                        </div>
+                        <div className="md:hidden flex flex-col animate-fade-in-up">
+                            <span>Cybersecurity</span>
+                            <span>SoftwareDev</span>
+                        </div>
+                    </>
+                )}
+            </div>
 
             {step === 2 && (
                 <div className="linux fixed inset-0 z-50 flex items-center justify-center bg-black bg-opacity-75">
