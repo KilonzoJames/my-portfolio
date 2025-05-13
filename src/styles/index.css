@@ -15,13 +15,14 @@
 @import url("https://fonts.googleapis.com/css2?family=Aboreto&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Wallpoet&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Nova+Cut&display=swap");
-@import url('https://fonts.googleapis.com/css2?family=IM+Fell+French+Canon+SC&display=swap');
-
+@import url("https://fonts.googleapis.com/css2?family=IM+Fell+French+Canon+SC&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Orbitron:wght@400..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Special+Elite&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Merriweather:ital,opsz,wght@0,18..144,300..900;1,18..144,300..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Creepster&display=swap");
 /* Good font: Mouse Memoirs */
 
-.slick-slide > div {
-    margin: 0 10px;
-}
 @layer base {
     body {
         font-family: "Aboreto", system-ui;
@@ -31,23 +32,50 @@
     h2 {
         @apply text-green-500 font-bold py-4 mb-4 text-3xl border-b-4 border-luminous;
     }
-}
-
-@layer components {
     .Shojumaru {
         font-family: "Shojumaru";
+    }
+    .special-elite-regular {
+        font-family: "Special Elite", system-ui;
+        font-weight: 400;
+        font-style: normal;
+    }
+    .orbitron-new {
+        font-family: "Orbitron", sans-serif;
+        font-optical-sizing: auto;
+        font-weight: 400;
+        font-style: normal;
     }
     .im-fell-french-canon-sc-regular {
         font-family: "IM Fell French Canon SC", serif;
         font-weight: 400;
         font-style: normal;
-      }
+    }
     .merienda-class {
         font-family: "Merienda", cursive;
         font-optical-sizing: auto;
         font-weight: 500;
         font-style: normal;
     }
+    .playfair-display {
+        font-family: "Playfair Display", serif;
+        font-optical-sizing: auto;
+        font-weight: 400;
+        font-style: normal;
+    }
+    .merriweather {
+        font-family: "Merriweather", serif;
+        font-optical-sizing: auto;
+        font-weight: 400;
+        font-style: normal;
+        font-variation-settings: "wdth" 100;
+    }
+    .creepster-regular {
+        font-family: "Creepster", system-ui;
+        font-weight: 400;
+        font-style: normal;
+    }
+
     .Montserrat {
         font-family: "Montserrat Alternates";
     }
@@ -86,14 +114,18 @@
         font-weight: 400;
         font-style: normal;
     }
-    .custom-button {
-        background-color: #3490dc;
-        color: #fff;
-        padding: 0.5rem 1rem;
-        border-radius: 0.25rem;
-        cursor: pointer;
+    .Agustina {
+        font-family: Agustina Regular;
     }
+}
+@layer utilities {
+    .shadow-neon-glow {
+        /* On Profile page */
+        box-shadow: 0 0 25px #00ffcc;
+    }
+
     @keyframes blink {
+        /* On Contacts page */
         0% {
             opacity: 0; /* On */
         }
@@ -101,19 +133,24 @@
             opacity: 1; /* On */
         }
     }
-
     .animate-blink {
+        /* On Contacts page */
         animation: blink 650ms alternate infinite ease-in-out;
     }
+
     .text-shadow-glow {
+        /* On footer page */
         text-shadow: 0 0 10px rgba(255, 255, 255, 0.6),
             0 0 20px rgba(255, 255, 255, 0.4);
     }
     .hover-text:hover {
+        /* On footer page */
         color: #ff1835;
         transition: color 0.5s;
     }
+
     @keyframes animated-gradient {
+        /* On Courses page */
         0% {
             background-position: 100% 0;
         }
@@ -121,8 +158,11 @@
             background-position: 0 0;
         }
     }
+}
 
+@layer components {
     .title-gradient {
+        /* On Courses page */
         display: inline-block;
         background: linear-gradient(
             to left,
@@ -137,7 +177,14 @@
         animation: animated-gradient 5.5s ease-in-out infinite; /* Faster animation */
         overflow: hidden;
     }
-    .Agustina {
-        font-family: Agustina Regular;
+    .slick-slide > div {
+        /* On Projects page */
+        margin: 0 10px;
+    }
+    .sectiontitle {
+        @apply text-green-500 font-extrabold text-3xl sm:text-5xl md:text-6xl lg:text-7xl protest-guerrilla-regular border-b-4 border-luminous;
+    }
+    .divtitle {
+        @apply text-green-500 font-extrabold text-3xl sm:text-5xl protest-guerrilla-regular border-b-4 border-luminous py-4 mb-4;
     }
 }

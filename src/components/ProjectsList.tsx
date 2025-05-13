@@ -72,7 +72,9 @@ const Project: React.FC<ProjectProps> = ({ projects }) => {
             <div className="Shojumaru flex items-center justify-center font-extrabold text-2xl uppercase underline">
                 {projects.name}
             </div>
-            <div className="merienda-class mx-auto flex items-center">{projects.desc}</div>
+            <div className="merienda-class mx-auto flex items-center">
+                {projects.desc}
+            </div>
             <div className="tech-stack  flex flex-wrap row-span-2 justify-around items-center ">
                 {projects.techs.map((item) => (
                     <div
@@ -103,7 +105,9 @@ const Project: React.FC<ProjectProps> = ({ projects }) => {
                 </div>
                 <div style={backgroundStyle}></div>
             </div>
-            {projects.isOpenSource && <div className="open merienda-class">Open Source</div>}
+            {projects.isOpenSource && (
+                <div className="open merienda-class">Open Source</div>
+            )}
         </div>
     );
 };
@@ -149,7 +153,7 @@ const ProjectsList = () => {
         <div>
             <div className="w-4/5 mx-auto md:p-20">
                 <div className="flex justify-center items-center md:mt-12">
-                    <h2>CURRENT PROJECTS</h2>
+                    <h1 className="divtitle">CURRENT PROJECTS</h1>
                 </div>
                 <div className="m-auto">
                     <Slider {...settings}>

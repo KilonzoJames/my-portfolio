@@ -6,7 +6,7 @@ function Socials() {
         <div className="flex justify-center items-center">
             <div className="flex flex-col justify-center items-center md:h-screen md:w-2/3">
                 <div className="flex flex-col">
-                    <h2>FIND ME @ </h2>
+                    <h1 className="divtitle">FIND ME @ </h1>
                 </div>
                 <div className="container flex flex-wrap justify-center md:gap-12 mt-20 ">
                     {socialLinks.map(

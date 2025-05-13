@@ -60,7 +60,7 @@ function Contacts() {
             <div className="w-4/5 md:w-1/2 flex flex-col justify-center items-center gap-12">
                 <div className="w-full flex flex-col md:flex-row justify-between items-center my-8">
                     <div>
-                        <h2>LET'S GET IN TOUCH</h2>
+                        <h1 className="divtitle">LET'S GET IN TOUCH</h1>
                     </div>
                     <div>
                         <img
