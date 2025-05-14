@@ -74,30 +74,34 @@ function Contacts() {
                         </div>
                     </div>
                 </div>
-                <div className="text-gradient text-mediumfont mb-12">
+                <div className="text-gradient text-mediumfont mb-12 text-sm md:text-lg sm:text-md tracking-wider Montserrat">
                     {t("contacts")}
                 </div>
                 <div className="grid lg:grid-cols-3 place-items-center gap-24">
                     {divs.map((div, index) => (
                         <div
-                            className="contact grid grid-row-3 w-60 h-72 shadow-md shadow-green-600"
-                            key={index}>
-                            <div className="flex justify-center items-center">
-                                {div.icon}
-                            </div>
-                            <div className="flex justify-center items-center font-extrabold uppercase">
-                                {div.name}
-                            </div>
-                            <div className="flex justify-center items-center">
+                            key={index}
+                            className="contact grid grid-row-3 w-60 h-72 shadow-md shadow-green-600">
+                            {[
+                                div.icon,
+                                <span className="font-extrabold uppercase">
+                                    {div.name}
+                                </span>,
                                 <button className="bg-green-500 rounded-md p-2">
                                     {div.a_tag}
-                                </button>
-                            </div>
+                                </button>,
+                            ].map((content, i) => (
+                                <div
+                                    key={i}
+                                    className="flex justify-center items-center">
+                                    {content}
+                                </div>
+                            ))}
                         </div>
                     ))}
                 </div>
                 <div className="flex justify-center items-center cursor-pointer hover:scale-110 duration-500">
-                    <strong className="border p-3 rounded-[20px] shadow-md shadow-fuchsia-50  flex items-center">
+                    <strong className="flex items-center p-3 border rounded-[20px] shadow-fuchsia-50 shadow-md">
                         <span className="inline-block w-[8px] h-[8px] rounded-full bg-red-600 animate-blink mr-2"></span>
                         Open to work
                     </strong>
