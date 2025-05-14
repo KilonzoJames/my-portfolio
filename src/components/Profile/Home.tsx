@@ -31,7 +31,7 @@ function Home() {
 
             <div className="z-20 fixed bottom-4 left-4 font-bold">
                 <p className="italic wallpoet-regular text-lime-400 text-xl">
-                    {"// "}Kilonzo James
+                    {new Date().toLocaleDateString("en-GB")}
                 </p>
             </div>
 
@@ -54,7 +54,7 @@ function Home() {
 
                 {/* Optional radial overlay */}
                 <div
-                // from-slate-900/0 to-slate-900 
+                    // from-slate-900/0 to-slate-900
                     id="radialGradient"
                     className="absolute inset-0 bg-gradient-radial pointer-events-none"></div>
 
@@ -64,8 +64,8 @@ function Home() {
                         <div className="max-w-fit mx-auto my-10 px-3 py-2 sm:px-6 sm:py-4 bg-black border-4 border-green-500 rounded-xl shadow-md">
                             <p
                                 data-value="K1L0NZ0 J4M35"
-                                className="text-green-400 nova-cut-regular tracking-widest text-xl sm:text-2xl cursor-default">
-                                K1L0NZ0 J4M35
+                                className="text-green-400 orbitron-new font-extrabold tracking-widest text-xl sm:text-2xl cursor-default">
+                                ▓▓▒▒░░▒▒ ▒▒▓░░▒▒
                             </p>
                         </div>
                     </ScrambleText>
