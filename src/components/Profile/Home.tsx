@@ -25,8 +25,8 @@ function Home() {
             <Header />
 
             {/* Spinner overlay */}
-            <div className="absolute mt-8 right-4 -translate-y-1/2">
-                <div className="w-24 h-24 border-t-4 border-l-2 border-luminous rounded-full animate-spin"></div>
+            <div className="absolute top-18 sm:top-10 right-0 -translate-y-1/2">
+                <div className="w-20 h-20 border-t-4 border-l-2 border-luminous rounded-full animate-spin"></div>
             </div>
 
             <div className="z-20 fixed bottom-4 left-4 font-bold">
@@ -61,10 +61,10 @@ function Home() {
                 {/* Centered heading */}
                 <div className="z-20 flex flex-col justify-center items-center text-center text-3xl">
                     <ScrambleText text="K1L0NZ0 J4M35">
-                        <div className="max-w-fit mx-auto my-10 px-6 py-4 bg-black border-4 border-green-500 rounded-lg shadow-md">
+                        <div className="max-w-fit mx-auto my-10 px-3 py-2 sm:px-6 sm:py-4 bg-black border-4 border-green-500 rounded-xl shadow-md">
                             <p
                                 data-value="K1L0NZ0 J4M35"
-                                className="text-green-400 nova-cut-regular tracking-widest text-3xl cursor-default">
+                                className="text-green-400 nova-cut-regular tracking-widest text-xl sm:text-2xl cursor-default">
                                 K1L0NZ0 J4M35
                             </p>
                         </div>

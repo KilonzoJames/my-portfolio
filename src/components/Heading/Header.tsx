@@ -5,7 +5,7 @@ import Logo from "./Logo";
 
 function Header() {
     return (
-        <div className="header md-shape w-full lg:w-4/5 flex flex-wrap top-0 mx-auto sticky z-[20] items-center justify-between p-8">
+        <div className="header md-shape w-full lg:w-4/5 flex flex-wrap top-0 mx-auto sticky z-[20] items-center justify-between p-6 sm:p-4">
             <motion.ul
                 initial={{ opacity: 0, x: -100 }}
                 animate={{ opacity: 1, x: 0 }}

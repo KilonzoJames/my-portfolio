@@ -57,7 +57,8 @@ function Footer() {
         <div>
             <footer className="flex merriweather font-semibold justify-center items-center bg-black text-luminous py-12 text-sm">
                 <div className="footer_container w-4/5 md:w-1/2">
-                    <div className="flex flex-col md:flex-row justify-between items-center">
+                    <div className="flex flex-col sm:flex-row sm:justify-between sm:items-center">
+                        {/* Footer Text*/}
                         <div className="flex">
                             <span>{t("footer")} </span>
                             <div className="h-9 w-24 overflow-hidden">
@@ -71,7 +72,7 @@ function Footer() {
                             </div>
                         </div>
                         {/* Country Flag */}
-                        <div className="flex items-center">
+                        <div className="hidden sm:block">
                             <div className="flex items-center gap-2">
                                 <img
                                     loading="lazy"
@@ -80,18 +81,29 @@ function Footer() {
                                     src="https://flagcdn.com/w40/ke.png"
                                     alt="Kenya"
                                 />
-                                <span className="text-opacity-70">
-                                    Kenya
-                                </span>
+                                <span className="text-opacity-70">Kenya</span>
                             </div>
                         </div>
                     </div>
                     <hr className="border-2 border-dotted border-citizen mb-3" />
-                    <div className="flex justify-center">
+                    <div className="flex justify-between sm:justify-center">
                         <p>
                             &copy; {new Date().getFullYear()}. All rights
                             reserved.
                         </p>
+                        {/* Country Flag */}
+                        <div className="flex justify-end sm:hidden">
+                            <div className="flex items-center gap-2">
+                                <img
+                                    loading="lazy"
+                                    width="29"
+                                    height="20"
+                                    src="https://flagcdn.com/w40/ke.png"
+                                    alt="Kenya"
+                                />
+                                <span className="text-opacity-70">Kenya</span>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </footer>
