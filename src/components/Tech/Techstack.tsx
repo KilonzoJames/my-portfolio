@@ -3,7 +3,7 @@ import ToolRows from "./ToolRows";
 import ResponsiveGrid from "./ResponsiveGrid";
 import SpiralItems from "./SpiralItems";
 import Cybersecurity from "./Cybersecurity";
-// import Cybertools from "./Cybertools";
+import Cybertools from "./Cybertools";
 
 function Techstack() {
     return (
@@ -46,10 +46,9 @@ function Techstack() {
                     <Cybersecurity />
                 </div>
             </div>
-            {/* Cybersecurity Tools */}
-            <div>
-                {/* <Cybertools /> */}
-            </div>
+
+            {/* Container3 - Cybersecurity Tools */}
+            <Cybertools />
         </div>
     );
 }
