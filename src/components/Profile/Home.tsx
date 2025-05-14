@@ -61,7 +61,7 @@ function Home() {
                 {/* Centered heading */}
                 <div className="z-20 flex flex-col justify-center items-center text-center text-3xl">
                     <ScrambleText text="K1L0NZ0 J4M35">
-                        <div className="max-w-fit mx-auto my-10 px-3 py-2 sm:px-6 sm:py-4 bg-black border-4 border-green-500 rounded-xl shadow-md">
+                        <div className="max-w-fit mx-auto my-10 px-3 py-2 sm:px-6 sm:py-4 bg-black rounded-xl shadow-lg shadow-luminous">
                             <p
                                 data-value="K1L0NZ0 J4M35"
                                 className="text-green-400 orbitron-new font-extrabold tracking-widest text-xl sm:text-2xl cursor-default">
