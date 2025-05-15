@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React, { useState } from "react";
 import { Routes, Route, useLocation } from "react-router-dom";
 import NotFound from "./components/notfound";
 import Header from "./components/Heading/Header";
@@ -21,18 +21,6 @@ function App() {
     const location = useLocation();
     const [showSplash, setShowSplash] = useState(true);
 
-    useEffect(() => {
-        // initial loading delay
-        const timer = setTimeout(() => {
-            setShowSplash(false);
-        }, 7000); // Show splash for 7 seconds (adjust as needed)
-        return () => clearTimeout(timer);
-    }, []);
-
-    if (showSplash) {
-        return <SplashScreen />;
-    }
-
     // Only show Header and Footer on valid paths
     const pathsWithHeader = [
         "/socials",
@@ -45,43 +33,60 @@ function App() {
     const showHeader = pathsWithHeader.includes(location.pathname);
     const showFooter = ["/", ...pathsWithHeader].includes(location.pathname);
 
+    // This callback is triggered by SplashScreen when its animation sequence is done.
+    const handleSplashEnd = () => {
+        setShowSplash(false);
+    };
+
     return (
         <div className="app">
-            <Routes>
-                {/* Routes that include Header and Footer */}
-                <Route
-                    path="/*"
-                    element={
-                        <div className="app">
-                            {showHeader && <Header />}
-                            <Routes>
-                                <Route path="/" element={<Profile />} />
-                                <Route
-                                    path="/projects"
-                                    element={<ProjectsList />}
-                                />
-                                <Route path="/course" element={<Courses />} />
-                                <Route
-                                    path="/techstack"
-                                    element={<Techstack />}
-                                />
-                                <Route path="/socials" element={<Socials />} />
-                                <Route
-                                    path="/contacts"
-                                    element={<Contacts />}
-                                />
-                                <Route
-                                    path="/misc"
-                                    element={<FakeTerminal />}
-                                />
-                            </Routes>
-                            {showFooter && <Footer />}{" "}
-                        </div>
-                    }
-                />
-                {/* NotFound Route outside Header/Footer */}
-                <Route path="*" element={<NotFound />} />
-            </Routes>
+            {showSplash ? (
+                // Render SplashScreen and pass the callback
+                <SplashScreen onAnimationEnd={handleSplashEnd} />
+            ) : (
+                // Once showSplash is false, render the main application
+                <Routes>
+                    {/* Routes that include Header and Footer */}
+                    <Route
+                        path="/*"
+                        element={
+                            <div className="app">
+                                {showHeader && <Header />}
+                                <Routes>
+                                    <Route path="/" element={<Profile />} />
+                                    <Route
+                                        path="/projects"
+                                        element={<ProjectsList />}
+                                    />
+                                    <Route
+                                        path="/course"
+                                        element={<Courses />}
+                                    />
+                                    <Route
+                                        path="/techstack"
+                                        element={<Techstack />}
+                                    />
+                                    <Route
+                                        path="/socials"
+                                        element={<Socials />}
+                                    />
+                                    <Route
+                                        path="/contacts"
+                                        element={<Contacts />}
+                                    />
+                                    <Route
+                                        path="/misc"
+                                        element={<FakeTerminal />}
+                                    />
+                                </Routes>
+                                {showFooter && <Footer />}{" "}
+                            </div>
+                        }
+                    />
+                    {/* NotFound Route outside Header/Footer */}
+                    <Route path="*" element={<NotFound />} />
+                </Routes>
+            )}
         </div>
     );
 }
