@@ -130,8 +130,8 @@ const FakeTerminal = () => {
 
     return (
         <div className="h-screen flex justify-center items-center">
-            <div className="h-full w-4/5 md:w-1/2 z-10">
-                <div className="bg-black text-green-500 rounded-lg shadow-md w-full mt-20">
+            <div className="h-full md:w-1/2 z-10">
+                <div className="bg-black text-green-500 rounded-lg shadow-md w-full mt-16">
                     <div className="bg-gray-800 flex items-center justify-between px-4 py-2 rounded-t-lg">
                         <div className="flex space-x-2">
                             <span className="w-3 h-3 rounded-full bg-red-500"></span>

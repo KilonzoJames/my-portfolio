@@ -3,11 +3,13 @@ import socialLinks from "./socialLinks";
 
 function Socials() {
     return (
-        <div className="flex justify-center items-center">
+        <div className="flex place-content-center">
             <div className="flex flex-col justify-center items-center md:h-screen md:w-2/3">
-                <div className="flex flex-col">
+                {/* Title heading */}
+                <div>
                     <h1 className="divtitle">FIND ME @ </h1>
                 </div>
+                {/* Socials container */}
                 <div className="container flex flex-wrap justify-center md:gap-12 mt-20 ">
                     {socialLinks.map(
                         ({ href, imgSrc, alt, color, style }, i) => {

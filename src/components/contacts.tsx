@@ -81,7 +81,7 @@ function Contacts() {
                     {divs.map((div, index) => (
                         <div
                             key={index}
-                            className="contact grid grid-row-3 w-60 h-72 shadow-md shadow-green-600">
+                            className="contact grid grid-row-3 w-44 h-60 md:w-52 lg:w-60 lg:h-72 shadow-md shadow-green-600">
                             {[
                                 div.icon,
                                 <span className="font-extrabold uppercase">
