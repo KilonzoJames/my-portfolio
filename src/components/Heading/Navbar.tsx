@@ -48,13 +48,14 @@ function Navbar() {
                 </div>
             </nav>
             {isOpen && isMd && (
-                <div
-                    className={`h-1/2 flex justify-center items-center text-lg basis-full`}>
-                    <div className="h-full flex flex-row gap-12">
-                        <div className="h-full flex flex-col">
+                <div className={`h-1/2 basis-full`}>
+                    {/* Applying h-full at every level won’t work unless every ancestor up to a defined height (like h-screen) is also explicitly given height. */}
+                    <div className="flex flex-row gap-20">
+                        <div className="flex flex-col">
                             <Navs />
                         </div>
-                        <div className="h-full flex flex-col flex-1 items-center justify-around">
+                        <div className="flex flex-col justify-around ml-auto">
+                            {/* ml-auto pushes it to the right edge of the flex container. */}
                             <ToggleLanguage />
                             <ToggleThemeButton />
                         </div>
