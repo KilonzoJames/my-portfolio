@@ -232,24 +232,24 @@ const Certs = [
 
 const CourseNames = [
     {
-        name: "Google Cybersecurity",
-        color: "bg-green-200", // Coral
-    },
-    {
-        name: "Google IT Support",
-        color: "bg-slate-100", // Slate Blue
+        name: "TryHackMe",
+        color: "bg-red-200", // Gold
     },
     {
         name: "Google IT Automation with Python",
         color: "bg-blue-200", // Medium Sea Green
     },
     {
-        name: "Google AI Essentials",
-        color: "bg-yellow-200", // Gold
+        name: "Google IT Support",
+        color: "bg-slate-100", // Slate Blue
     },
     {
-        name: "TryHackMe",
-        color: "bg-red-200", // Gold
+        name: "Google Cybersecurity",
+        color: "bg-green-200", // Coral
+    },
+    {
+        name: "Google AI Essentials",
+        color: "bg-yellow-200", // Gold
     },
 ];
 
@@ -265,9 +265,9 @@ function Courses() {
                     return (
                         <div>
                             <div className="flex justify-center items-center m-4">
-                                <h2 className="text-slate-400">
+                                <h1 className="divtitle text-slate-400">
                                     {course.name}
-                                </h2>
+                                </h1>
                             </div>
                             <div
                                 key={course.name}
