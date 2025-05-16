@@ -1,4 +1,5 @@
 import React, { useState, useEffect, useRef } from "react";
+import BoxBg from "./BoxBg";
 
 const FakeTerminal = () => {
     const [typedText, setTypedText] = useState("");
@@ -129,40 +130,44 @@ const FakeTerminal = () => {
     };
 
     return (
-        <div className="h-screen flex justify-center items-center">
-            <div className="h-full w-full sm:w-3/4 lg:w-1/2 z-10">
-                <div className="bg-black text-green-500 rounded-lg shadow-md w-full mt-16">
-                    <div className="bg-gray-800 flex items-center justify-between px-4 py-2 rounded-t-lg">
-                        <div className="flex space-x-2">
-                            <span className="w-3 h-3 rounded-full bg-red-500"></span>
-                            <span className="w-3 h-3 rounded-full bg-yellow-500"></span>
-                            <span className="w-3 h-3 rounded-full bg-green-500"></span>
+        <div>
+            <div className="h-screen flex justify-center items-center">
+                <div className="h-full w-full sm:w-3/4 lg:w-1/2 z-10">
+                    <div className="bg-black text-green-500 rounded-lg shadow-md w-full mt-16">
+                        <div className="bg-gray-800 flex items-center justify-between px-4 py-2 rounded-t-lg">
+                            <div className="flex space-x-2">
+                                <span className="w-3 h-3 rounded-full bg-red-500"></span>
+                                <span className="w-3 h-3 rounded-full bg-yellow-500"></span>
+                                <span className="w-3 h-3 rounded-full bg-green-500"></span>
+                            </div>
+                            <div className="text-lime-400 font-bold text-center tracking-wider merriweather">
+                                user@domain.com:{"/>"} Terminal
+                            </div>
+                            <div className="w-6" />{" "}
+                            {/* spacer to center the title */}
                         </div>
-                        <div className="text-lime-400 font-bold text-center tracking-wider merriweather">
-                            user@domain.com:{"/>"} Terminal
-                        </div>
-                        <div className="w-6" />{" "}
-                        {/* spacer to center the title */}
-                    </div>
 
-                    <div className="p-4 min-h-[300px] whitespace-pre-wrap break-words text-sm sm:text-base">
-                        <pre className="whitespace-pre-wrap break-words">
-                            {typedText}
-                        </pre>
-                        {!isTyping && (
-                            <input
-                                type="text"
-                                className="nova-cut-regular terminal-input w-full bg-transparent text-green-400 focus:outline-none caret-lime-400"
-                                value={command}
-                                onChange={(e) => setCommand(e.target.value)}
-                                onKeyDown={handleCommandInput}
-                                autoFocus
-                                placeholder="Type 'help' for available commands"
-                            />
-                        )}
+                        <div className="p-4 min-h-[300px] whitespace-pre-wrap break-words text-sm sm:text-base">
+                            <pre className="whitespace-pre-wrap break-words">
+                                {typedText}
+                            </pre>
+                            {!isTyping && (
+                                <input
+                                    type="text"
+                                    className="nova-cut-regular terminal-input w-full bg-transparent text-green-400 focus:outline-none caret-lime-400"
+                                    value={command}
+                                    onChange={(e) => setCommand(e.target.value)}
+                                    onKeyDown={handleCommandInput}
+                                    autoFocus
+                                    placeholder="Type 'help' for available commands"
+                                />
+                            )}
+                        </div>
                     </div>
                 </div>
             </div>
+
+            <BoxBg />
         </div>
     );
 };
