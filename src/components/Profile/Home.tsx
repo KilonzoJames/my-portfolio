@@ -61,16 +61,16 @@ function Home() {
                 {/* Centered heading */}
                 <div className="z-20 flex flex-col justify-center items-center text-center text-3xl">
                     <ScrambleText text="K1L0NZ0 J4M35">
-                        <div className="max-w-fit mx-auto my-10 px-3 py-2 sm:px-6 sm:py-4 bg-black rounded-xl shadow-lg shadow-luminous">
+                        <div className="max-w-fit mx-auto my-10 px-3 py-2 sm:px-6 sm:py-4 border-b-4 border-blueish rounded-xl shadow-blueish">
                             <p
                                 data-value="K1L0NZ0 J4M35"
-                                className="text-green-400 orbitron-new font-extrabold tracking-widest text-xl sm:text-2xl cursor-default">
+                                className="text-blueish special-elite-regular font-extrabold tracking-widest text-xl sm:text-2xl cursor-default">
                                 ▓▓▒▒░░▒▒ ▒▒▓░░▒▒
                             </p>
                         </div>
                     </ScrambleText>
 
-                    <h1 className="italic Shojumaru text-lime-400 sm:text-4xl mt-2">
+                    <h1 className="italic protest-guerrilla-regular text-gradient sm:text-4xl mt-2">
                         {"// "}Welcome to my portfolio!
                     </h1>
 
