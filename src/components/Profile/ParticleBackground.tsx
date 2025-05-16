@@ -3,8 +3,11 @@ import React, { useCallback } from "react";
 import type { Container, Engine } from "tsparticles-engine";
 import Particles from "react-tsparticles";
 import { loadSlim } from "tsparticles-slim"; // if you are going to use `loadSlim`, install the "tsparticles-slim" package too.
+import { useTheme } from "../ThemeContext";
 
 const ParticleBackground = () => {
+    const { isDarkMode } = useTheme();
+
     const particlesInit = useCallback(async (engine: Engine) => {
         console.log(engine);
         await loadSlim(engine);
@@ -17,6 +20,9 @@ const ParticleBackground = () => {
         []
     );
 
+    // Determine the background color based on the theme
+    const backgroundColor = isDarkMode ? "#000" : "#18163c"; // Black for dark mode, dark blue for light mode
+
     return (
         <Particles
             id="tsparticles"
@@ -24,7 +30,11 @@ const ParticleBackground = () => {
             loaded={particlesLoaded}
             options={{
                 fullScreen: { enable: false }, // ⛔️ Disable full screen so it doesn't cover all content
-                background: { color: { value: "#000" } },
+                background: {
+                    color: {
+                        value: backgroundColor, // Use the dynamically determined color
+                    },
+                },
                 fpsLimit: 120,
                 interactivity: {
                     events: {
@@ -49,8 +59,30 @@ const ParticleBackground = () => {
                     },
                 },
                 particles: {
+                    number: {
+                        value: 80,
+                        density: {
+                            enable: true,
+                            area: 800,
+                        },
+                    },
                     color: {
                         value: "#0ACF11",
+                    },
+                    shape: {
+                        type: "circle",
+                    },
+                    opacity: {
+                        value: 0.8,
+                    },
+                    size: {
+                        value: 3,
+                        animation: {
+                            enable: true,
+                            speed: 2,
+                            minimumValue: 1,
+                            sync: false,
+                        },
                     },
                     links: {
                         color: "#0ACF11",
@@ -68,28 +100,6 @@ const ParticleBackground = () => {
                         random: false,
                         speed: 1.2,
                         straight: false,
-                    },
-                    number: {
-                        density: {
-                            enable: true,
-                            area: 800,
-                        },
-                        value: 80,
-                    },
-                    opacity: {
-                        value: 0.8,
-                    },
-                    shape: {
-                        type: "circle",
-                    },
-                    size: {
-                        value: 3,
-                        animation: {
-                            enable: true,
-                            speed: 2,
-                            minimumValue: 1,
-                            sync: false,
-                        },
                     },
                 },
                 detectRetina: true,
