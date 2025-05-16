@@ -55,8 +55,8 @@ function Footer() {
 
     return (
         <div>
-            <footer className="flex merriweather font-semibold justify-center items-center bg-black text-luminous py-12 text-sm">
-                <div className="footer_container w-4/5 md:w-1/2">
+            <footer className="footer merriweather flex justify-center items-center font-semibold text-luminous py-12 text-sm">
+                <div className="w-4/5 md:w-1/2">
                     <div className="flex flex-col sm:flex-row sm:justify-between sm:items-center">
                         {/* Footer Text*/}
                         <div className="flex">
