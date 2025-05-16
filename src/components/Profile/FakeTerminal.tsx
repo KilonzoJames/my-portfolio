@@ -138,8 +138,8 @@ const FakeTerminal = () => {
                             <span className="w-3 h-3 rounded-full bg-yellow-500"></span>
                             <span className="w-3 h-3 rounded-full bg-green-500"></span>
                         </div>
-                        <div className="text-lime-400 font-bold text-center tracking-wider ">
-                            james@kilonzo.run:~ — Terminal
+                        <div className="text-lime-400 font-bold text-center tracking-wider merriweather">
+                            user@domain.com:{"/>"} Terminal
                         </div>
                         <div className="w-6" />{" "}
                         {/* spacer to center the title */}
