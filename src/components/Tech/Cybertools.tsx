@@ -45,7 +45,7 @@ const tools = [
 
 function Cybertools() {
     return (
-            <div className="w-full bg-black p-16 md:p-32">
+            <div className="w-full p-16 md:p-32">
                 <div className="flex flex-col place-items-center gap-12">
                     <h2 className="divtitle">Tools I Use (Cybersecurity)</h2>
                     <p className="mb-16 text-sm md:text-lg sm:text-md tracking-wider Montserrat">
