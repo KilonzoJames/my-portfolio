@@ -30,9 +30,12 @@ function Navs() {
         link6: string;
         link7: string;
     }
-    const { link1, link2, link3, link4, link5, link6, link7 } = t("navigation", {
-        returnObjects: true,
-    }) as navigation;
+    const { link1, link2, link3, link4, link5, link6, link7 } = t(
+        "navigation",
+        {
+            returnObjects: true,
+        }
+    ) as navigation;
 
     const navLinks = [
         {
@@ -72,15 +75,21 @@ function Navs() {
         },
     ];
 
+    // Define common classes that apply in both states
+    const baseClasses =
+        "rounded-lg border-transparent hover:border-white hover:shadow-lg transition-all duration-100";
+
+    // Define classes specific to each state
+    const openStateClasses = "flex my-8 border-2";
+    const closedStateClasses = "border-b-2 cursor-grab shadow-md mx-4";
+
     return (
         <div>
             {navLinks.map((link, index) => (
                 <button
                     key={index}
-                    className={`${
-                        isOpen
-                            ? "flex my-8 border-2 border-transparent rounded-lg hover:border-white  hover:shadow-lg transition-all duration-100"
-                            : "mx-4 shadow-md rounded-lg border-b-2 border-transparent hover:border-white hover:shadow-lg cursor-grab transition-all duration-100"
+                    className={`${baseClasses} ${
+                        isOpen ? openStateClasses : closedStateClasses
                     }`}
                     onClick={() => {
                         if (isOpen) {
