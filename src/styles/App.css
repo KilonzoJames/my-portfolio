@@ -1,104 +1,122 @@
 * {
-  margin: 0;
-  padding: 0;
-  list-style: none;
-  text-decoration: none
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
 }
-body{
+
+body {
+    background-color: black;
     background-size: cover;
     scroll-behavior: smooth;
 }
 
+/* ❌ Why transition: all 1s; doesn’t affect background gradients
+CSS transitions cannot animate complex background changes such as:
+linear-gradient(...)
+url(...)
+Multi-stop color changes
+This is because background is not a smoothly interpolatable value when it involves gradients or images. */
+
 /* Dark Mode Styles */
 .dark {
-  background: linear-gradient(to top, #211945 0%, #303030 40%, #121212 60%, #000000 100%);
-  color: #fff;
-  transition: all 1s;
+    /* background: linear-gradient(to top, #211945 0%, #303030 40%, #121212 60%, #000000 100%); */
+    background-color: black;
+    color: #fff;
+    transition: all 3s;
 }
-.dark.header {
-  background: linear-gradient(to left, gray 0%, gray 40%, #000000 60%, #000000 80%, #000000 100%);
-  color: #f5f5f5;
-  transition: all 1s;
+.dark .header {
+    /* background-color: linear-gradient(to left, gray 0%, gray 40%, #000000 60%, #000000 80%, #000000 100%); */
+    background-color: black;
+    color: #f5f5f5;
+    transition: background-color all 3s;
 }
 
 /* Light Mode Styles */
 .light {
-  background: linear-gradient(to top, #f0f0f0 0%, #d1e0e6 100%);
-  /* background: linear-gradient(to top, #2d7fb2 0%, #1e88ca 20%, #1da1f2 40%, #030035 60%, #030035 80%, #18163c 100%); */
-  color: #000;
-  transition: background 0.5s, color 0.5s;
+    /* background: linear-gradient(to top, #2d7fb2 0%, #1e88ca 20%, #1da1f2 40%, #29709c 60%, #030035 80%, #18163c 100%); */
+    background-color: #18163c;
+    color: #f5f5f5;
+    transition: background-color 3s;
 }
 
-.light.header {
-  background: linear-gradient(to bottom left, #1da1f2 0%, #030035 40%, #030035 60%, #18163c 100%);
-  color: #f5f5f5;
-  transition: background 0.5s, color 0.5s;
+.light .header {
+    /* background-color: linear-gradient(
+        to bottom left,
+        #1da1f2 0%,
+        #030035 40%,
+        #030035 60%,
+        #18163c 100%
+    ); */
+    background-color: 18163c;
+    color: #f5f5f5;
+    transition: background-color all 3s;
 }
 
 /* Gradient Text Styles */
-.dark .text-gradient{
-  background-image: -webkit-linear-gradient(left, white, gray, white);
-  background-clip: text;
-  -webkit-background-clip: text;
-  color: transparent;
-/* background: -webkit-linear-gradient(left, #00f298, #07f7f7); */
-/* background: linear-gradient(-19deg, darkgray, transparent); */
-/* -webkit-background-clip: text;
--webkit-text-fill-color: transparent; */
-}
-.light .text-gradient {
-  background-image: -webkit-linear-gradient(left, black, rgb(67, 65, 65), black);
-  background-clip: text;
-  -webkit-background-clip: text;
-  color: transparent;
+.dark .text-gradient {
+    /* background-image: -webkit-linear-gradient(left, white, gray, white); */
+    /* background: linear-gradient(-19deg, darkgray, transparent); */
+    background-image: -webkit-linear-gradient(left, #00f298, #07f7f7);
+    /* This is the core of the gradient effect. It defines a linear gradient as the background for the text.
+    left: Specifies that the gradient should start from the left side of the element and progress towards the right.
+    white, gray, white: These are the color stops. The gradient will smoothly transition from white on the far left, to gray in the middle, and back to white on the far right. */
+
+    /* -webkit-background-clip: text; */
+    /* This is the vendor-prefixed version of background-clip: text; for older WebKit browsers, ensuring compatibility. */
+
+    background-clip: text;
+    /* This is a crucial property for text gradients. It instructs the browser to clip the background to the shape of the text. Instead of the gradient filling the entire box of the element, it will only show through where the text characters are. */
+
+    /* -webkit-background-clip: text; */
+    /* This is the vendor-prefixed version of background-clip: text; for older WebKit browsers, ensuring compatibility. */
+
+    /* -webkit-text-fill-color: transparent; */
+    color: transparent;
+    /* This is equally vital. By setting the color of the text itself to transparent, you allow the background-image (the gradient) to become visible through the text's shape. If the color property wasn't transparent, you would just see the solid text color on top of the gradient. */
 }
 
+.light .text-gradient {
+    background-image: -webkit-linear-gradient(left, white, gray, white);
+    background-clip: text;
+    color: transparent;
+}
+
+/* No longer used */
 /* KeyFrames*/
-@keyframes moveFromRightToMiddle {
-  from {
-    transform: translateX(100%);
-  }
-  to {
-    transform: translateX(0);
-  }
+/* @keyframes moveFromRightToMiddle {
+    from {
+        transform: translateX(100%);
+    }
+    to {
+        transform: translateX(0);
+    }
 }
 @keyframes moveFromLeftToMiddle {
-  from {
-    transform: translateX(-100%);
-  }
-  to {
-    transform: translateX(0);
-  }
-}
-.animate-svg {
-  animation: moveFromLeftToMiddle 2s ease-in-out; 
-  overflow-y: auto;
-}
-.animate-text {
-  animation: moveFromRightToMiddle 2s ease-in-out;
-  overflow-y: auto;
-}
-.animate-image {
-  animation: moveFromRightToMiddle 2s ease-in-out;
+    from {
+        transform: translateX(-100%);
+    }
+    to {
+        transform: translateX(0);
+    }
 }
 
+.animate-svg {
+    animation: moveFromLeftToMiddle 2s ease-in-out;
+    overflow-y: auto;
+}
+.animate-text {
+    animation: moveFromRightToMiddle 2s ease-in-out;
+    overflow-y: auto;
+}
+.animate-image {
+    animation: moveFromRightToMiddle 2s ease-in-out;
+} */
+
+/* Nice background-colors */
 /* .active{
     background-color: #1d4ed8;
 } */
-/* #nav a:not(.active):hover{
+/* #nav{
     background-color: #5a0c1f;
 } */
-
-/* a:hover{
-    background: var(--color);
-    color: #050801;
-    box-shadow: 0 0 5px var(--color),
-    0 0 25px var(--color),
-    0 0 50 var(--color)
-    0 0 75px var(--color)
-} */
-
-/* background: linear-gradient(to bottom left, #211945, #211945);
-background: linear-gradient(to bottom left, #1da1f2, #6253e8); */
-/* -webkit-box-reflect: below 5px linear-gradient(to bottom,  rgba(0, 0, 0, 0), rgba(0, 0, 0, 0)) */
-
