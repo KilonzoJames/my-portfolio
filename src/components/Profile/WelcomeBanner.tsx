@@ -3,7 +3,7 @@ import "../../styles/WelcomeBanner.css";
 
 export default function WelcomeBanner() {
     const text =
-        ">> Booting creative mode... Presence detected. Welcome, curious traveler. 👻 This portal hosts dangerously cool ideas. Proceed adventurously.";
+        ">> Booting into creative mode...👻 Presence detected. Welcome, curious traveler. You've stepped into a portal of dangerously cool ideas — explore boldly, and let your curiosity guide you.";
 
     return (
         <div className="relative flex justify-center items-center">
