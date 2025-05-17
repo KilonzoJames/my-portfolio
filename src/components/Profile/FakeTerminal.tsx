@@ -45,10 +45,10 @@ const FakeTerminal = () => {
             const welcomeMessage = [
                 "[booting system...]\n",
                 "[authenticating terminal access...]\n",
-                "Injecting custom shell configuration...\n",
-                "Initializing environment variables...\n",
-                "Loading portfolio v1.0...\n",
-                "Access granted. Systems online. Welcome back, Operator.\n",
+                "$ Injecting custom shell configuration...\n",
+                "$ Initializing environment variables...\n",
+                "$ Loading portfolio v1.0...\n",
+                "$ Access granted. Systems online. Welcome back, Operator.\n",
                 ">>> Awaiting your command...\n",
             ];
             let index = 0;
@@ -133,7 +133,8 @@ const FakeTerminal = () => {
         <div>
             <div className="h-screen flex justify-center items-center">
                 <div className="h-full w-full sm:w-3/4 lg:w-1/2 z-10">
-                    <div className="bg-black text-green-500 rounded-lg shadow-md w-full mt-16">
+                    <div className="bg-black text-grayish rounded-lg shadow-md w-full mt-16">
+                        {/* Terminal Title */}
                         <div className="bg-gray-800 flex items-center justify-between px-4 py-2 rounded-t-lg">
                             <div className="flex space-x-2">
                                 <span className="w-3 h-3 rounded-full bg-red-500"></span>
@@ -147,6 +148,7 @@ const FakeTerminal = () => {
                             {/* spacer to center the title */}
                         </div>
 
+                        {/* Terminal */}
                         <div className="p-4 min-h-[300px] whitespace-pre-wrap break-words text-sm sm:text-base">
                             <pre className="whitespace-pre-wrap break-words">
                                 {typedText}
@@ -154,7 +156,7 @@ const FakeTerminal = () => {
                             {!isTyping && (
                                 <input
                                     type="text"
-                                    className="nova-cut-regular terminal-input w-full bg-transparent text-green-400 focus:outline-none caret-lime-400"
+                                    className="merriweather w-full bg-transparent focus:outline-none caret-lime-400"
                                     value={command}
                                     onChange={(e) => setCommand(e.target.value)}
                                     onKeyDown={handleCommandInput}

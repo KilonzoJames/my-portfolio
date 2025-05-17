@@ -9,6 +9,7 @@ const tailwindConfig = {
                 crimson: "#B22222",
                 citizen: "#005100",
                 blueish: "#07f7f7",
+                grayish: "#abbeab",
             },
             backgroundImage: {
                 /* On About and Home page */
