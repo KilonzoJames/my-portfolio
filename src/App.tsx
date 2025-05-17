@@ -10,7 +10,7 @@ import Contacts from "./components/contacts";
 import ProjectsList from "./components/ProjectsList";
 import Courses from "./components/Courses";
 import SplashScreen from "./components/SplashScreen";
-import FakeTerminal from "./components/Profile/FakeTerminal";
+import FakeTerminal from "./components/Misc/FakeTerminal";
 import "./styles/App.css";
 import "./styles/project.css";
 import "./styles/header.css";
