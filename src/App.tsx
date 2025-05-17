@@ -6,7 +6,7 @@ import Footer from "./components/footer";
 import Profile from "./components/Profile/Profile";
 import Socials from "./components/Socials/Socials";
 import Techstack from "./components/Tech/Techstack";
-import Contacts from "./components/contacts";
+import Contacts from "./components/Contacts/contacts";
 import ProjectsList from "./components/ProjectsList";
 import Courses from "./components/Courses";
 import SplashScreen from "./components/SplashScreen";
