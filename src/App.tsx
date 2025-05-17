@@ -8,7 +8,7 @@ import Socials from "./components/Socials/Socials";
 import Techstack from "./components/Tech/Techstack";
 import Contacts from "./components/Contacts/contacts";
 import ProjectsList from "./components/ProjectsList";
-import Courses from "./components/Courses";
+import Courses from "./components/Courses/Courses";
 import SplashScreen from "./components/SplashScreen";
 import FakeTerminal from "./components/Misc/FakeTerminal";
 import "./styles/App.css";
