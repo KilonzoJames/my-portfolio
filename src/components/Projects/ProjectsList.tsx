@@ -1,8 +1,8 @@
 import React from "react";
-import e_learning_platform from "../assets/screenshots/screencapture-e-learning-platform-1-vercel-app-2024-09-18-20_33_14.png";
-import foodapp from "../assets/screenshots/screencapture-food-ordering-app-lokp-onrender-2023-09-18-19_56_19.png";
-import bank from "../assets/screenshots/screencapture-localhost-3001-2023-09-18-21_20_22.png";
-import hunt from "../assets/screenshots/screencapture-the-hunt-onrender-2023-12-16-12_21_21.png";
+import e_learning_platform from "../../assets/screenshots/screencapture-e-learning-platform-1-vercel-app-2024-09-18-20_33_14.png";
+import foodapp from "../../assets/screenshots/screencapture-food-ordering-app-lokp-onrender-2023-09-18-19_56_19.png";
+import bank from "../../assets/screenshots/screencapture-localhost-3001-2023-09-18-21_20_22.png";
+import hunt from "../../assets/screenshots/screencapture-the-hunt-onrender-2023-12-16-12_21_21.png";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import Slider from "react-slick";
