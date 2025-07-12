@@ -38,6 +38,15 @@ const socialLinks = [
                 "polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%)", // Pentagram
         },
     },
+    {
+        href: "https://sevenly.vercel.app/",
+        imgSrc: "https://res.cloudinary.com/dzif8ltvg/image/upload/v1750874821/et4lf5lup4ripznhowum.jpg",
+        alt: "CTF Journal",
+        color: "bg-gradient-to-br from-pink-500 to-black-400",
+        style: {
+            clipPath: "circle(50% at 50% 50%)",
+        },
+    },
 ];
 
 export default socialLinks;
