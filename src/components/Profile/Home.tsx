@@ -31,7 +31,7 @@ function Home() {
                     </h1>
 
                     {/* 2. Descriptive Tagline */}
-                    <p className="italic protest-guerrilla-regular text-gradient text-2xl sm:text-3xl lg:text-4xl max-w-2xl opacity-90 mb-6 p-4">
+                    <p className="italic protest-guerrilla-regular text-gradient text-xl sm:text-2xl lg:text-3xl max-w-2xl opacity-90 mb-6 p-4 mx-4">
                         Systems obey. Logic yields. Creativity defies — a mind
                         forged in code, chaos, and control.
                     </p>
