@@ -1,43 +1,68 @@
 import React from "react";
 
 function Footer() {
+    const currentYear = new Date().getFullYear();
+    const localTime = new Date().toLocaleString();
+
     return (
-        <footer className="footer text-white font-mono px-4 sm:px-6 py-10">
+        <footer
+            className="footer text-white font-mono px-4 sm:px-6 py-10"
+            aria-label="Footer Section">
             <div className="max-w-6xl mx-auto">
                 {/* Top Message */}
-                <div className="mb-6">
-                    <h2 className="text-base sm:text-lg mb-2 text-green-500">
-                        [SESSION END]
-                    </h2>
-                    <p className="text-xs sm:text-sm">
-                        Thanks for exploring the node. Logging out of
-                        cyberspace...
+                <div className="mb-6 border-b border-green-700 pb-4">
+                    <h1
+                        className="text-lg sm:text-xl mb-3 font-mono font-medium bg-clip-text text-transparent 
+                        bg-[length:200%_200%] bg-gradient-to-r from-cyan-400 via-emerald-400 to-purple-500
+                        animate-gradient-shift">
+                        [Exploration Complete]
+                    </h1>
+                    <p className="text-xs sm:text-sm text-[#a2b8d4] hover:text-[#c2e7ff] transition-colors">
+                        Terminal session archived. Returning to base reality...
                     </p>
                 </div>
 
-                {/* Info Section */}
-                <div className="mt-8 text-xs sm:text-sm text-gray-400 space-y-2">
-                    <p>[+] Node: Nairobi</p>
-                    <p>[+] Local Time: {new Date().toLocaleString()}</p>
-                    <p>[+] Build: v1.0.0 | Powered by React + Tailwind</p>
+                {/* Info Grid */}
+                <div className="grid grid-cols-1 sm:grid-cols-3 gap-4 text-xs sm:text-sm">
+                    <div className="p-3 bg-gray-800/50 rounded-lg border-l-2 border-cyan-400">
+                        <p className="text-gray-400">📍 NODE LOCATION</p>
+                        <p className="text-cyan-300">Nairobi, KE</p>
+                    </div>
+                    <div className="p-3 bg-gray-800/50 rounded-lg border-l-2 border-emerald-400">
+                        <p className="text-gray-400">🕒 Local Time</p>
+                        <p className="text-emerald-300">{localTime}</p>
+                    </div>
+                    <div className="p-3 bg-gray-800/50 rounded-lg border-l-2 border-purple-400">
+                        <p className="text-gray-400">🛠 Build</p>
+                        <p className="text-purple-300">React + Tailwind</p>
+                    </div>
                 </div>
 
-                {/* Bottom Row */}
-                <div className="flex flex-col sm:flex-row justify-between items-start sm:items-center mt-6 border-t border-green-800 pt-4 text-xs sm:text-sm text-gray-400 gap-4">
+                {/* Footer Bottom */}
+                <div className="flex flex-col sm:flex-row justify-between items-center mt-6 border-t border-green-700 pt-4 text-xs sm:text-sm text-gray-400 transition-colors gap-4 flex-wrap">
                     <div>
-                        [ © {new Date().getFullYear()} ] — Handcrafted in the
-                        terminal with coffee & bad ideas. Stay weird, Stay
-                        encrypted.
+                        [ © {currentYear} ] | Fueled by{" "}
+                        <span className="bg-clip-text text-transparent bg-gradient-to-r from-amber-400 to-red-500">
+                            Coffee
+                        </span>{" "}
+                        &{" "}
+                        <span className="bg-clip-text text-transparent bg-gradient-to-r from-[#ff79c6] to-[#ffb3d1]">
+                            wild ideas.
+                        </span>{" "}
+                        <span className="text-[#00ffcc] font-bold">
+                            Embrace the chaos,
+                        </span>{" "}
+                        <span className="text-[#ffcc00] font-bold">
+                            stay encrypted.
+                        </span>
                     </div>
 
-                    <div>
+                    <div className="flex items-center gap-2">
                         <img
-                            loading="lazy"
-                            width="29"
-                            height="20"
                             src="https://flagcdn.com/w40/ke.png"
-                            alt="Kenya"
-                            className="opacity-80"
+                            alt="Kenya Flag"
+                            className="h-5 w-auto rounded-sm opacity-90 hover:opacity-100 transition-opacity"
+                            loading="lazy"
                         />
                     </div>
                 </div>
