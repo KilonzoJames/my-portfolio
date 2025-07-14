@@ -22,12 +22,27 @@ const tailwindConfig = {
                 "unveil-from-below": "unveilFromBelow 2s ease-out forwards", // Define peel-up animation here && Adjust duration and easing
                 "light-burst": "lightBurst 0.5s ease-out forwards", // New animation for light burst
                 "hue-rotate": "hue-rotate 10s linear infinite",
+                slideInLeft: "slideInLeft 2s ease-out forwards",
+                slideInRight: "slideInRight 2s ease-out forwards",
+                slideInUp: "slideInUp 2s ease-out forwards",
             },
             keyframes: {
                 /* On SplashScreen page */
                 fadeInUp: {
                     "0%": { opacity: 0, transform: "translateY(20px)" },
                     "100%": { opacity: 1, transform: "translateY(0)" },
+                },
+                slideInLeft: {
+                    "0%": { transform: "translateX(-100%)", opacity: "0" },
+                    "100%": { transform: "translateX(0)", opacity: "1" },
+                },
+                slideInRight: {
+                    "0%": { transform: "translateX(100%)", opacity: "0" },
+                    "100%": { transform: "translateX(0)", opacity: "1" },
+                },
+                slideInUp: {
+                    "0%": { transform: "translateY(100%)", opacity: "0" },
+                    "100%": { transform: "translateY(0)", opacity: "1" },
                 },
                 // NEW KEYFRAME FOR UNVEIL FROM BELOW
                 unveilFromBelow: {

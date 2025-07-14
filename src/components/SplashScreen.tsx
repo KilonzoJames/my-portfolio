@@ -31,7 +31,7 @@ const SplashScreen: React.FC<SplashScreenProps> = ({ onAnimationEnd }) => {
                     <h1 className="text-4xl md:text-5xl font-bold">
                         Pixels, Packets & Possibility
                     </h1>
-                    <p className="text-2xl merriweather">
+                    <p className="text-2xl space-y-4 merienda-class">
                         Where Ideas Take Flight
                     </p>
                 </div>
@@ -40,15 +40,15 @@ const SplashScreen: React.FC<SplashScreenProps> = ({ onAnimationEnd }) => {
             {/* Step 1: Skills Page */}
             {step === 1 && (
                 <div className="w-full h-full flex flex-col items-center justify-center text-left animate-fade-in-up space-y-6">
-                    <h2 className="text-4xl font-medium">Fields of Interest</h2>
-                    <ul className="space-y-2 text-xl merriweather">
-                        {[
-                            "Cybersecurity",
-                            "Software Development",
-                            "AI Innovations",
-                        ].map((skill) => (
-                            <li key={skill}>{skill}</li>
-                        ))}
+                    <h1 className="text-4xl md:text-5xl font-bold rubik-vinyl-regular">
+                        Fields of Interest
+                    </h1>
+                    <ul className="text-2xl space-y-4 merienda-class">
+                        <li className="animate-slideInLeft">Cybersecurity</li>
+                        <li className="animate-slideInRight">
+                            Software Development
+                        </li>
+                        <li className="animate-slideInUp">AI</li>
                     </ul>
                 </div>
             )}
