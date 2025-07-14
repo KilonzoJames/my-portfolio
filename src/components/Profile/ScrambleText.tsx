@@ -40,11 +40,7 @@ const ScrambleText: React.FC<ScrambleTextProps> = ({
         }, 30);
     };
     return (
-        <div
-            onMouseOver={handleScramble}
-            onFocus={handleScramble}
-            tabIndex={0} // so onFocus can work
-            className={className}>
+        <div onClick={handleScramble} className={className}>
             {children}
         </div>
     );
