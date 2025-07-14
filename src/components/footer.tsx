@@ -4,42 +4,45 @@ function Footer() {
     const currentYear = new Date().getFullYear();
     const localTime = new Date().toLocaleString();
 
+    // Centralized gradient class for reuse
+    const gradientText =
+        "bg-clip-text text-transparent bg-gradient-to-r from-cyan-400 via-emerald-400 to-purple-500";
+
     return (
         <footer
-            className="footer text-white font-mono px-4 sm:px-6 py-10"
+            className="footer bg-gradient-to-b from-[#0f1115] via-[#12161c] to-black text-white font-mono px-4 sm:px-6 py-8"
             aria-label="Footer Section">
             <div className="max-w-6xl mx-auto">
                 {/* Top Message */}
-                <div className="mb-6 border-b border-green-700 pb-4">
+                <div className="mb-2 border-b border-green-700 pb-4">
                     <h1
-                        className="text-lg sm:text-xl mb-3 font-mono font-medium bg-clip-text text-transparent 
-                        bg-[length:200%_200%] bg-gradient-to-r from-cyan-400 via-emerald-400 to-purple-500
-                        animate-gradient-shift">
-                        [Exploration Complete]
+                        className={`text-lg sm:text-xl mb-3 font-medium ${gradientText}`}>
+                        [EOF]
                     </h1>
-                    <p className="text-xs sm:text-sm text-[#a2b8d4] hover:text-[#c2e7ff] transition-colors">
+                    <p className="text-xs sm:text-sm text-gray-400 hover:text-[#c2e7ff] transition-colors">
                         Terminal session archived. Returning to base reality...
                     </p>
                 </div>
 
                 {/* Info Grid */}
-                <div className="grid grid-cols-1 sm:grid-cols-3 gap-4 text-xs sm:text-sm">
-                    <div className="p-3 bg-gray-800/50 rounded-lg border-l-2 border-cyan-400">
-                        <p className="text-gray-400">📍 NODE LOCATION</p>
-                        <p className="text-cyan-300">Nairobi, KE</p>
-                    </div>
-                    <div className="p-3 bg-gray-800/50 rounded-lg border-l-2 border-emerald-400">
-                        <p className="text-gray-400">🕒 Local Time</p>
-                        <p className="text-emerald-300">{localTime}</p>
-                    </div>
-                    <div className="p-3 bg-gray-800/50 rounded-lg border-l-2 border-purple-400">
-                        <p className="text-gray-400">🛠 Build</p>
-                        <p className="text-purple-300">React + Tailwind</p>
-                    </div>
+                <div className="grid grid-cols-1 sm:grid-cols-3 gap-2 text-xs sm:text-sm text-gray-400">
+                    {[
+                        { label: "📍 NODE LOCATION", value: "Nairobi, KE" },
+                        { label: "🕒 Local Time", value: localTime },
+                        { label: "🛠 Build", value: "React + Tailwind" },
+                    ].map(({ label, value }, idx) => (
+                        <div
+                            key={idx}
+                            className="p-3 bg-gray-800/50 border-l-2 rounded-lg ">
+                            <p>{label}</p>
+                            <p className={gradientText}>{value}</p>
+                        </div>
+                    ))}
                 </div>
 
                 {/* Footer Bottom */}
-                <div className="flex flex-col sm:flex-row justify-between items-center mt-6 border-t border-green-700 pt-4 text-xs sm:text-sm text-gray-400 transition-colors gap-4 flex-wrap">
+                <div className="flex flex-col sm:flex-row justify-between items-center mt-6 border-t border-green-700 pt-4 text-xs sm:text-sm text-gray-400 flex-wrap">
+                    {/* Signature */}
                     <div>
                         [ © {currentYear} ] | Fueled by{" "}
                         <span className="bg-clip-text text-transparent bg-gradient-to-r from-amber-400 to-red-500">
@@ -47,16 +50,23 @@ function Footer() {
                         </span>{" "}
                         &{" "}
                         <span className="bg-clip-text text-transparent bg-gradient-to-r from-[#ff79c6] to-[#ffb3d1]">
-                            wild ideas.
-                        </span>{" "}
-                        <span className="text-[#00ffcc] font-bold">
-                            Embrace the chaos,
-                        </span>{" "}
-                        <span className="text-[#ffcc00] font-bold">
-                            stay encrypted.
+                            rogue ideas
+                        </span>
+                        .
+                    </div>
+
+                    {/* Hacker motto */}
+                    <div className="text-center sm:text-left">
+                        <span className="bg-clip-text text-transparent bg-gradient-to-r from-amber-400 to-red-500">
+                            Chaos isn’t a glitch
+                        </span>
+                        <span className="bg-clip-text text-transparent bg-gradient-to-r from-fuchsia-400 to-pink-300">
+                            {" "}
+                            — it’s the default. Embrace it.
                         </span>
                     </div>
 
+                    {/* Flag */}
                     <div className="flex items-center gap-2">
                         <img
                             src="https://flagcdn.com/w40/ke.png"
