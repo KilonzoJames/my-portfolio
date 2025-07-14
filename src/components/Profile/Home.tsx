@@ -31,7 +31,7 @@ function Home() {
                     </h1>
 
                     {/* 2. Descriptive Tagline */}
-                    <p className="italic protest-guerrilla-regular text-gradient text-xl sm:text-2xl lg:text-3xl max-w-2xl opacity-90 mb-6 p-4 mx-4">
+                    <p className="im-fell-french-canon-sc-regular font-extrabold text-gradient text-xl sm:text-2xl lg:text-3xl max-w-2xl opacity-90 mb-6 p-4 mx-4">
                         Systems obey. Logic yields. Creativity defies — a mind
                         forged in code, chaos, and control.
                     </p>
@@ -42,7 +42,7 @@ function Home() {
                         className="inline-block mb-8 border-b-4 border-blueish rounded-xl shadow-blueish-glow max-w-[95vw] mx-auto">
                         <p
                             data-value="K1L0NZ0 J4M35"
-                            className="text-blueish special-elite-regular font-extrabold text-lg sm:text-xl md:text-2xl whitespace-nowrap p-4">
+                            className="text-gradient nova-cut-regular font-extrabold text-lg sm:text-xl md:text-2xl p-4">
                             ⛧ Engineering the Impossible ⛧
                         </p>
                     </ScrambleText>
