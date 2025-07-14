@@ -7,8 +7,7 @@ function Logo() {
                 className="protest-guerrilla-regular text-flicker-in-glow text-luminous"
                 href="/">
                 <span className="md:mx-8"></span>
-                <span>KILONZO</span>
-                <span> JAMES</span>
+                <span>KJ-007</span>
             </a>
         </div>
     );
