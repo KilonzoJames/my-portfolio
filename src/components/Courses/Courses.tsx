@@ -228,6 +228,15 @@ const Certs = [
             "https://tryhackme-certificates.s3-eu-west-1.amazonaws.com/THM-LS51NMP9VO.pdf",
         coursename: "TryHackMe",
     },
+    {
+        title: "Industrial Intrusion",
+        description: "TryHackMe",
+        img_link:
+            "https://web.archive.org/web/20230601051507if_/https://cdn.icon-icons.com/icons2/3915/PNG/512/tryhackme_logo_icon_249349.png",
+        coursera_link:
+            "https://tryhackme-certificates.s3-eu-west-1.amazonaws.com/THM-S1G4LJE26X.pdf",
+        coursename: "TryHackMe",
+    },
 ];
 
 const CourseNames = [
