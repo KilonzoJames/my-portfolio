@@ -2,8 +2,8 @@ import React from "react";
 
 const tools = [
     {
-        name: "Debian",
-        logo: "https://files.softicons.com/download/system-icons/os-affiliates-icons-by-tatice/ico/Debian.ico",
+        name: "Linux",
+        logo: "https://img.icons8.com/?size=100&id=38796&format=png&color=404040",
     },
     {
         name: "Burp Suite",
@@ -15,7 +15,7 @@ const tools = [
     },
     {
         name: "Ghidra",
-        logo: "https://ghidra-sre.org/images/GHIDRA_1.png",
+        logo: "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f6/Ghidra_logo.svg/512px-Ghidra_logo.svg.png?20220727174502",
     },
     {
         name: "Radare2",
@@ -45,38 +45,38 @@ const tools = [
 
 function Cybertools() {
     return (
-            <div className="w-full p-16 md:p-32">
-                <div className="flex flex-col place-items-center gap-12">
-                    <h2 className="divtitle">Tools I Use (Cybersecurity)</h2>
-                    <p className="mb-16 text-sm md:text-lg sm:text-md tracking-wider Montserrat">
-                        My security assessments delve deep, utilizing powerful
-                        tools like Linux, Burp Suite, Ghidra, Autopsy,
-                        Metasploit, Wireshark, and other top-tier industry
-                        tools. I conduct thorough security assessments to
-                        pinpoint vulnerabilities and strengthen systems against
-                        the ever-changing threat landscape.
-                    </p>
-                </div>
+        <div className="w-full p-16 md:p-32">
+            <div className="flex flex-col place-items-center gap-12">
+                <h2 className="divtitle">Tools I Use (Cybersecurity)</h2>
+                <p className="mb-16 text-sm md:text-lg sm:text-md tracking-wider Montserrat">
+                    My security assessments delve deep, utilizing powerful tools
+                    like Linux, Burp Suite, Ghidra, Autopsy, Metasploit,
+                    Wireshark, and other top-tier industry tools. I conduct
+                    thorough security assessments to pinpoint vulnerabilities
+                    and strengthen systems against the ever-changing threat
+                    landscape.
+                </p>
+            </div>
 
-                <div>
-                    <div className="grid grid-cols-2 sm:grid-cols-4 md:grid-cols-10 gap-6 justify-items-center">
-                        {tools.map((tool, index) => (
-                            <div
-                                key={index}
-                                className="transition-transform duration-300 hover:scale-110">
-                                <img
-                                    src={tool.logo}
-                                    alt={tool.name}
-                                    className="w-20 h-20 object-contain"
-                                />
-                                <p className="mt-2 text-center text-sm">
-                                    {tool.name}
-                                </p>
-                            </div>
-                        ))}
-                    </div>
+            <div>
+                <div className="grid grid-cols-2 sm:grid-cols-4 md:grid-cols-10 gap-6 justify-items-center">
+                    {tools.map((tool, index) => (
+                        <div
+                            key={index}
+                            className="transition-transform duration-300 hover:scale-110">
+                            <img
+                                src={tool.logo}
+                                alt={tool.name}
+                                className="w-20 h-20 object-contain"
+                            />
+                            <p className="mt-2 text-center text-sm">
+                                {tool.name}
+                            </p>
+                        </div>
+                    ))}
                 </div>
             </div>
+        </div>
     );
 }
 
