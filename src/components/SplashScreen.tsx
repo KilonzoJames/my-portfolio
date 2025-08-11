@@ -52,7 +52,7 @@ const SplashScreen: React.FC<SplashScreenProps> = ({ onAnimationEnd }) => {
                             <h1 className="text-3xl md:text-5xl font-bold text-luminous">
                                 Pixels, Packets & Possibility
                             </h1>
-                            <p className="text-lg md:text-2xl mt-2 text-gray-300 merienda-class text-luminous">
+                            <p className="text-lg md:text-2xl mt-2 text-luminous merienda-class hidden">
                                 Where ideas take flight — engineering, security,
                                 and scale.
                             </p>
@@ -64,48 +64,55 @@ const SplashScreen: React.FC<SplashScreenProps> = ({ onAnimationEnd }) => {
                             <h1 className="text-3xl md:text-4xl font-extrabold tracking-wide drop-shadow-lg text-luminous animate-slideInUp">
                                 Fields of Interest
                             </h1>
-                            <ul className="flex flex-wrap gap-4 justify-center">
+                            <ul className="flex flex-wrap gap-4 justify-center md:text-xl">
                                 {[
                                     {
                                         label: "Cybersecurity",
-                                        color: "green",
                                         animationClass:
                                             "motion-safe:animate-slideInLeft",
+                                        colorClasses:
+                                            "text-green-300 bg-green-900/20 hover:bg-green-900/40",
                                     },
                                     {
                                         label: "Software Engineering",
-                                        color: "red",
                                         animationClass:
                                             "motion-safe:animate-slideInRight",
+                                        colorClasses:
+                                            "text-sky-300 bg-sky-900/20 hover:bg-sky-900/40",
                                     },
                                     {
                                         label: "Machine Learning",
-                                        color: "blue",
                                         animationClass:
                                             "motion-safe:animate-slideInRight",
+                                        colorClasses:
+                                            "text-blue-300 bg-blue-900/20 hover:bg-blue-900/40",
                                     },
                                     {
                                         label: "Cloud / Infra",
-                                        color: "gray",
                                         animationClass:
                                             "motion-safe:animate-slideInUp",
+                                        colorClasses:
+                                            "text-gray-300 bg-gray-900/20 hover:bg-gray-900/40",
                                     },
-                                ].map(({ label, color, animationClass }, i) => (
-                                    <li
-                                        key={i}
-                                        className={`
-                        px-6 py-3 rounded-full border-2 border-${color}-400 
-                        text-${color}-300 text-base font-medium bg-${color}-900/20 
-                        hover:bg-${color}-900/40 transition-colors shadow-md 
+                                ].map(
+                                    (
+                                        { label, animationClass, colorClasses },
+                                        i
+                                    ) => (
+                                        <li
+                                            key={i}
+                                            className={`
+                        px-6 py-3 rounded-full transition-colors shadow-md 
+                        ${colorClasses} 
                         ${animationClass}
                     `}>
-                                        {label}
-                                    </li>
-                                ))}
+                                            {label}
+                                        </li>
+                                    )
+                                )}
                             </ul>
                         </div>
                     )}
-
                     {/* Step 2 — Loader */}
                     {step === 2 && (
                         <div
