@@ -2,17 +2,20 @@ import React, { useEffect, useRef, useState } from "react";
 
 // Define the interface for your component's props
 interface SplashScreenProps {
-    onAnimationEnd: () => void; // Specifies that onAnimationEnd is a function that returns nothing (void)
+    // Callback function that is called when all animations are complete.
+    onAnimationEnd: () => void;
 }
 
+// A progressive splash screen that animates content in stages before showing the main application.
 const SplashScreen: React.FC<SplashScreenProps> = ({ onAnimationEnd }) => {
     const [step, setStep] = useState(0);
     const timers = useRef<number[]>([]);
 
     useEffect(() => {
         // Chain animations with clear timeout management
+        // Clear all timers on component unmount to prevent memory leaks.
         timers.current.push(
-            setTimeout(() => setStep(1), 2000),
+            setTimeout(() => setStep(1), 2500),
             setTimeout(() => setStep(2), 5000),
             setTimeout(onAnimationEnd, 7500)
         );
@@ -24,46 +27,114 @@ const SplashScreen: React.FC<SplashScreenProps> = ({ onAnimationEnd }) => {
     }, [onAnimationEnd]);
 
     return (
-        <div className="w-full h-screen bg-black text-luminous rubik-vinyl-regular relative overflow-hidden">
-            {/* Step 0: Intro Page */}
-            {step === 0 && (
-                <div className="w-full h-full flex flex-col items-center justify-center text-center animate-fade-in-up space-y-4">
-                    <h1 className="text-4xl md:text-5xl font-bold">
-                        Pixels, Packets & Possibility
-                    </h1>
-                    <p className="text-2xl space-y-4 merienda-class">
-                        Where Ideas Take Flight
-                    </p>
-                </div>
-            )}
+        <div
+            role="dialog"
+            aria-modal="true"
+            aria-label="Site loading"
+            className={`w-full h-screen bg-black text-white relative overflow-hidden`}>
+            {/* Animated background */}
+            <div
+                aria-hidden
+                className="absolute inset-0 pointer-events-none opacity-20 motion-safe:animate-hue-rotate"
+                style={{ mixBlendMode: "screen" }}
+            />
 
-            {/* Step 1: Skills Page */}
-            {step === 1 && (
-                <div className="w-full h-full flex flex-col items-center justify-center text-left animate-fade-in-up space-y-6">
-                    <h1 className="text-4xl md:text-5xl font-bold rubik-vinyl-regular">
-                        Fields of Interest
-                    </h1>
-                    <ul className="text-2xl space-y-4 merienda-class">
-                        <li className="animate-slideInLeft">Cybersecurity</li>
-                        <li className="animate-slideInRight">
-                            Software Development
-                        </li>
-                        <li className="animate-slideInUp">AI</li>
-                    </ul>
-                </div>
-            )}
+            <div className="relative z-10 w-full h-full flex items-center justify-center">
+                <div className="max-w-4xl w-full px-6">
+                    {/* Step 0: Intro Page */}
+                    {step === 0 && (
+                        <div
+                            className={`w-full h-64 md:h-72 flex flex-col items-center justify-center text-center transition-all ${
+                                step >= 0
+                                    ? "motion-safe:animate-fade-in-up"
+                                    : ""
+                            }`}>
+                            <h1 className="text-3xl md:text-5xl font-bold text-luminous">
+                                Pixels, Packets & Possibility
+                            </h1>
+                            <p className="text-lg md:text-2xl mt-2 text-gray-300 merienda-class text-luminous">
+                                Where ideas take flight — engineering, security,
+                                and scale.
+                            </p>
+                        </div>
+                    )}
+                    {/* Step 1 — Fields of Interest */}
+                    {step === 1 && (
+                        <div className="w-full mt-12 flex flex-col items-center gap-8 transition-opacity duration-700">
+                            <h1 className="text-3xl md:text-4xl font-extrabold tracking-wide drop-shadow-lg text-luminous animate-slideInUp">
+                                Fields of Interest
+                            </h1>
+                            <ul className="flex flex-wrap gap-4 justify-center">
+                                {[
+                                    {
+                                        label: "Cybersecurity",
+                                        color: "green",
+                                        animationClass:
+                                            "motion-safe:animate-slideInLeft",
+                                    },
+                                    {
+                                        label: "Software Engineering",
+                                        color: "red",
+                                        animationClass:
+                                            "motion-safe:animate-slideInRight",
+                                    },
+                                    {
+                                        label: "Machine Learning",
+                                        color: "blue",
+                                        animationClass:
+                                            "motion-safe:animate-slideInRight",
+                                    },
+                                    {
+                                        label: "Cloud / Infra",
+                                        color: "gray",
+                                        animationClass:
+                                            "motion-safe:animate-slideInUp",
+                                    },
+                                ].map(({ label, color, animationClass }, i) => (
+                                    <li
+                                        key={i}
+                                        className={`
+                        px-6 py-3 rounded-full border-2 border-${color}-400 
+                        text-${color}-300 text-base font-medium bg-${color}-900/20 
+                        hover:bg-${color}-900/40 transition-colors shadow-md 
+                        ${animationClass}
+                    `}>
+                                        {label}
+                                    </li>
+                                ))}
+                            </ul>
+                        </div>
+                    )}
 
-            {/* Step 2: Penguin Loader Page */}
-            {step === 2 && (
-                <div className="absolute inset-0 flex items-center justify-center bg-black bg-opacity-90 z-30">
-                    <img
-                        src="https://cdn.pixabay.com/photo/2013/07/12/15/30/penguin-149971_1280.png"
-                        alt="Linux Penguin Loader"
-                        className="w-24 h-24 md:w-48 md:h-48 animate-ping-slow"
-                        loading="lazy"
-                    />
+                    {/* Step 2 — Loader */}
+                    {step === 2 && (
+                        <div
+                            className={`absolute inset-0 flex items-end md:items-center justify-center pb-16 md:pb-0 transition-all duration-700 z-30 pointer-events-none ${
+                                step === 2 ? "opacity-100" : "opacity-0"
+                            }`}
+                            aria-hidden={step !== 2}>
+                            <div className="flex flex-col items-center gap-3">
+                                {/* Loader image (use a local SVG for performance) */}
+                                <div className="motion-safe:animate-ping-slow">
+                                    <img
+                                        src="https://cdn.pixabay.com/photo/2013/07/12/15/30/penguin-149971_1280.png"
+                                        alt="loader"
+                                        className="w-20 h-20"
+                                        loading="lazy"
+                                    />
+                                </div>
+                                <div className="flex items-center gap-2 text-sm merienda-class ">
+                                    <span>Preparing experience</span>
+                                    <span
+                                        className="h-3 w-3 rounded-full bg-green-900 inline-block animate-blink"
+                                        aria-hidden
+                                    />
+                                </div>
+                            </div>
+                        </div>
+                    )}
                 </div>
-            )}
+            </div>
         </div>
     );
 };

@@ -20,7 +20,7 @@ const tailwindConfig = {
                 "fade-in-up": "fadeInUp 1.5s ease-out forwards",
                 "ping-slow": "ping 4s cubic-bezier(0, 0, 0.1, 1) infinite",
                 "unveil-from-below": "unveilFromBelow 2s ease-out forwards", // Define peel-up animation here && Adjust duration and easing
-                "light-burst": "lightBurst 0.5s ease-out forwards", // New animation for light burst
+                "light-burst": "lightBurst 1.0s ease-out forwards", // New animation for light burst
                 "hue-rotate": "hue-rotate 10s linear infinite",
                 slideInLeft: "slideInLeft 2s ease-out forwards",
                 slideInRight: "slideInRight 2s ease-out forwards",
